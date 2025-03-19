@@ -13,12 +13,14 @@
     box-sizing: border-box;
 }
 
-/* Main Styles */
+/* Global Reset ve Temel Stiller */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 56px;
+    padding-top: 76px;
+    /* Navbar yüksekliğine göre ayarlandı */
     color: var(--text-color);
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 h1,
@@ -29,87 +31,75 @@ h5,
 h6 {
     font-weight: 700;
     color: var(--dark-color);
+    margin-bottom: 1rem;
 }
 
 a {
     text-decoration: none;
     color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 a:hover {
     color: var(--secondary-color);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 section {
-    padding: 100px 0;
+    padding: 80px 0;
     position: relative;
 }
 
-.highlight {
-    color: var(--primary-color);
-    position: relative;
-    display: inline-block;
+.btn {
+    transition: all 0.3s ease;
 }
 
-.highlight::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(112, 70, 245, 0.15);
-    z-index: -1;
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.section-header {
-    margin-bottom: 70px;
-}
-
-.section-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-/* Navbar */
+/* Navbar Stili - Düzeltildi */
 .navbar {
-    padding: 20px 0;
-    background-color: var(--dark-color);
-    /* Arka plan rengini değiştirdim */
+    padding: 15px 0;
+    background-color: var(--dark-color) !important;
+    /* !important eklendi */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
 }
 
-.navbar-scrolled {
-    padding: 15px 0;
+.navbar-dark {
+    background-color: var(--dark-color) !important;
 }
 
-.navbar-brand img {
-    transition: all 0.3s ease;
+.navbar-dark .navbar-brand {
+    color: #fff;
 }
 
-.nav-link {
-    color: var(--dark-color);
-    font-weight: 500;
-    margin: 0 15px;
-    transition: all 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: var(--primary-color);
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.85);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: white;
+    color: #fff;
 }
 
-/* Navbar Logo */
 .navbar-logo {
     height: 30px;
     width: auto;
@@ -119,104 +109,31 @@ section {
 .navbar-brand {
     display: flex;
     align-items: center;
+    font-weight: 600;
 }
 
-/* Hero Section */
+/* Hero Section - Tamamen Yenilendi */
 .hero-section {
-    height: 100vh;
-    min-height: 500px;
+    position: relative;
+    min-height: 100vh;
     background: var(--gradient-primary);
-    /* Gradient arka plan ekledim */
-    position: relative;
     color: white;
-    padding: 180px 0 100px;
+    padding: 120px 0 80px;
     overflow: hidden;
-}
-
-.hero-text {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-section h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-.hero-section .highlight {
-    color: white;
-}
-
-.hero-section .highlight::after {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-.download-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.download-btn {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    color: var(--dark-color);
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.download-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.download-btn img {
-    height: 24px;
-    margin-right: 10px;
-}
-
-.download-btn.soon {
-    opacity: 0.7;
-    cursor: not-allowed;
-}
-
-.hero-image {
-    max-width: 70%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 5px solid #fff;
-    position: relative;
-    z-index: 2;
-}
-
-.phone-mockup {
-    position: relative;
-    text-align: center;
-}
-
-.phone-mockup img {
-    max-width: 80%;
-    transform: perspective(1000px) rotateY(-15deg) rotateX(10deg) rotateZ(-2deg);
-    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
-}
-
-.hero-wave {
+.hero-section::before {
+    content: '';
     position: absolute;
-    bottom: -1px;
+    top: 0;
     left: 0;
     width: 100%;
-    line-height: 0;
+    height: 100%;
+    background: url('../images/pattern.png');
+    opacity: 0.1;
+    z-index: 1;
 }
 
 .hero-section .overlay {
@@ -225,367 +142,389 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .hero-section .container {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
-/* Features Section */
-.features-section {
-    background-color: white;
-    padding-top: 80px;
+.hero-section h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 1.2;
 }
 
-.features-container {
-    margin-top: 50px;
-}
-
-.feature-item {
-    text-align: center;
-    padding: 30px 15px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+.hero-section p {
+    font-size: 1.2rem;
     margin-bottom: 30px;
-}
-
-.feature-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.feature-icon {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--gradient-primary);
-    color: white;
-    border-radius: 50%;
-    margin: 0 auto 25px;
-    font-size: 2rem;
-}
-
-.feature-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-/* Screenshots Section */
-.screenshots-section {
-    background-color: #f8f9fa;
-    padding: 100px 0;
-}
-
-.screenshot-item {
-    padding: 15px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    background-color: white;
-    transition: all 0.3s ease;
-}
-
-.screenshot-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.screenshot-item img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border: 8px solid white;
-}
-
-.screenshots-carousel {
-    padding: 20px 0;
-}
-
-/* Download Section */
-.download-section {
-    background: var(--gradient-primary);
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.download-section .section-header h2 {
-    color: white;
-}
-
-.download-section p {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.download-buttons-large {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
+.hero-section .highlight {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 8px;
+    border-radius: 4px;
 }
 
-.download-btn-large {
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: white;
-    color: var(--dark-color);
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+.hero-section .highlight::after {
+    display: none;
 }
 
-.download-btn-large:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.download-btn-large img {
-    height: 35px;
-    margin-right: 15px;
-}
-
-.download-btn-large div {
-    text-align: left;
-}
-
-.download-btn-large small {
-    display: block;
-    font-size: 0.7rem;
-    opacity: 0.7;
-}
-
-.download-btn-large span {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-/* İndirme bölümü için ek stiller */
-.feature-showcase {
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transform: perspective(1000px) rotateY(10deg);
-    transition: all 0.5s ease;
-    max-width: 80%;
-}
-
-.feature-showcase:hover {
-    transform: perspective(1000px) rotateY(0deg);
-}
-
-/* Footer */
-.footer-section {
-    background-color: var(--dark-color);
-    color: rgba(255, 255, 255, 0.7);
-    padding: 80px 0 30px;
-}
-
-.footer-section h5 {
-    color: white;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.footer-logo {
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 15px;
-}
-
-.footer-links a {
-    color: rgba(255, 255, 255, 0.7);
-    transition: all 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: white;
-}
-
-.social-links {
+.hero-buttons {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
-}
-
-.social-links a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background: var(--gradient-primary);
-    transform: translateY(-3px);
-}
-
-.copyright {
     margin-top: 30px;
-    color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.wave-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 4;
+}
+
+/* About Section */
+.about-img-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-img-container img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.experience-badge .number {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.experience-badge .text {
     font-size: 0.9rem;
+    opacity: 0.9;
 }
 
-hr {
-    border-color: rgba(255, 255, 255, 0.1);
-    margin: 40px 0;
-}
-
-/* Section Styles */
 .section-title {
     position: relative;
-    margin-bottom: 45px;
-    padding-bottom: 15px;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
 }
 
 .section-title:after {
     content: '';
     position: absolute;
-    width: 100px;
+    width: 80px;
     height: 3px;
-    background-color: #007bff;
+    background: var(--gradient-primary);
     bottom: 0;
+    left: 0;
+}
+
+.section-title.text-center:after {
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* Page Header */
-.page-header {
-    background-color: #f8f9fa;
-    padding: 7rem 0 4rem;
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.skill-tag {
+    background-color: rgba(112, 70, 245, 0.1);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* App Section */
+.featured-app-image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.app-stats {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    display: block;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.stat-text {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+.app-logo-large {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.app-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(112, 70, 245, 0.1);
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.feature-item i {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.feature-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: all 0.3s ease;
     text-align: center;
 }
 
-/* Applications Card */
-.app-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px;
-    overflow: hidden;
-    border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    height: 100%;
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.app-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 50%;
+    background: var(--gradient-primary);
 }
 
-.app-card .card-title {
+.benefit-card h4 {
+    margin-bottom: 15px;
     font-weight: 600;
 }
 
-.app-tags {
-    margin-top: 15px;
-}
-
-.app-tags .badge {
-    margin-right: 5px;
-    padding: 5px 10px;
-    font-weight: 500;
+.benefit-card p {
+    color: var(--text-color);
+    font-size: 0.95rem;
 }
 
 /* Contact Section */
-.contact-info {
-    font-size: 1.1rem;
+.contact-form-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
 }
 
-.social-links .social-icon {
-    display: inline-flex;
+.contact-info-container {
+    border-radius: 15px;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.contact-info-item i {
+    font-size: 1.6rem;
+    margin-right: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-info-item h5 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact-info-item p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-social-links {
+    margin-top: auto;
+}
+
+.contact-social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.contact-social-icon:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    padding: 20px 0;
+    color: white;
+}
+
+.back-to-top {
+    opacity: 0.7;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* Page Header */
+.page-header {
+    background: var(--gradient-primary);
+    padding: 120px 0 80px;
+    text-align: center;
     color: white;
-    margin: 0 10px;
-    font-size: 1.2rem;
-    transition: all 0.3s;
+    position: relative;
 }
 
-.social-links .social-icon:hover {
-    transform: scale(1.2);
-    background-color: #007bff;
+.page-header h1 {
+    color: white;
+    margin-bottom: 10px;
 }
 
-/* Application Cards Enhanced */
+.page-header .lead {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* App Cards */
 .app-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     height: 100%;
+    transition: all 0.3s ease;
 }
 
 .app-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.app-card .card-img-top {
-    height: 200px;
-    object-fit: contain;
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.app-card .card-title {
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 12px;
-}
-
-.app-card .card-text {
-    color: var(--text-color);
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.app-tags {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.app-tags .badge {
-    padding: 6px 12px;
-    font-weight: 500;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
-    border-radius: 50px;
-}
-
-/* App Logo Styles */
-.app-logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .card-img-container {
     position: relative;
+}
+
+.app-card .card-img-top {
+    height: 220px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 20px;
 }
 
 .app-logo-container {
@@ -595,131 +534,97 @@ hr {
     z-index: 10;
     background-color: white;
     border-radius: 12px;
-    padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .app-logo-overlay {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
-/* Enhanced Responsive Styles */
-@media (max-width: 991px) {
-    .hero-section {
-        padding: 150px 0 80px;
-    }
-
-    .hero-section h1 {
-        font-size: 2.8rem;
-    }
-
-    .hero-image {
-        margin-top: 50px;
-    }
-
-    .phone-mockup img {
-        max-width: 70%;
-    }
-
-    .applications-section .row {
-        justify-content: center;
-    }
-
-    .app-card {
-        max-width: 350px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 767px) {
-    section {
-        padding: 70px 0;
-    }
-
-    .hero-section h1 {
-        font-size: 2.3rem;
-    }
-
-    .section-header h2 {
-        font-size: 2rem;
-    }
-
-    .download-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .download-buttons-large {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .app-card .card-img-top {
-        height: 180px;
-    }
-}
-
-@media (max-width: 576px) {
-    .page-header {
-        padding: 5rem 0 3rem;
-    }
-
-    .page-header h1 {
-        font-size: 2rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-}
-
-/* Flutter Benefits Section düzeltmeleri */
-.benefit-card {
-    background-color: white;
+.app-card .card-body {
     padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    height: 100%;
-    transition: all 0.3s ease;
 }
 
-.benefit-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+.app-card .card-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
-.benefit-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 20px;
+.app-card .card-text {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.app-tags {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    color: white;
-    border-radius: 50%;
-    background: var(--gradient-primary);
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
 }
 
-/* Woo sayfası için ek özellikler */
+.app-tags .badge {
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.app-card .card-footer {
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+/* Woo Specific Styles */
+.feature-card {
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
 .feature-icon-container {
     width: 80px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     border-radius: 50%;
     background: var(--gradient-primary);
-    color: white;
+}
+
+.feature-icon {
     font-size: 2rem;
+    color: white;
+}
+
+.screenshot-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.screenshot-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .step-number {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -727,75 +632,129 @@ hr {
     border-radius: 50%;
     background: var(--gradient-primary);
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
-/* App Logo boyutu düzeltmesi */
-.app-logo-large {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-/* Testimonial Card */
 .testimonial-card {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact bilgileri güncelleme */
-.contact-info-container {
-    background: var(--gradient-primary);
+.testimonial-text {
+    font-style: italic;
+    color: var(--text-color);
+    line-height: 1.7;
 }
 
-.contact-info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
+.testimonial-author h5 {
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
-.contact-info-item i {
-    font-size: 1.8rem;
-    margin-right: 15px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
+.rating i {
+    color: #ffb400;
+    font-size: 1.1rem;
 }
 
-.contact-social-icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.2);
+/* Accordion */
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
     color: white;
-    border-radius: 50%;
-    margin-right: 10px;
-    transition: all 0.3s ease;
 }
 
-.contact-social-icon:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-3px);
+.accordion-button:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(112, 70, 245, 0.25);
 }
 
-/* Back to top button */
-.back-to-top {
-    opacity: 0.7;
-    transition: all 0.3s ease;
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    section {
+        padding: 70px 0;
+    }
 }
 
-.back-to-top:hover {
-    opacity: 1;
-    transform: translateY(-3px);
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 130px 0 70px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .benefit-card,
+    .app-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 120px 0 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .app-features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .featured-app-image {
+        margin-bottom: 30px;
+    }
+
+    .app-stats {
+        position: static;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .contact-info-item i {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
 }
