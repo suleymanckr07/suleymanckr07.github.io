@@ -20,15 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                    top: targetElement.offsetTop - 60,
                     behavior: 'smooth'
                 });
-
-                // Update active link
-                document.querySelectorAll('.nav-link').forEach(navLink => {
-                    navLink.classList.remove('active');
-                });
-                this.classList.add('active');
             }
         });
     });
@@ -36,22 +30,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // Highlight active section on scroll
     window.addEventListener('scroll', function () {
         const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
         let current = '';
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
+            const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.clientHeight;
 
-            if (window.scrollY >= (sectionTop - 100)) {
+            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
             }
         });
 
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
+            if (link.getAttribute('href').includes(current)) {
                 link.classList.add('active');
             }
         });

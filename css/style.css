@@ -13,8 +13,10 @@
     box-sizing: border-box;
 }
 
+/* Main Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
     color: var(--text-color);
     overflow-x: hidden;
 }
@@ -98,9 +100,24 @@ section {
     color: var(--primary-color);
 }
 
+/* Navbar Logo */
+.navbar-logo {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
 /* Hero Section */
 .hero-section {
-    background: var(--gradient-primary);
+    height: 100vh;
+    min-height: 500px;
+    background-color: #f8f9fa;
+    position: relative;
     color: white;
     padding: 180px 0 100px;
     overflow: hidden;
@@ -166,6 +183,9 @@ section {
 }
 
 .hero-image {
+    max-width: 70%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff;
     position: relative;
     z-index: 2;
 }
@@ -405,7 +425,163 @@ hr {
     margin: 40px 0;
 }
 
-/* Responsive */
+/* Section Styles */
+.section-title {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Page Header */
+.page-header {
+    background-color: #f8f9fa;
+    padding: 7rem 0 4rem;
+    text-align: center;
+}
+
+/* Applications Card */
+.app-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.app-card .card-title {
+    font-weight: 600;
+}
+
+.app-tags {
+    margin-top: 15px;
+}
+
+.app-tags .badge {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-info {
+    font-size: 1.1rem;
+}
+
+.social-links .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #343a40;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-links .social-icon:hover {
+    transform: scale(1.2);
+    background-color: #007bff;
+}
+
+/* Application Cards Enhanced */
+.app-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.app-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.app-card .card-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.app-card .card-text {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.app-tags {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.app-tags .badge {
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+}
+
+/* App Logo Styles */
+.app-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.card-img-container {
+    position: relative;
+}
+
+.app-logo-container {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-logo-overlay {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+/* Enhanced Responsive Styles */
 @media (max-width: 991px) {
     .hero-section {
         padding: 150px 0 80px;
@@ -421,6 +597,15 @@ hr {
 
     .phone-mockup img {
         max-width: 70%;
+    }
+
+    .applications-section .row {
+        justify-content: center;
+    }
+
+    .app-card {
+        max-width: 350px;
+        margin: 0 auto;
     }
 }
 
@@ -445,5 +630,23 @@ hr {
     .download-buttons-large {
         flex-direction: column;
         align-items: center;
+    }
+
+    .app-card .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        padding: 5rem 0 3rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
     }
 }
