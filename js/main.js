@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Initialize AOS animation library
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    }
+
     // Navbar Scroll Effect
     window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.navbar');
