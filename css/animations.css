@@ -1,0 +1,44 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.features h2 {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.features .col-md-3 {
+    animation: slideIn 0.5s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+.app-screenshot {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
