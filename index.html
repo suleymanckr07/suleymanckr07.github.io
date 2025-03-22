@@ -385,14 +385,12 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
 
-                        <!-- FormSubmit.co ile Form Entegrasyonu -->
-                        <form id="contactForm" action="https://formsubmit.co/suleymman074307@gmail.com" method="POST">
-                            <!-- FormSubmit.co Yapılandırma -->
-                            <input type="hidden" name="_subject" value="Yeni İletişim Formu Mesajı - Kişisel Website">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next"
-                                value="https://suleymanckr07.github.io/?formSuccess=true#contact">
+                        <!-- Web3Forms ile Form Entegrasyonu -->
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms API Key - Ücretsiz kayıt yaparak alabilirsiniz -->
+                            <input type="hidden" name="access_key" value="ff4a523f-3200-4807-b035-cc6243478fdb">
+                            <input type="hidden" name="subject" value="Yeni İletişim Formu Mesajı - Kişisel Website">
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Adınız"
@@ -416,8 +414,8 @@
                                 <label for="message"><i class="fas fa-comments text-primary me-2"></i>Mesajınız</label>
                             </div>
 
-                            <!-- Honeypot spam koruması -->
-                            <input type="text" name="_honey" style="display:none">
+                            <!-- Web3Forms spam koruması -->
+                            <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
 
                             <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" id="submitButton">
                                 <span id="buttonText"><i class="fas fa-paper-plane me-2"></i>Mesaj Gönder</span>
@@ -556,78 +554,82 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <script>
-        // Initialize AOS
+        // Initialize AOS and GLightbox
         AOS.init();
-
-        // Initialize GLightbox
         const lightbox = GLightbox({
             touchNavigation: true,
             loop: true,
             autoplayVideos: true
         });
 
-        // Form başarı mesajı kontrolü
+        // Form işleme fonksiyonu
         document.addEventListener('DOMContentLoaded', function () {
-            // URL parametrelerini kontrol et
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('formSuccess') === 'true') {
-                // Başarı mesajını göster
-                const successMessage = document.getElementById('formSuccessMessage');
-                successMessage.classList.add('show');
+            const contactForm = document.getElementById('contactForm');
+            const submitButton = document.getElementById('submitButton');
+            const submitSpinner = document.getElementById('submitSpinner');
+            const buttonText = document.getElementById('buttonText');
+            const formSuccessMessage = document.getElementById('formSuccessMessage');
+            const formErrorMessage = document.getElementById('formErrorMessage');
 
-                // Submit butonunu normale döndür
-                const submitButton = document.getElementById('submitButton');
-                const submitSpinner = document.getElementById('submitSpinner');
-                if (submitButton && submitSpinner) {
-                    submitButton.disabled = false;
-                    submitSpinner.classList.add('d-none');
-                }
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    // Varsayılan formu engelle (sayfanın yenilenmemesi için)
+                    e.preventDefault();
 
-                // URL'den parametreyi temizle (sayfayı tazelemeden)
-                const newURL = window.location.pathname + window.location.hash;
-                history.replaceState(null, '', newURL);
+                    // Submit butonunu devre dışı bırak ve spinner'ı göster
+                    submitButton.disabled = true;
+                    submitSpinner.classList.remove('d-none');
+                    buttonText.innerHTML = "Gönderiliyor...";
 
-                // Başarı mesajına odaklan ve görünür kıl
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                    // Form verilerini hazırla
+                    const formData = new FormData(contactForm);
 
-                // 5 saniye sonra mesajı gizle
-                setTimeout(() => {
-                    successMessage.classList.remove('show');
-                }, 5000);
+                    // Fetch API ile form gönderimi
+                    fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                // Başarılı gönderim
+                                formSuccessMessage.classList.add('show');
+                                contactForm.reset();
+
+                                // 5 saniye sonra mesajı gizle
+                                setTimeout(() => {
+                                    formSuccessMessage.classList.remove('show');
+                                }, 5000);
+                            } else {
+                                // Hata durumu
+                                formErrorMessage.classList.add('show');
+                                console.error('Form gönderim hatası:', data);
+
+                                // 5 saniye sonra mesajı gizle
+                                setTimeout(() => {
+                                    formErrorMessage.classList.remove('show');
+                                }, 5000);
+                            }
+                        })
+                        .catch(error => {
+                            // Bağlantı hatası
+                            formErrorMessage.classList.add('show');
+                            console.error('Form gönderim hatası:', error);
+
+                            // 5 saniye sonra mesajı gizle
+                            setTimeout(() => {
+                                formErrorMessage.classList.remove('show');
+                            }, 5000);
+                        })
+                        .finally(() => {
+                            // İşlem tamamlandı, buton normal haline dönsün
+                            submitButton.disabled = false;
+                            submitSpinner.classList.add('d-none');
+                            buttonText.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Mesaj Gönder';
+                        });
+                });
             }
         });
-
-        // Form gönderim animasyonu
-        const contactForm = document.getElementById('contactForm');
-        const submitButton = document.getElementById('submitButton');
-        const submitSpinner = document.getElementById('submitSpinner');
-        const buttonText = document.getElementById('buttonText');
-
-        if (contactForm) {
-            contactForm.addEventListener('submit', function () {
-                // Submit butonunu devre dışı bırak ve spinner'ı göster
-                submitButton.disabled = true;
-                submitSpinner.classList.remove('d-none');
-                buttonText.innerHTML = "Gönderiliyor..."; // Butonda metin değişimi
-
-                // Gönderim sonrası form resetleme için demo - normalde bu kısım FormSubmit redirect ile hallolur
-                setTimeout(() => {
-                    if (!window.location.search.includes('formSuccess')) {
-                        // Sayfanın taze yüklenmediği demo test durumunda
-                        const successMessage = document.getElementById('formSuccessMessage');
-                        successMessage.classList.add('show');
-                        contactForm.reset();
-                        submitButton.disabled = false;
-                        submitSpinner.classList.add('d-none');
-                        buttonText.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Mesaj Gönder';
-
-                        setTimeout(() => {
-                            successMessage.classList.remove('show');
-                        }, 5000);
-                    }
-                }, 2000); // Demo için 2 saniye gecikme
-            });
-        }
     </script>
 </body>
 
