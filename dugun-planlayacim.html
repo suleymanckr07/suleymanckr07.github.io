@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Düğün Planlayacım - Offline Düğün Planlama Uygulaması</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="images/dugun/dugun.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Meta Tags -->
     <meta name="description"
         content="Düğün Planlayacım, tüm düğün hazırlıklarınızı kolayca organize etmenizi sağlayan, internet bağlantısı gerektirmeden çalışan ücretsiz bir uygulamadır.">
     <meta name="keywords"
@@ -26,9 +27,40 @@
     <meta property="og:title" content="Düğün Planlayacım - Offline Düğün Planlama Uygulaması">
     <meta property="og:description"
         content="Düğün hazırlıklarınızı kolayca organize edin! İnternet bağlantısı gerektirmeden çalışan, verilerinizi sadece cihazınızda saklayan güvenli düğün planlama uygulaması.">
-    <meta property="og:image" content="https://suleymanckr07.github.io/images/dugun-logo.png">
+    <meta property="og:image" content="https://suleymanckr07.github.io/images/dugun/dugun.png">
     <meta property="og:url" content="https://suleymanckr07.github.io/dugun-planlayacim.html">
     <meta property="og:type" content="website">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://suleymanckr07.github.io/dugun-planlayacim.html">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Düğün Planlayacım",
+      "operatingSystem": "Android",
+      "applicationCategory": "LifestyleApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": "300",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "description": "Düğün hazırlıklarınızı kolayca organize etmenizi sağlayan, internet bağlantısı gerektirmeden çalışan ücretsiz bir uygulama.",
+      "image": "https://suleymanckr07.github.io/images/dugun/dugun.png",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sc_my_dowry",
+      "author": {
+        "@type": "Person",
+        "name": "Süleyman Çakır"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -48,45 +80,54 @@
                         <a class="nav-link" href="index.html">Ana Sayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">Hakkımda</a>
+                        <a class="nav-link" href="#features">Özellikler</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="woo.html">Woo: AI</a>
+                        <a class="nav-link" href="#screenshots">Ekran Görüntüleri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="dugun-planlayacim.html">Düğün Planlayacım</a>
+                        <a class="nav-link" href="dugun-planlayacim-privacy.html">Gizlilik Politikası</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="dugun-planlayacim-privacy.html">Gizlilik Politikası</a>
+                        <a class="nav-link" href="index.html#contact">İletişim</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header"
-        style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%); color: white; position: relative; padding-bottom: 120px; z-index: 10;">
-        <div class="container" style="position: relative; z-index: 20;">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
-                    <h1 class="display-4 fw-bold text-white">Düğün Planlayacım</h1>
-                    <p class="lead text-white-50">Düğün hazırlıklarınızı kolayca organize edin - İnternet bağlantısı ve
-                        kayıt gerektirmez!</p>
-                    <div class="d-flex justify-content-center mt-4">
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/dugun/dugun.png" alt="Düğün Planlayacım Logo" class="app-logo me-3"
+                            style="width: 60px; height: 60px;">
+                        <h1 class="display-4 fw-bold text-white mb-0">Düğün Planlayacım</h1>
+                    </div>
+                    <p class="lead text-white-50 my-4">
+                        Flutter ile geliştirilmiş, tamamen çevrimdışı çalışan, düğün hazırlıklarınızı kolayca organize
+                        etmenizi sağlayan uygulama. Verileriniz sadece cihazınızda!
+                    </p>
+                    <div class="hero-buttons">
                         <a href="https://play.google.com/store/apps/details?id=com.sc_my_dowry"
-                            class="btn btn-success btn-lg rounded-pill">
-                            <i class="fab fa-google-play me-2"></i>Google Play'den İndir
+                            class="btn btn-success btn-lg rounded-pill me-3">
+                            <i class="fab fa-google-play me-2"></i>Google Play'de İndir
                         </a>
-                        <a href="dugun-planlayacim-privacy.html"
-                            class="btn btn-light text-dark btn-lg rounded-pill ms-3">
-                            <i class="fas fa-shield-alt me-2"></i>Gizlilik Politikası
+                        <a href="#features" class="btn btn-outline-light btn-lg rounded-pill">
+                            <i class="fas fa-info-circle me-2"></i>Özellikleri Keşfet
                         </a>
                     </div>
                 </div>
+                <div class="col-lg-6 text-center d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="images/dugun/1.png" alt="Düğün Planlayacım Ana Ekran"
+                        class="img-fluid rounded-3 shadow-lg" style="max-height: 500px;">
+                </div>
             </div>
         </div>
-        <div class="wave-bottom" style="position: absolute; bottom: -1px; left: 0; width: 100%; z-index: 15;">
+        <div class="wave-bottom">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffffff" fill-opacity="1"
                     d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -95,57 +136,31 @@
         </div>
     </section>
 
-    <!-- App Overview -->
-    <section class="py-5">
+    <!-- App Description Section -->
+    <section id="about-app" class="py-5">
         <div class="container py-4">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
-                    <img src="images/dugun/dugun.png" alt="Düğün Planlayacım Ekran Görüntüsü"
-                        class="img-fluid rounded-3 shadow-lg">
-                </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
-                    <h2 class="section-title text-start mb-4">Düğününüzü <span class="highlight">Kolayca
-                            Planlayın</span></h2>
-                    <p class="lead">Düğün hazırlıkları stresli ve karmaşık olabilir, ancak Düğün Planlayacım ile her
-                        şeyi kolayca organize edebilirsiniz!</p>
-                    <p>Bu uygulama, düğününüzü adım adım planlamanızı sağlayan pratik ve kullanıcı dostu bir
-                        yardımcıdır. Üstelik internet bağlantısına ihtiyaç duymadan tamamen lokal olarak çalışır ve
-                        kayıt olmanıza gerek yoktur. Tüm verileriniz sadece sizin cihazınızda saklanır!</p>
-                    <div class="app-features mt-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="feature-icon-small me-3 bg-danger text-white rounded-circle">
-                                <i class="fas fa-tasks"></i>
-                            </div>
-                            <span><strong>Detaylı Görev Yönetimi</strong> - Hiçbir detayı atlamayın</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="feature-icon-small me-3 bg-danger text-white rounded-circle">
-                                <i class="fas fa-coins"></i>
-                            </div>
-                            <span><strong>Bütçe Takibi</strong> - Harcamalarınızı kontrol altında tutun</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="feature-icon-small me-3 bg-danger text-white rounded-circle">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <span><strong>Davetli Yönetimi</strong> - Misafirlerinizi organize edin</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="feature-icon-small me-3 bg-danger text-white rounded-circle">
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <span><strong>%100 Gizlilik</strong> - Verileriniz sadece cihazınızda</span>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section-title">Düğün Planlayacım <span class="highlight">Hakkında</span></h2>
+                    <p class="lead mb-4">
+                        Flutter ile geliştirilen, %100 çevrimdışı çalışan düğün planlama uygulaması.
+                    </p>
+                    <p>
+                        Düğün hazırlıkları stresli ve karmaşık olabilir. Çeyiz listesi, davetli listesi, yapılacaklar
+                        listesi derken bir sürü detayı takip etmek zorunda kalırsınız. Düğün Planlayacım tam da bu
+                        noktada devreye girerek tüm düğün hazırlıklarınızı tek bir uygulamada organize etmenizi sağlar.
+                        İnternet bağlantısı gerektirmeden tamamen offline çalışan bu uygulama ile verilerinizin
+                        gizliliği de %100 güvence altındadır.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- App Features -->
-    <section class="py-5 bg-light">
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
         <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Özellikleri</span></h2>
+            <h2 class="section-title text-center mb-5">Öne Çıkan <span class="highlight">Özellikler</span></h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
                     <div class="card feature-card h-100 border-0 shadow-sm">
@@ -154,9 +169,9 @@
                                 style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);">
                                 <i class="fas fa-tasks feature-icon"></i>
                             </div>
-                            <h4>Görev Yönetimi ve Ajanda</h4>
-                            <p>Düğün sürecinde yapılacak birçok iş vardır. Detaylı bir görev listesi oluşturun ve önemli
-                                tarihler için hatırlatmalar ekleyin.</p>
+                            <h4>Görev Yönetimi</h4>
+                            <p>Düğün hazırlık sürecindeki tüm görevleri listeleme, kategorilere ayırma ve tamamlandıkça
+                                işaretleme imkanı sunar.</p>
                         </div>
                     </div>
                 </div>
@@ -167,9 +182,9 @@
                                 style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);">
                                 <i class="fas fa-money-bill-wave feature-icon"></i>
                             </div>
-                            <h4>Bütçe Takibi</h4>
-                            <p>Düğün masraflarınızı kolayca yönetin! Harcamalarınızı kategori bazında düzenleyerek
-                                bütçenizi kontrol altında tutun.</p>
+                            <h4>Bütçe Yönetimi</h4>
+                            <p>Düğün bütçenizi kategorilere ayırarak takip edin. Harcamalarınızı kaydedin ve kalan
+                                bütçenizi anlık olarak görün.</p>
                         </div>
                     </div>
                 </div>
@@ -181,8 +196,8 @@
                                 <i class="fas fa-users feature-icon"></i>
                             </div>
                             <h4>Davetli Listesi</h4>
-                            <p>Düğününüze kimleri davet edeceğinizi kolayca listeleyin. Katılım durumlarını takip edin
-                                ve oturma düzeni planınızı oluşturun.</p>
+                            <p>Düğününüze davet edeceğiniz kişileri listeleyin, iletişim bilgilerini kaydedin ve davet
+                                durumlarını takip edin.</p>
                         </div>
                     </div>
                 </div>
@@ -191,11 +206,195 @@
                         <div class="card-body text-center p-4">
                             <div class="feature-icon-container mb-4"
                                 style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);">
-                                <i class="fas fa-calendar-check feature-icon"></i>
+                                <i class="fas fa-shield-alt feature-icon"></i>
                             </div>
-                            <h4>Etkinlik Planlama</h4>
-                            <p>Nişan, kına, bekarlığa veda partisi gibi etkinliklerinizi planlayın, zaman çizelgesi
-                                oluşturun.</p>
+                            <h4>%100 Gizlilik</h4>
+                            <p>İnternet bağlantısı gerektirmez ve hiçbir veri toplamaz. Tüm verileriniz sadece kendi
+                                cihazınızda saklanır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Görüntüleri</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/dugun/1.png" class="glightbox"
+                            data-glightbox="title: Düğün Planlayacım Ana Ekran">
+                            <img src="images/dugun/1.png" alt="Düğün Planlayacım Ana Ekran"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <a href="images/dugun/2.png" class="glightbox"
+                            data-glightbox="title: Düğün Planlayacım Görevler">
+                            <img src="images/dugun/2.png" alt="Düğün Planlayacım Görevler"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <a href="images/dugun/3.png" class="glightbox" data-glightbox="title: Düğün Planlayacım Bütçe">
+                            <img src="images/dugun/3.png" alt="Düğün Planlayacım Bütçe"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="screenshot-container">
+                        <a href="images/dugun/4.png" class="glightbox"
+                            data-glightbox="title: Düğün Planlayacım Davetliler">
+                            <img src="images/dugun/4.png" alt="Düğün Planlayacım Davetliler"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/dugun/5.png" class="glightbox"
+                            data-glightbox="title: Düğün Planlayacım Ayarlar">
+                            <img src="images/dugun/5.png" alt="Düğün Planlayacım Ayarlar"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <a href="images/dugun/6.png" class="glightbox"
+                            data-glightbox="title: Düğün Planlayacım Harcamalar">
+                            <img src="images/dugun/6.png" alt="Düğün Planlayacım Harcamalar"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <a href="images/dugun/7.png" class="glightbox"
+                            data-glightbox="title: Düğün Planlayacım İstatistikler">
+                            <img src="images/dugun/7.png" alt="Düğün Planlayacım İstatistikler"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Nasıl <span class="highlight">Çalışır?</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number"
+                                style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);">1</div>
+                            <h4 class="mt-4">Uygulama İndirin</h4>
+                            <p>Google Play'den Düğün Planlayacım uygulamasını indirin. İnternet bağlantısı sadece
+                                indirme için gereklidir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number"
+                                style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);">2</div>
+                            <h4 class="mt-4">Bilgilerinizi Girin</h4>
+                            <p>Düğün tarihinizi, bütçenizi, davetli listenizi ve yapılacak işleri girin. Tüm bilgiler
+                                sadece cihazınızda saklanır.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number"
+                                style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);">3</div>
+                            <h4 class="mt-4">Düğününüzü Planlayın</h4>
+                            <p>Yapılacaklar listesini takip edin, harcamalarınızı izleyin ve davetlilerinizi yönetin.
+                                Düğün gününe hazır olun!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Kullanıcı <span class="highlight">Yorumları</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"Düğünümüzü organize ederken bu uygulama hayatımızı kurtardı.
+                                Her detayı takip edebildik ve hiçbir şeyi unutmadık. Reklamsız ve tamamen ücretsiz
+                                olması da harika."</p>
+                            <div class="testimonial-author mt-4">
+                                <h5 class="mb-1">Ayşe K.</h5>
+                                <small class="text-muted">Yeni Gelin</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"Çeyiz listemi ve alışveriş planımı bu uygulamada tutuyorum.
+                                İnternet gerektirmemesi ve verilerin sadece telefonumda kalması benim için çok önemli.
+                                Kesinlikle tavsiye ediyorum."</p>
+                            <div class="testimonial-author mt-4">
+                                <h5 class="mb-1">Zeynep M.</h5>
+                                <small class="text-muted">Nişanlı</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"Kızımın düğünü için kullanıyoruz. Bütçe takibi özelliği ile
+                                harcamaları kontrol altında tutabiliyoruz. Basit ve anlaşılır bir arayüzü var,
+                                kullanması çok kolay."</p>
+                            <div class="testimonial-author mt-4">
+                                <h5 class="mb-1">Mehmet Y.</h5>
+                                <small class="text-muted">Gelin Babası</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,40 +403,40 @@
     </section>
 
     <!-- Privacy Features -->
-    <section class="py-5">
+    <section id="privacy" class="py-5 bg-light">
         <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Gizlilik <span class="highlight">Özellikleri</span></h2>
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
-                    <h2 class="section-title text-start mb-4">%100 <span class="highlight">Gizlilik ve Güvenlik</span>
-                    </h2>
-                    <p class="lead">Düğün Planlayacım, gizliliğinize saygı duyan bir uygulamadır.</p>
                     <div class="privacy-features">
-                        <div class="d-flex align-items-start mb-3">
+                        <div class="d-flex align-items-start mb-4">
                             <div class="feature-icon-small me-3 bg-success text-white rounded-circle">
                                 <i class="fas fa-check"></i>
                             </div>
                             <div>
                                 <h5>İnternet Bağlantısı Gerektirmez</h5>
-                                <p>Uygulama tamamen çevrimdışı çalışır, internet bağlantısına ihtiyaç duymaz.</p>
+                                <p>Uygulama tamamen çevrimdışı çalışır, kullanmak için internet bağlantısına ihtiyaç
+                                    duymazsınız.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start mb-3">
+                        <div class="d-flex align-items-start mb-4">
                             <div class="feature-icon-small me-3 bg-success text-white rounded-circle">
                                 <i class="fas fa-check"></i>
                             </div>
                             <div>
                                 <h5>Veri Toplamaz</h5>
-                                <p>Uygulamaya girdiğiniz hiçbir bilgi bizimle paylaşılmaz. Tüm veriler sadece sizin
-                                    cihazınızda saklanır.</p>
+                                <p>Hiçbir kişisel veriniz toplanmaz veya sunuculara gönderilmez. Tüm verileriniz sadece
+                                    sizin cihazınızda saklanır.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start mb-3">
+                        <div class="d-flex align-items-start mb-4">
                             <div class="feature-icon-small me-3 bg-success text-white rounded-circle">
                                 <i class="fas fa-check"></i>
                             </div>
                             <div>
-                                <h5>İzin Talep Etmez</h5>
-                                <p>Uygulama, telefonunuzdan hiçbir özel izin talep etmez.</p>
+                                <h5>Reklam İçermez</h5>
+                                <p>Tamamen reklamsız bir deneyim sunar. Hiçbir reklam gösterilmez ve reklam takip
+                                    sistemleri kullanılmaz.</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-start">
@@ -245,31 +444,114 @@
                                 <i class="fas fa-check"></i>
                             </div>
                             <div>
-                                <h5>Reklam İçermez</h5>
-                                <p>Uygulama içinde hiçbir reklam gösterilmez, dikkatinizi dağıtacak unsurlar yoktur.</p>
+                                <h5>Özel İzin Talep Etmez</h5>
+                                <p>Uygulama, cihazınızdan hiçbir özel izin talep etmez. Sadece temel depolama izni
+                                    kullanılır.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-4 mb-lg-0 text-center" data-aos="fade-left" data-aos-duration="800">
-                    <img src="https://cdn.pixabay.com/photo/2013/07/13/13/32/padlock-161059_1280.png"
-                        alt="Düğün Planlayacım Gizlilik" class="img-fluid rounded-3 shadow-lg"
-                        style="max-height: 500px;">
+                    <img src="images/dugun/kilit.png" alt="Gizlilik" class="img-fluid rounded-3 shadow-lg"
+                        style="max-height: 350px;">
+                    <div class="mt-4">
+                        <a href="dugun-planlayacim-privacy.html" class="btn btn-danger btn-lg rounded-pill">
+                            <i class="fas fa-shield-alt me-2"></i>Gizlilik Politikasını Görüntüle
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-5 bg-light">
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Sık Sorulan <span class="highlight">Sorular</span></h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Uygulama tamamen ücretsiz mi?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, Düğün Planlayacım uygulaması tamamen ücretsizdir. Hiçbir gizli ücret veya
+                                    uygulama içi satın alma yoktur. Tüm özelliklerinden sınırsız olarak
+                                    faydalanabilirsiniz.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Verilerim güvende mi?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, verileriniz tamamen güvende. Uygulama internet bağlantısı gerektirmez ve
+                                    hiçbir veri sunuculara gönderilmez. Tüm verileriniz sadece kendi cihazınızda
+                                    saklanır ve başka hiç kimse tarafından erişilemez.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Telefonumu değiştirirsem verilerim kaybolur mu?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Verileriniz sadece cihazınızda saklandığı için, telefon değişikliği durumunda
+                                    verilerinizi manuel olarak yedeklemeniz gerekir. Ancak yakında Google Drive ile
+                                    yedekleme özelliği de eklenecektir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Uygulama hangi dilleri destekliyor?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Düğün Planlayacım şu anda Türkçe dilini desteklemektedir. Yakında İngilizce, Almanca
+                                    ve Arapça dil desteği de eklenecektir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-5"
+        style="background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%); color: white;">
         <div class="container py-4 text-center">
-            <h2 class="section-title mb-4">Hayalinizdeki Düğünü <span class="highlight">Planlayın</span></h2>
-            <p class="lead mb-5">Ücretsiz, kullanımı kolay ve tamamen gizli - düğün organizasyonunuzu sorunsuz hale
-                getirin!</p>
-            <a href="https://play.google.com/store/apps/details?id=com.sc_my_dowry"
-                class="btn btn-lg btn-primary rounded-pill">
-                <i class="fab fa-google-play me-2"></i>Google Play'den Hemen İndirin
-            </a>
+            <div data-aos="zoom-in" data-aos-duration="800">
+                <h2 class="mb-4">Hemen İndirin, Düğün Hazırlıklarınızı Kolaylaştırın!</h2>
+                <p class="lead mb-5">Google Play'den ücretsiz olarak indirebilirsiniz.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.sc_my_dowry"
+                    class="btn btn-lg btn-light rounded-pill">
+                    <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                </a>
+            </div>
         </div>
     </section>
 
@@ -278,8 +560,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="images/logo.png" alt="Süleyman Çakır Logo" class="footer-logo me-2" width="30">
-                    <span>&copy; 2025 Süleyman Çakır. Tüm Hakları Saklıdır.</span>
+                    <img src="images/dugun/dugun.png" alt="Düğün Planlayacım Logo" class="footer-logo me-2" width="30">
+                    <span>&copy; 2025 Düğün Planlayacım. Tüm Hakları Saklıdır.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
@@ -318,22 +600,9 @@
             </div>
             <div class="row mt-3">
                 <div class="col-12 text-center">
-                    <div class="social-icons mb-2">
-                        <a href="https://github.com/suleymanckr07" class="text-white-50 me-2">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://play.google.com/store/apps/dev?id=5860077215277038886"
-                            class="text-white-50 me-2">
-                            <i class="fab fa-google-play"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/suleymancakir0/" class="text-white-50 me-2">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://x.com/suleymancakiir0" class="text-white-50">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                    <small class="text-white-50">Flutter Geliştirici | Mobil Uygulama Uzmanı</small>
+                    <small class="text-white-50">Düğün Planlayacım, Flutter ile geliştirilmiş %100 offline düğün
+                        planlama uygulamasıdır. <a href="index.html" class="text-white-50">Süleyman Çakır</a> tarafından
+                        tasarlanmıştır.</small>
                 </div>
             </div>
         </div>
@@ -345,7 +614,10 @@
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+        // Initialize AOS
         AOS.init();
+
+        // Initialize GLightbox
         const lightbox = GLightbox({
             touchNavigation: true,
             loop: true,
