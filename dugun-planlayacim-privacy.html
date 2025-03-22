@@ -99,11 +99,14 @@
                                             bilgiler</p>
                                     </div>
                                 </div>
-                                <div class="alert alert-success">
+                                <div class="alert alert-success alert-dismissible fade show permanent-alert"
+                                    role="alert">
                                     <i class="fas fa-info-circle me-2"></i>
                                     <strong>Önemli Bilgilendirme:</strong> Düğün Planlayacım uygulaması hiçbir kişisel
                                     veri toplamaz, internet bağlantısı gerektirmez ve tüm verileriniz sadece kendi
                                     cihazınızda saklanır.
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
                                 </div>
                             </div>
 
@@ -296,7 +299,78 @@
     <script src="js/main.js"></script>
     <script>
         AOS.init();
+
+        // Önemli bilgilendirme kalıcı olarak görünecek
+        document.addEventListener('DOMContentLoaded', function () {
+            var permanentAlerts = document.querySelectorAll('.permanent-alert');
+            permanentAlerts.forEach(function (alert) {
+                // alert kapatma düğmesini devre dışı bırak
+                var closeButton = alert.querySelector('.btn-close');
+                if (closeButton) {
+                    closeButton.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        // Sadece görsel bir efekt olarak hafifçe titreme
+                        alert.classList.add('shake');
+                        setTimeout(function () {
+                            alert.classList.remove('shake');
+                        }, 500);
+                        return false;
+                    });
+                }
+            });
+        });
     </script>
+    <style>
+        /* Önemli bilgilendirme uyarısını daha belirgin yap */
+        .permanent-alert {
+            border-left: 5px solid #28a745;
+            background-color: rgba(40, 167, 69, 0.15);
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .permanent-alert i {
+            font-size: 1.2rem;
+            color: #28a745;
+        }
+
+        /* Kapatma düğmesini devre dışı olduğunu belirtmek için stilini değiştir */
+        .permanent-alert .btn-close {
+            opacity: 0.5;
+        }
+
+        .permanent-alert .btn-close:hover {
+            opacity: 0.7;
+        }
+
+        /* Titreme animasyonu */
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(5px);
+            }
+
+            50% {
+                transform: translateX(-5px);
+            }
+
+            75% {
+                transform: translateX(5px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .shake {
+            animation: shake 0.5s;
+        }
+    </style>
 </body>
 
 </html>
