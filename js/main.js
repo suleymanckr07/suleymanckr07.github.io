@@ -33,18 +33,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add scroll event listener
     window.addEventListener('scroll', updateNavbar);
 
-    // Smooth scrolling for anchor links
+    // Smooth scrolling for anchor links - FIX
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
+            console.log('Anchor clicked:', this.getAttribute('href')); // Debug log
 
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
 
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
             }

@@ -116,12 +116,9 @@ section {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background: var(--gradient-primary);
-    color: white;
-    padding: 120px 0 80px;
+    padding: 120px 0 60px;
+    background: linear-gradient(120deg, #1e3c72 0%, #2a5298 100%);
     overflow: hidden;
-    display: flex;
-    align-items: center;
 }
 
 .hero-section::before {
@@ -144,6 +141,8 @@ section {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
+    pointer-events: none;
+    /* Eklendi - tıklamaları geçirir */
 }
 
 .hero-section .container {
@@ -181,8 +180,14 @@ section {
     gap: 15px;
     margin-top: 30px;
     position: relative;
-    z-index: 20;
-    /* Daha da artırıldı: diğer tüm elementlerin üzerine çıkarıldı */
+    z-index: 30;
+    /* Z-index artırıldı */
+}
+
+.hero-buttons a {
+    position: relative;
+    z-index: 35;
+    /* Her buton için bireysel z-index */
 }
 
 .hero-image {
@@ -203,14 +208,6 @@ section {
 }
 
 /* Enhanced Hero Section Styles */
-.hero-section {
-    position: relative;
-    min-height: 100vh;
-    padding: 120px 0 60px;
-    background: linear-gradient(120deg, #1e3c72 0%, #2a5298 100%);
-    overflow: hidden;
-}
-
 .hero-content {
     position: relative;
     z-index: 15;
@@ -263,6 +260,8 @@ section {
     left: 0;
     width: 100%;
     z-index: 3;
+    pointer-events: none;
+    /* Eklendi - tıklamaları geçirir */
 }
 
 @keyframes float {
