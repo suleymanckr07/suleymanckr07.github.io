@@ -181,8 +181,8 @@ section {
     gap: 15px;
     margin-top: 30px;
     position: relative;
-    z-index: 10;
-    /* Önemli: z-index artırıldı */
+    z-index: 20;
+    /* Daha da artırıldı: diğer tüm elementlerin üzerine çıkarıldı */
 }
 
 .hero-image {
@@ -213,7 +213,10 @@ section {
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 15;
+    /* Artırıldı: tüm içeriğin z-index'i yükseltildi */
+    padding-bottom: 40px;
+    /* Butonlar için daha fazla boşluk */
 }
 
 .hero-image-container {
@@ -223,11 +226,14 @@ section {
 
 .hero-backdrop {
     position: absolute;
-    top: 50%;
+    top: 40%;
+    /* Yukarı kaydırıldı: %50'den %40'a */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    /* Küçültüldü: %90'dan %70'e */
+    height: 70%;
+    /* Küçültüldü: %90'dan %70'e */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     filter: blur(35px);
@@ -1224,13 +1230,15 @@ footer {
 @media (min-width: 992px) {
     .hero-section {
         min-height: 90vh;
-        padding-bottom: 100px;
-        /* Butonlar için daha fazla alan */
+        padding-bottom: 120px;
+        /* Artırıldı: Alt kısımda daha fazla boşluk bırakıldı */
     }
 
     .hero-image {
         max-height: 350px;
         animation: float 5s ease-in-out infinite;
+        margin-top: -30px;
+        /* Eklendi: Logo biraz yukarı çekildi */
     }
 
     .hero-content {
@@ -1242,12 +1250,14 @@ footer {
     }
 
     .hero-backdrop {
-        width: 80%;
+        top: 35%;
+        /* Daha yukarı konumlandırıldı */
+        width: 70%;
         /* Daraltıldı */
-        height: 80%;
+        height: 70%;
         /* Daraltıldı */
-        top: 45%;
-        /* Biraz yukarı kaydırıldı */
+        opacity: 0.8;
+        /* Hafif şeffaflık eklendi */
     }
 
     .feature-card:hover,
