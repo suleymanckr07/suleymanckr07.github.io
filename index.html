@@ -385,13 +385,13 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
 
-                        <!-- Basit HTML Form - E-posta İletişimi -->
-                        <form id="contactForm" action="https://formsubmit.co/suleymman074307@gmail.com" method="POST">
-                            <!-- Form gönderim sonrası ayarlar -->
-                            <input type="hidden" name="_subject" value="Kişisel Web Sitesi İletişim Formu">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next"
+                        <!-- Web3Forms ile Form Entegrasyonu -->
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms API Key - Değiştirilmeyecek -->
+                            <input type="hidden" name="access_key" value="ff4a523f-3200-4807-b035-cc6243478fdb">
+                            <input type="hidden" name="subject" value="Yeni İletişim Formu Mesajı - Kişisel Website">
+                            <input type="hidden" name="from_name" value="Süleyman Çakır Web Sitesi">
+                            <input type="hidden" name="redirect"
                                 value="https://suleymanckr07.github.io/?success=true#contact">
 
                             <div class="form-floating mb-3">
@@ -416,8 +416,8 @@
                                 <label for="message"><i class="fas fa-comments text-primary me-2"></i>Mesajınız</label>
                             </div>
 
-                            <!-- Spam koruması için honeypot -->
-                            <input type="text" name="_honey" style="display:none">
+                            <!-- Web3Forms spam koruması -->
+                            <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
 
                             <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" id="submitButton">
                                 <span id="buttonText"><i class="fas fa-paper-plane me-2"></i>Mesaj Gönder</span>
@@ -564,24 +564,75 @@
             autoplayVideos: true
         });
 
-        // Form gönderim işleme
+        // Form gönderim işleme - Web3Forms için özel düzenleme
         document.addEventListener('DOMContentLoaded', function () {
             const contactForm = document.getElementById('contactForm');
             const submitButton = document.getElementById('submitButton');
             const submitSpinner = document.getElementById('submitSpinner');
             const buttonText = document.getElementById('buttonText');
             const formSuccessMessage = document.getElementById('formSuccessMessage');
+            const formErrorMessage = document.getElementById('formErrorMessage');
 
-            // Form submit öncesi buton değişimi
             if (contactForm) {
-                contactForm.addEventListener('submit', function () {
+                contactForm.addEventListener('submit', function (e) {
+                    // Varsayılan formu engelle (AJAX kullanımı için)
+                    e.preventDefault();
+
+                    // Submit butonunu devre dışı bırak ve spinner'ı göster
                     submitButton.disabled = true;
                     submitSpinner.classList.remove('d-none');
                     buttonText.innerHTML = "Gönderiliyor...";
+
+                    // Form verilerini hazırla
+                    const formData = new FormData(contactForm);
+
+                    // Fetch API ile form gönderimi
+                    fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                // Başarılı gönderim
+                                formSuccessMessage.classList.add('show');
+                                contactForm.reset();
+
+                                // 5 saniye sonra mesajı gizle
+                                setTimeout(() => {
+                                    formSuccessMessage.classList.remove('show');
+                                }, 5000);
+                            } else {
+                                // Hata durumu
+                                formErrorMessage.classList.add('show');
+                                console.error('Form gönderim hatası:', data);
+
+                                // 5 saniye sonra mesajı gizle
+                                setTimeout(() => {
+                                    formErrorMessage.classList.remove('show');
+                                }, 5000);
+                            }
+                        })
+                        .catch(error => {
+                            // Bağlantı hatası
+                            formErrorMessage.classList.add('show');
+                            console.error('Form gönderim hatası:', error);
+
+                            // 5 saniye sonra mesajı gizle
+                            setTimeout(() => {
+                                formErrorMessage.classList.remove('show');
+                            }, 5000);
+                        })
+                        .finally(() => {
+                            // İşlem tamamlandı, buton normal haline dönsün
+                            submitButton.disabled = false;
+                            submitSpinner.classList.add('d-none');
+                            buttonText.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Mesaj Gönder';
+                        });
                 });
             }
 
-            // URL parametrelerini kontrol et
+            // URL parametrelerini kontrol et (manuel eklenen başarı parametresi için)
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('success') === 'true') {
                 // Başarı mesajını göster
