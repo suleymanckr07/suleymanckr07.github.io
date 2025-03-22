@@ -45,9 +45,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">İletişim</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="privacy-policy.html">Gizlilik Politikası</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -361,64 +361,88 @@
     <section id="contact" class="py-5 bg-light">
         <div class="container py-4">
             <h2 class="section-title text-center mb-5"><span class="highlight">İletişime</span> Geçin</h2>
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
-                    <div class="contact-form-container p-4 bg-white rounded-3 shadow-sm">
+                    <div class="contact-form-container p-4 bg-white rounded-3 shadow">
+                        <div class="contact-form-header mb-4">
+                            <h4 class="mb-2">Mesaj Gönderin</h4>
+                            <p class="text-muted mb-0">Sorularınız veya iş birliği teklifleriniz için bana
+                                yazabilirsiniz.</p>
+                            <div class="divider my-3"></div>
+                        </div>
                         <form id="contactForm">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Adınız</label>
-                                <input type="text" class="form-control" id="name" required>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Adınız" required>
+                                <label for="name"><i class="fas fa-user text-primary me-2"></i>Adınız</label>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">E-posta Adresiniz</label>
-                                <input type="email" class="form-control" id="email" required>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="E-posta Adresiniz"
+                                    required>
+                                <label for="email"><i class="fas fa-envelope text-primary me-2"></i>E-posta
+                                    Adresiniz</label>
                             </div>
-                            <div class="mb-3">
-                                <label for="subject" class="form-label">Konu</label>
-                                <input type="text" class="form-control" id="subject" required>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="subject" placeholder="Konu" required>
+                                <label for="subject"><i class="fas fa-heading text-primary me-2"></i>Konu</label>
                             </div>
-                            <div class="mb-4">
-                                <label for="message" class="form-label">Mesajınız</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" id="message" placeholder="Mesajınız"
+                                    style="height: 140px" required></textarea>
+                                <label for="message"><i class="fas fa-comments text-primary me-2"></i>Mesajınız</label>
                             </div>
-                            <button type="submit" class="btn btn-primary rounded-pill">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100">
                                 <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
                             </button>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-5" data-aos="fade-left" data-aos-duration="800">
-                    <div class="contact-info-container p-4 bg-primary text-white rounded-3 shadow-sm h-100">
-                        <h4 class="mb-4">İletişim Bilgileri</h4>
-                        <div class="contact-info-item mb-4">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h5>E-posta</h5>
-                                <p><a href="mailto:suleymman074307@gmail.com"
-                                        class="text-white">suleymman074307@gmail.com</a></p>
+                    <div class="contact-info-container p-4 rounded-3 shadow h-100">
+                        <div class="contact-info-header mb-4">
+                            <h4 class="text-white mb-2">İletişim Bilgileri</h4>
+                            <p class="text-white-50 mb-0">Benimle iletişime geçebileceğiniz kanallar:</p>
+                            <div class="divider-light my-3"></div>
+                        </div>
+
+                        <div class="contact-info-items">
+                            <div class="contact-info-item mb-4">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5 class="text-white">E-posta</h5>
+                                    <p class="text-white-50 mb-0"><a href="mailto:suleymman074307@gmail.com"
+                                            class="text-decoration-none contact-link">suleymman074307@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item mb-4">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5 class="text-white">Konum</h5>
+                                    <p class="text-white-50 mb-0">Türkiye</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-info-item mb-4">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h5>Konum</h5>
-                                <p>Türkiye</p>
-                            </div>
-                        </div>
-                        <div class="contact-social-links mt-5">
-                            <h5 class="mb-3">Sosyal Medya</h5>
-                            <div class="d-flex">
-                                <a href="https://github.com/suleymanckr07" class="contact-social-icon">
+
+                        <div class="divider-light my-4"></div>
+
+                        <div class="social-links-container">
+                            <h5 class="text-white mb-3">Sosyal Medya & Platformlar</h5>
+                            <div class="social-links">
+                                <a href="https://github.com/suleymanckr07" class="social-link github" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a href="https://play.google.com/store/apps/dev?id=5860077215277038886"
-                                    class="contact-social-icon">
+                                    class="social-link google-play" title="Google Play">
                                     <i class="fab fa-google-play"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/in/suleymancakir0/" class="contact-social-icon">
-                                    <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/suleymancakir0/" class="social-link linkedin"
+                                    title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="https://x.com/suleymancakiir0" class="contact-social-icon">
+                                <a href="https://x.com/suleymancakiir0" class="social-link twitter" title="Twitter/X">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </div>
