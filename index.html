@@ -385,20 +385,15 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
 
-                        <!-- Web3Forms ile Form Entegrasyonu -->
-                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                            <!-- Web3Forms API Key - Ücretsiz kayıt yaparak alabilirsiniz -->
-                            <input type="hidden" name="access_key" value="ff4a523f-3200-4807-b035-cc6243478fdb">
-                            <input type="hidden" name="subject" value="Yeni İletişim Formu Mesajı - Kişisel Website">
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
+                        <!-- Basitleştirilmiş Form -->
+                        <form id="contactForm" action="https://formspree.io/f/mkndvyqw" method="POST">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Adınız"
                                     required>
                                 <label for="name"><i class="fas fa-user text-primary me-2"></i>Adınız</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" name="email"
+                                <input type="email" class="form-control" id="email" name="_replyto"
                                     placeholder="E-posta Adresiniz" required>
                                 <label for="email"><i class="fas fa-envelope text-primary me-2"></i>E-posta
                                     Adresiniz</label>
@@ -413,9 +408,6 @@
                                     style="height: 140px" required></textarea>
                                 <label for="message"><i class="fas fa-comments text-primary me-2"></i>Mesajınız</label>
                             </div>
-
-                            <!-- Web3Forms spam koruması -->
-                            <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
 
                             <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" id="submitButton">
                                 <span id="buttonText"><i class="fas fa-paper-plane me-2"></i>Mesaj Gönder</span>
@@ -562,7 +554,7 @@
             autoplayVideos: true
         });
 
-        // Form işleme fonksiyonu
+        // Basitleştirilmiş Form Gönderim Yönetimi
         document.addEventListener('DOMContentLoaded', function () {
             const contactForm = document.getElementById('contactForm');
             const submitButton = document.getElementById('submitButton');
@@ -573,61 +565,32 @@
 
             if (contactForm) {
                 contactForm.addEventListener('submit', function (e) {
-                    // Varsayılan formu engelle (sayfanın yenilenmemesi için)
-                    e.preventDefault();
-
                     // Submit butonunu devre dışı bırak ve spinner'ı göster
                     submitButton.disabled = true;
                     submitSpinner.classList.remove('d-none');
                     buttonText.innerHTML = "Gönderiliyor...";
 
-                    // Form verilerini hazırla
-                    const formData = new FormData(contactForm);
-
-                    // Fetch API ile form gönderimi
-                    fetch(contactForm.action, {
-                        method: 'POST',
-                        body: formData
-                    })
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data.success) {
-                                // Başarılı gönderim
-                                formSuccessMessage.classList.add('show');
-                                contactForm.reset();
-
-                                // 5 saniye sonra mesajı gizle
-                                setTimeout(() => {
-                                    formSuccessMessage.classList.remove('show');
-                                }, 5000);
-                            } else {
-                                // Hata durumu
-                                formErrorMessage.classList.add('show');
-                                console.error('Form gönderim hatası:', data);
-
-                                // 5 saniye sonra mesajı gizle
-                                setTimeout(() => {
-                                    formErrorMessage.classList.remove('show');
-                                }, 5000);
-                            }
-                        })
-                        .catch(error => {
-                            // Bağlantı hatası
-                            formErrorMessage.classList.add('show');
-                            console.error('Form gönderim hatası:', error);
-
-                            // 5 saniye sonra mesajı gizle
-                            setTimeout(() => {
-                                formErrorMessage.classList.remove('show');
-                            }, 5000);
-                        })
-                        .finally(() => {
-                            // İşlem tamamlandı, buton normal haline dönsün
-                            submitButton.disabled = false;
-                            submitSpinner.classList.add('d-none');
-                            buttonText.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Mesaj Gönder';
-                        });
+                    // Form submit işlemini normal şekilde devam ettir
+                    // Formspree tüm işi halledecek
+                    // Sayfa yönlendirilecek, bu nedenle preventDefault kullanmıyoruz
                 });
+
+                // URL parametrelerini kontrol et (Formspree başarılı gönderim sonrası)
+                if (window.location.search.includes('?submitted=true')) {
+                    // Başarı mesajını göster
+                    formSuccessMessage.classList.add('show');
+
+                    // URL'den parametreyi temizle
+                    history.replaceState(null, '', window.location.pathname + window.location.hash);
+
+                    // Forma odaklan
+                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+
+                    // 5 saniye sonra mesajı gizle
+                    setTimeout(() => {
+                        formSuccessMessage.classList.remove('show');
+                    }, 5000);
+                }
             }
         });
     </script>
