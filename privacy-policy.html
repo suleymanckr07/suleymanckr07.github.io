@@ -5,83 +5,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gizlilik Politikası - Woo: AI</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/woo-logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Logo" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Süleyman Çakır Logo" class="navbar-logo">
+                Süleyman Çakır
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Ana Sayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="features.html">Özellikler</a>
+                        <a class="nav-link" href="index.html#about">Hakkımda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Hakkında</a>
+                        <a class="nav-link" href="woo.html">Woo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">İletişim</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="privacy-policy.html">Gizlilik Politikası</a>
+                        <a class="nav-link active" href="privacy-policy.html">Gizlilik Politikası</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="terms-of-service.html">Hizmet Şartları</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">İletişim</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="container mt-5">
-        <h1>Gizlilik Politikası</h1>
-        <p>Bu Gizlilik Politikası, Woo: AI uygulamasını kullanırken topladığımız, kullandığımız ve koruduğumuz kişisel
-            bilgilerinizi açıklamaktadır.</p>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h1 class="display-4 fw-bold">Gizlilik Politikası</h1>
+                    <p class="lead">Woo: AI uygulamasını kullanırken verilerinizi nasıl topladığımız, kullandığımız ve
+                        koruduğumuz hakkında bilgiler</p>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <span class="badge bg-light text-dark me-2">Son Güncelleme: 27 Şubat 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
 
-        <h2>Topladığımız Bilgiler</h2>
-        <p>Uygulamayı kullanırken, aşağıdaki bilgileri toplayabiliriz:</p>
-        <ul>
-            <li>Kişisel Bilgiler: Ad, e-posta adresi, telefon numarası gibi bilgiler.</li>
-            <li>Kullanım Verileri: Uygulama içindeki etkileşimleriniz hakkında bilgiler.</li>
-            <li>Çerezler: Uygulama deneyiminizi geliştirmek için çerezler kullanabiliriz.</li>
-        </ul>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm rounded-3 mb-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card-body p-4 p-md-5">
+                        <h2 class="section-title">1. Hangi Verileri Topluyoruz?</h2>
+                        <div class="mb-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-user-circle text-primary me-2"></i>
+                                    <strong>Kayıt Verileri:</strong> Ad, kullanıcı adı, e-posta adresi, şifre ve profil
+                                    fotoğrafı.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                    <strong>Konum Bilgileri:</strong> İçerikleri kişiselleştirmek ve yakındaki
+                                    etkinlikleri göstermek için.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-share-alt text-primary me-2"></i>
+                                    <strong>İçerik Paylaşımları:</strong> Fotoğraflar, videolar, yorumlar, beğeniler ve
+                                    hikayeler.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-comments text-primary me-2"></i>
+                                    <strong>İletişim Verileri:</strong> Mesajlar, grup sohbetleri ve etkileşimler.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-credit-card text-primary me-2"></i>
+                                    <strong>Ödeme Bilgileri:</strong> Eğer uygulama içi satın alma veya abonelik
+                                    hizmetleri sunuluyorsa, ödeme işlemleri için gerekli bilgiler.
+                                </li>
+                            </ul>
+                        </div>
 
-        <h2>Bilgilerin Kullanımı</h2>
-        <p>Topladığımız bilgileri aşağıdaki amaçlarla kullanabiliriz:</p>
-        <ul>
-            <li>Hizmetleri sağlamak ve sürdürmek.</li>
-            <li>Kullanıcı deneyimini geliştirmek.</li>
-            <li>Destek sağlamak ve kullanıcı geri bildirimlerini yönetmek.</li>
-            <li>Pazarlama ve promosyon amaçları için iletişim kurmak.</li>
-        </ul>
+                        <h2 class="section-title">2. Verilerinizi Nasıl Kullanıyoruz?</h2>
+                        <div class="mb-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">Uygulama deneyiminizi kişiselleştirmek.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">Size özel içerikler ve öneriler sunmak.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">Güvenliği sağlamak ve dolandırıcılığı
+                                    önlemek.</li>
+                                <li class="list-group-item bg-transparent px-0">Yasal gereklilikleri yerine getirmek.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">Uygulama performansını analiz etmek ve
+                                    geliştirmek.</li>
+                                <li class="list-group-item bg-transparent px-0">Hizmetlerinize ilişkin geri bildirimleri
+                                    değerlendirmek.</li>
+                            </ul>
+                        </div>
 
-        <h2>Bilgilerin Korunması</h2>
-        <p>Kişisel bilgilerinizi korumak için uygun güvenlik önlemleri alıyoruz. Ancak, internet üzerinden veri
-            iletiminin tamamen güvenli olduğunu garanti edemeyiz.</p>
+                        <h2 class="section-title">3. Hukuki Dayanaklar</h2>
+                        <div class="mb-4">
+                            <p>Kişisel verileriniz, aşağıdaki yasal dayanaklara dayanarak işlenmektedir:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">Sözleşmenin ifası.</li>
+                                <li class="list-group-item bg-transparent px-0">Hukuki yükümlülüklerin yerine
+                                    getirilmesi.</li>
+                                <li class="list-group-item bg-transparent px-0">Açık rızanızın bulunması.</li>
+                                <li class="list-group-item bg-transparent px-0">Meşru menfaatlerimizin korunması.</li>
+                            </ul>
+                        </div>
 
-        <h2>Değişiklikler</h2>
-        <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler hakkında sizi bilgilendireceğiz.</p>
+                        <h2 class="section-title">4. Konum Bilgilerinizin Kullanımı</h2>
+                        <div class="mb-4">
+                            <p>Woo: AI, <strong>arka planda konum erişimi kullanmaz</strong>. Konum verileriniz şu
+                                amaçlarla kullanılır:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">Yakınınızdaki popüler gönderileri
+                                    göstermek.</li>
+                                <li class="list-group-item bg-transparent px-0">Gezdiğiniz yerleri haritada
+                                    işaretleyebilmek.</li>
+                                <li class="list-group-item bg-transparent px-0">Konum bazlı öneriler sunmak.</li>
+                            </ul>
+                        </div>
 
-        <h2>İletişim</h2>
-        <p>Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen <a href="contact.html">İletişim</a>
-            sayfasından bizimle iletişime geçin.</p>
-    </main>
+                        <h2 class="section-title">5. Uluslararası Veri Aktarımı</h2>
+                        <div class="mb-4">
+                            <p>Verileriniz, Woo: AI'nin hizmet aldığı yurt dışındaki sunuculara aktarılabilir.</p>
+                        </div>
 
-    <footer class="text-center mt-5">
-        <p>&copy; 2025 Woo: AI. Tüm hakları saklıdır.</p>
-    </footer>
+                        <h2 class="section-title">6. Veri Taşınabilirliği</h2>
+                        <div class="mb-4">
+                            <p>Kullanıcılar, kendi verilerini talep ederek farklı platformlara taşıyabilir.</p>
+                        </div>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+                        <h2 class="section-title">7. Çerezler ve Takip Teknolojileri</h2>
+                        <div class="mb-4">
+                            <p>Woo, kullanıcı deneyimini geliştirmek için çerezler ve benzeri teknolojiler kullanır.</p>
+                        </div>
+
+                        <h2 class="section-title">8. Kullanıcı Hakları</h2>
+                        <div class="mb-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">Kendi verilerine erişme, düzeltme ve
+                                    silme hakkı.</li>
+                                <li class="list-group-item bg-transparent px-0">Veri işleme sürecine itiraz etme hakkı.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">Hesap silme ve verilerin tamamen
+                                    kaldırılmasını talep etme hakkı.</li>
+                                <li class="list-group-item bg-transparent px-0">Veri taşınabilirliği talep etme hakkı.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">İzninize dayalı işlemleri geri çekme
+                                    hakkı.</li>
+                                <li class="list-group-item bg-transparent px-0">Profilinizin gizliliğini yönetme hakkı.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">Çerez ve takip teknolojilerini devre
+                                    dışı bırakma hakkı.</li>
+                            </ul>
+                        </div>
+
+                        <h2 class="section-title">9. Açık Rıza Gerektiren İşlemler</h2>
+                        <div class="mb-4">
+                            <p>Reklam, pazarlama ve konum bazlı içerikler gibi işlemler için açık rızanız alınmaktadır.
+                            </p>
+                        </div>
+
+                        <h2 class="section-title">10. Güvenlik Önlemleri</h2>
+                        <div class="mb-4">
+                            <p>Woo, verilerinizi korumak için <strong>şifreleme, güvenlik duvarları ve erişim
+                                    kontrolleri</strong> kullanır.</p>
+                        </div>
+
+                        <h2 class="section-title">11. Üçüncü Taraf Hizmetler ve Paylaşımlar</h2>
+                        <div class="mb-4">
+                            <p>Woo, aşağıdaki üçüncü taraf hizmetlerini kullanabilir ve belirli verileri paylaşabilir:
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">Google Analytics ve Firebase gibi analiz
+                                    araçları.</li>
+                                <li class="list-group-item bg-transparent px-0">Ödeme işlemleri için üçüncü taraf ödeme
+                                    sağlayıcıları.</li>
+                                <li class="list-group-item bg-transparent px-0">Reklam ve pazarlama amacıyla üçüncü
+                                    taraf reklam ağları.</li>
+                            </ul>
+                        </div>
+
+                        <h2 class="section-title">12. Değişiklikler</h2>
+                        <div class="mb-4">
+                            <p>Gizlilik politikamız zaman zaman güncellenebilir.
 </body>
 
 </html>
