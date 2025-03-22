@@ -420,7 +420,7 @@
                             <input type="text" name="_honey" style="display:none">
 
                             <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" id="submitButton">
-                                <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
+                                <span id="buttonText"><i class="fas fa-paper-plane me-2"></i>Mesaj Gönder</span>
                                 <span class="spinner-border spinner-border-sm ms-2 d-none" id="submitSpinner"
                                     role="status" aria-hidden="true"></span>
                             </button>
@@ -575,9 +575,20 @@
                 const successMessage = document.getElementById('formSuccessMessage');
                 successMessage.classList.add('show');
 
+                // Submit butonunu normale döndür
+                const submitButton = document.getElementById('submitButton');
+                const submitSpinner = document.getElementById('submitSpinner');
+                if (submitButton && submitSpinner) {
+                    submitButton.disabled = false;
+                    submitSpinner.classList.add('d-none');
+                }
+
                 // URL'den parametreyi temizle (sayfayı tazelemeden)
                 const newURL = window.location.pathname + window.location.hash;
                 history.replaceState(null, '', newURL);
+
+                // Başarı mesajına odaklan ve görünür kıl
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 
                 // 5 saniye sonra mesajı gizle
                 setTimeout(() => {
@@ -590,12 +601,31 @@
         const contactForm = document.getElementById('contactForm');
         const submitButton = document.getElementById('submitButton');
         const submitSpinner = document.getElementById('submitSpinner');
+        const buttonText = document.getElementById('buttonText');
 
         if (contactForm) {
             contactForm.addEventListener('submit', function () {
                 // Submit butonunu devre dışı bırak ve spinner'ı göster
                 submitButton.disabled = true;
                 submitSpinner.classList.remove('d-none');
+                buttonText.innerHTML = "Gönderiliyor..."; // Butonda metin değişimi
+
+                // Gönderim sonrası form resetleme için demo - normalde bu kısım FormSubmit redirect ile hallolur
+                setTimeout(() => {
+                    if (!window.location.search.includes('formSuccess')) {
+                        // Sayfanın taze yüklenmediği demo test durumunda
+                        const successMessage = document.getElementById('formSuccessMessage');
+                        successMessage.classList.add('show');
+                        contactForm.reset();
+                        submitButton.disabled = false;
+                        submitSpinner.classList.add('d-none');
+                        buttonText.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Mesaj Gönder';
+
+                        setTimeout(() => {
+                            successMessage.classList.remove('show');
+                        }, 5000);
+                    }
+                }, 2000); // Demo için 2 saniye gecikme
             });
         }
     </script>
