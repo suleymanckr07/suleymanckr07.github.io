@@ -103,6 +103,76 @@ document.addEventListener('DOMContentLoaded', function () {
             contactForm.reset();
         });
     }
+
+    // Mobil ve masaüstü deneyimini iyileştirme
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+
+    // Mobil cihazlarda AOS animasyon gecikmelerini azaltma
+    if (isMobile) {
+        const aosElements = document.querySelectorAll('[data-aos]');
+        aosElements.forEach(el => {
+            // Gecikmeli animasyonları eşitleme
+            if (el.getAttribute('data-aos-delay')) {
+                const currentDelay = parseInt(el.getAttribute('data-aos-delay'));
+                if (currentDelay > 100) {
+                    el.setAttribute('data-aos-delay', '100');
+                }
+            }
+
+            // Animasyon süresini kısaltma
+            if (el.getAttribute('data-aos-duration')) {
+                const currentDuration = parseInt(el.getAttribute('data-aos-duration'));
+                if (currentDuration > 800) {
+                    el.setAttribute('data-aos-duration', '800');
+                }
+            }
+        });
+    }
+
+    // Dokunmatik cihazlar için geliştirilmiş etkileşim
+    if ('ontouchstart' in window || navigator.maxTouchPoints) {
+        // Galeri resimlerine dokunma ile büyütme
+        const galleryImages = document.querySelectorAll('.gallery-img');
+        galleryImages.forEach(img => {
+            img.addEventListener('touchstart', function () {
+                this.style.transform = 'scale(1.05)';
+            });
+
+            img.addEventListener('touchend', function () {
+                setTimeout(() => {
+                    this.style.transform = 'none';
+                }, 200);
+            });
+        });
+
+        // Butonlara dokunma efekti
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('touchstart', function () {
+                this.style.transform = 'scale(0.98)';
+            });
+
+            btn.addEventListener('touchend', function () {
+                this.style.transform = 'none';
+            });
+        });
+    }
+
+    // Masaüstü cihazlarda geliştirilmiş etkileşim
+    if (!isMobile) {
+        // Hover ile kartları biraz kaldırma
+        const cards = document.querySelectorAll('.feature-card, .benefit-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'none';
+            });
+        });
+    }
 });
 
 // Ensure images are loaded
