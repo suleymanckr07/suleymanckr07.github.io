@@ -385,15 +385,22 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
 
-                        <!-- Basitleştirilmiş Form -->
-                        <form id="contactForm" action="https://formspree.io/f/mkndvyqw" method="POST">
+                        <!-- Basit HTML Form - E-posta İletişimi -->
+                        <form id="contactForm" action="https://formsubmit.co/suleymman074307@gmail.com" method="POST">
+                            <!-- Form gönderim sonrası ayarlar -->
+                            <input type="hidden" name="_subject" value="Kişisel Web Sitesi İletişim Formu">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next"
+                                value="https://suleymanckr07.github.io/?success=true#contact">
+
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Adınız"
                                     required>
                                 <label for="name"><i class="fas fa-user text-primary me-2"></i>Adınız</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" name="_replyto"
+                                <input type="email" class="form-control" id="email" name="email"
                                     placeholder="E-posta Adresiniz" required>
                                 <label for="email"><i class="fas fa-envelope text-primary me-2"></i>E-posta
                                     Adresiniz</label>
@@ -408,6 +415,9 @@
                                     style="height: 140px" required></textarea>
                                 <label for="message"><i class="fas fa-comments text-primary me-2"></i>Mesajınız</label>
                             </div>
+
+                            <!-- Spam koruması için honeypot -->
+                            <input type="text" name="_honey" style="display:none">
 
                             <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" id="submitButton">
                                 <span id="buttonText"><i class="fas fa-paper-plane me-2"></i>Mesaj Gönder</span>
@@ -554,43 +564,37 @@
             autoplayVideos: true
         });
 
-        // Basitleştirilmiş Form Gönderim Yönetimi
+        // Form gönderim işleme
         document.addEventListener('DOMContentLoaded', function () {
             const contactForm = document.getElementById('contactForm');
             const submitButton = document.getElementById('submitButton');
             const submitSpinner = document.getElementById('submitSpinner');
             const buttonText = document.getElementById('buttonText');
             const formSuccessMessage = document.getElementById('formSuccessMessage');
-            const formErrorMessage = document.getElementById('formErrorMessage');
 
+            // Form submit öncesi buton değişimi
             if (contactForm) {
-                contactForm.addEventListener('submit', function (e) {
-                    // Submit butonunu devre dışı bırak ve spinner'ı göster
+                contactForm.addEventListener('submit', function () {
                     submitButton.disabled = true;
                     submitSpinner.classList.remove('d-none');
                     buttonText.innerHTML = "Gönderiliyor...";
-
-                    // Form submit işlemini normal şekilde devam ettir
-                    // Formspree tüm işi halledecek
-                    // Sayfa yönlendirilecek, bu nedenle preventDefault kullanmıyoruz
                 });
+            }
 
-                // URL parametrelerini kontrol et (Formspree başarılı gönderim sonrası)
-                if (window.location.search.includes('?submitted=true')) {
-                    // Başarı mesajını göster
-                    formSuccessMessage.classList.add('show');
+            // URL parametrelerini kontrol et
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                // Başarı mesajını göster
+                formSuccessMessage.classList.add('show');
 
-                    // URL'den parametreyi temizle
-                    history.replaceState(null, '', window.location.pathname + window.location.hash);
+                // URL'den parametreyi temizle
+                const newURL = window.location.pathname + window.location.hash;
+                history.replaceState(null, '', newURL);
 
-                    // Forma odaklan
-                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-
-                    // 5 saniye sonra mesajı gizle
-                    setTimeout(() => {
-                        formSuccessMessage.classList.remove('show');
-                    }, 5000);
-                }
+                // 5 saniye sonra mesajı gizle
+                setTimeout(() => {
+                    formSuccessMessage.classList.remove('show');
+                }, 5000);
             }
         });
     </script>
