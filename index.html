@@ -370,32 +370,63 @@
                                 yazabilirsiniz.</p>
                             <div class="divider my-3"></div>
                         </div>
-                        <form id="contactForm">
+
+                        <!-- Form Success Message (initially hidden) -->
+                        <div class="alert alert-success alert-dismissible fade" role="alert" id="formSuccessMessage">
+                            <strong>Teşekkürler!</strong> Mesajınız başarıyla gönderildi. En kısa sürede size dönüş
+                            yapacağım.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                        <!-- Form Error Message (initially hidden) -->
+                        <div class="alert alert-danger alert-dismissible fade" role="alert" id="formErrorMessage">
+                            <strong>Hata!</strong> Mesajınız gönderilirken bir sorun oluştu. Lütfen daha sonra tekrar
+                            deneyin.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                        <form id="contactForm" action="https://formsubmit.co/suleymman074307@gmail.com" method="POST">
+                            <!-- FormSubmit.co Yapılandırma -->
+                            <input type="hidden" name="_subject" value="Yeni İletişim Formu Mesajı - Süleyman Çakır">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next"
+                                value="https://suleymanckr07.github.io/?formSuccess=true#contact">
+
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Adınız" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Adınız"
+                                    required>
                                 <label for="name"><i class="fas fa-user text-primary me-2"></i>Adınız</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="E-posta Adresiniz"
-                                    required>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="E-posta Adresiniz" required>
                                 <label for="email"><i class="fas fa-envelope text-primary me-2"></i>E-posta
                                     Adresiniz</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="subject" placeholder="Konu" required>
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Konu"
+                                    required>
                                 <label for="subject"><i class="fas fa-heading text-primary me-2"></i>Konu</label>
                             </div>
                             <div class="form-floating mb-4">
-                                <textarea class="form-control" id="message" placeholder="Mesajınız"
+                                <textarea class="form-control" id="message" name="message" placeholder="Mesajınız"
                                     style="height: 140px" required></textarea>
                                 <label for="message"><i class="fas fa-comments text-primary me-2"></i>Mesajınız</label>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100">
+
+                            <!-- Honeypot spam koruması -->
+                            <input type="text" name="_honey" style="display:none">
+
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" id="submitButton">
                                 <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
+                                <span class="spinner-border spinner-border-sm ms-2 d-none" id="submitSpinner"
+                                    role="status" aria-hidden="true"></span>
                             </button>
                         </form>
                     </div>
                 </div>
+
                 <div class="col-lg-5" data-aos="fade-left" data-aos-duration="800">
                     <div class="contact-info-container p-4 rounded-3 shadow h-100">
                         <div class="contact-info-header mb-4">
@@ -449,6 +480,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -532,6 +564,39 @@
             loop: true,
             autoplayVideos: true
         });
+
+        // Form başarı mesajı kontrolü
+        document.addEventListener('DOMContentLoaded', function () {
+            // URL parametrelerini kontrol et
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('formSuccess') === 'true') {
+                // Başarı mesajını göster
+                const successMessage = document.getElementById('formSuccessMessage');
+                successMessage.classList.add('show');
+
+                // URL'den parametreyi temizle (sayfayı tazelemeden)
+                const newURL = window.location.pathname + window.location.hash;
+                history.replaceState(null, '', newURL);
+
+                // 5 saniye sonra mesajı gizle
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            }
+        });
+
+        // Form gönderim animasyonu
+        const contactForm = document.getElementById('contactForm');
+        const submitButton = document.getElementById('submitButton');
+        const submitSpinner = document.getElementById('submitSpinner');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function () {
+                // Submit butonunu devre dışı bırak ve spinner'ı göster
+                submitButton.disabled = true;
+                submitSpinner.classList.remove('d-none');
+            });
+        }
     </script>
 </body>
 
