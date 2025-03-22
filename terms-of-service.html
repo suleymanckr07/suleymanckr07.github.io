@@ -1,69 +1,252 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kullanım Şartları - Woo: AI</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Hizmet Şartları - Woo: AI</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/woo-logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/woo-logo.png" alt="Woo: AI Logo" class="navbar-logo">
+                Woo: AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Ana Sayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="features.html">Özellikler</a>
+                        <a class="nav-link" href="index.html#about">Hakkımda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Hakkında</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">İletişim</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="terms-of-service.html">Kullanım Şartları</a>
+                        <a class="nav-link" href="woo.html">Woo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="privacy-policy.html">Gizlilik Politikası</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="terms-of-service.html">Hizmet Şartları</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">İletişim</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="container mt-5">
-        <h1>Kullanım Şartları</h1>
-        <p>Bu Kullanım Şartları, Woo: AI uygulamasını kullanırken uymanız gereken kuralları ve şartları belirler. Uygulamayı kullanarak bu şartları kabul etmiş olursunuz.</p>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h1 class="display-4 fw-bold">Hizmet Şartları</h1>
+                    <p class="lead">Woo: AI uygulamasını kullanırken bilmeniz gereken kullanım şartları ve koşulları</p>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <span class="badge bg-light text-dark me-2">Son Güncelleme: 27 Şubat 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
 
-        <h2>1. Kullanım Hakkı</h2>
-        <p>Woo: AI uygulamasını yalnızca kişisel ve yasal amaçlarla kullanabilirsiniz. Uygulamanın kötüye kullanımı yasaktır.</p>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm rounded-3 mb-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card-body p-4 p-md-5">
+                        <p class="lead">Bu Hizmet Şartları, Woo: AI uygulamasını kullanırken uymanız gereken kuralları
+                            ve şartları belirler. Uygulamayı kullanarak bu şartları kabul etmiş olursunuz.</p>
 
-        <h2>2. Kullanıcı Sorumlulukları</h2>
-        <p>Kullanıcılar, uygulama üzerinden paylaştıkları içeriklerin sorumluluğunu üstlenir. Herhangi bir yasadışı veya zararlı içerik paylaşmak yasaktır.</p>
+                        <h2 class="section-title mt-5">1. Kullanım Hakkı</h2>
+                        <div class="mb-4">
+                            <p>Woo: AI uygulamasını yalnızca kişisel ve yasal amaçlarla kullanabilirsiniz. Aşağıdaki
+                                eylemler kesinlikle yasaktır:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-ban text-danger me-2"></i>
+                                    Uygulamayı yasa dışı amaçlarla kullanmak
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-ban text-danger me-2"></i>
+                                    Diğer kullanıcıların deneyimini engellemek veya bozmak
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-ban text-danger me-2"></i>
+                                    Uygulamanın güvenlik önlemlerini aşmaya çalışmak
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-ban text-danger me-2"></i>
+                                    Zararlı yazılım yaymak veya uygulama hizmetlerini kesintiye uğratmak
+                                </li>
+                            </ul>
+                        </div>
 
-        <h2>3. Fikri Mülkiyet</h2>
-        <p>Uygulama ve içeriği, telif hakkı ve diğer fikri mülkiyet hakları ile korunmaktadır. Uygulamanın içeriğini izinsiz kullanmak yasaktır.</p>
+                        <h2 class="section-title">2. Kullanıcı Sorumlulukları</h2>
+                        <div class="mb-4">
+                            <p>Kullanıcılar, uygulama üzerinden paylaştıkları içeriklerin sorumluluğunu üstlenir.
+                                Aşağıdaki içerik türlerinin paylaşılması yasaktır:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                    Yasadışı, tehdit edici, taciz edici veya rahatsız edici içerikler
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                    Nefret söylemi veya ayrımcılık içeren paylaşımlar
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                    Müstehcen, pornografik veya cinsel içerikli materyaller
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                    Başkalarının telif hakkına sahip olduğu içerikler (izinsiz)
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                    Spam veya istenmeyen reklam içerikleri
+                                </li>
+                            </ul>
+                        </div>
 
-        <h2>4. Değişiklikler</h2>
-        <p>Bu şartlar zaman zaman güncellenebilir. Kullanıcılar, değişiklikleri takip etmekle yükümlüdür.</p>
+                        <h2 class="section-title">3. Fikri Mülkiyet</h2>
+                        <div class="mb-4">
+                            <p>Woo: AI uygulaması ve içeriği, telif hakkı ve diğer fikri mülkiyet hakları ile
+                                korunmaktadır. Uygulamanın içeriğini izinsiz kullanmak, kopyalamak, değiştirmek veya
+                                dağıtmak yasaktır.</p>
+                            <p>Uygulama üzerinden paylaştığınız içeriğin haklarını korursunuz, ancak Woo: AI'ye bu
+                                içeriği uygulama içinde kullanma, gösterme ve dağıtma hakkı vermiş olursunuz.</p>
+                        </div>
 
-        <h2>5. İletişim</h2>
-        <p>Bu şartlarla ilgili herhangi bir sorunuz varsa, lütfen <a href="contact.html">İletişim</a> sayfasından bizimle iletişime geçin.</p>
+                        <h2 class="section-title">4. Hesap Güvenliği</h2>
+                        <div class="mb-4">
+                            <p>Hesabınızın güvenliğinden siz sorumlusunuz. Güçlü bir şifre seçmeli ve hesap
+                                bilgilerinizi gizli tutmalısınız. Hesabınızla gerçekleştirilen tüm etkinliklerden siz
+                                sorumlu olacaksınız.</p>
+                            <p>Hesabınızın yetkisiz kullanımını fark ederseniz, hemen bizimle iletişime geçmelisiniz.
+                            </p>
+                        </div>
+
+                        <h2 class="section-title">5. Hizmet Değişiklikleri</h2>
+                        <div class="mb-4">
+                            <p>Woo: AI, uygulamanın özelliklerini, içeriğini ve işlevselliğini herhangi bir zamanda
+                                değiştirme, askıya alma veya sonlandırma hakkını saklı tutar. Bu tür değişiklikler için
+                                önceden bildirimde bulunulması zorunlu değildir.</p>
+                        </div>
+
+                        <h2 class="section-title">6. Sorumluluk Sınırlaması</h2>
+                        <div class="mb-4">
+                            <p>Woo: AI, uygulama kullanımından kaynaklanan doğrudan, dolaylı, arızi, özel veya sonuç
+                                olarak ortaya çıkan zararlardan sorumlu tutulamaz. Uygulama "olduğu gibi" sunulmaktadır
+                                ve herhangi bir garanti vermemektedir.</p>
+                        </div>
+
+                        <h2 class="section-title">7. Uygulanacak Hukuk</h2>
+                        <div class="mb-4">
+                            <p>Bu şartlar Türkiye Cumhuriyeti kanunlarına tabidir ve bu kanunlara göre yorumlanacaktır.
+                            </p>
+                        </div>
+
+                        <h2 class="section-title">8. Değişiklikler</h2>
+                        <div class="mb-4">
+                            <p>Bu şartlar zaman zaman güncellenebilir. Tüm değişiklikler uygulama içinde ve web
+                                sitemizde yayınlanacaktır. Değişiklikleri takip etmekle yükümlüsünüz ve uygulamayı
+                                kullanmaya devam ederek güncellenmiş şartları kabul etmiş sayılırsınız.</p>
+                        </div>
+
+                        <h2 class="section-title">9. İletişim</h2>
+                        <div class="mb-4">
+                            <p>Bu şartlarla ilgili herhangi bir sorunuz veya geri bildiriminiz varsa, lütfen <a
+                                    href="mailto:wootales@gmail.com">wootales@gmail.com</a> adresinden bizimle iletişime
+                                geçin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="text-center mt-5">
-        <p>&copy; 2023 Woo: AI. Tüm hakları saklıdır.</p>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="images/woo-logo.png" alt="Woo Logo" class="footer-logo me-2" width="30">
+                    <span>&copy; 2025 Woo: AI. Tüm Hakları Saklıdır.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="privacy-policy.html" class="text-white-50 text-decoration-none">Gizlilik
+                                Politikası</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="terms-of-service.html" class="text-white-50 text-decoration-none">Hizmet
+                                Şartları</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:wootales@gmail.com" class="text-white-50 text-decoration-none">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <small class="text-white-50">Woo: AI, Flutter ile geliştirilmiş yapay zeka destekli bir seyahat
+                        uygulamasıdır. <a href="index.html" class="text-white-50">Süleyman Çakır</a> tarafından
+                        tasarlanmıştır.</small>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
 </body>
+
 </html>
