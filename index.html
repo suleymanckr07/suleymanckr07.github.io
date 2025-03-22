@@ -385,21 +385,14 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
 
-                        <form id="contactForm" action="https://formsubmit.co/suleymman074307@gmail.com" method="POST">
-                            <!-- FormSubmit.co Yapılandırma -->
-                            <input type="hidden" name="_subject" value="Yeni İletişim Formu Mesajı - Süleyman Çakır">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next"
-                                value="https://suleymanckr07.github.io/?formSuccess=true#contact">
-
+                        <form id="contactForm">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Adınız"
+                                <input type="text" class="form-control" id="name" name="user_name" placeholder="Adınız"
                                     required>
                                 <label for="name"><i class="fas fa-user text-primary me-2"></i>Adınız</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" name="email"
+                                <input type="email" class="form-control" id="email" name="user_email"
                                     placeholder="E-posta Adresiniz" required>
                                 <label for="email"><i class="fas fa-envelope text-primary me-2"></i>E-posta
                                     Adresiniz</label>
@@ -414,9 +407,6 @@
                                     style="height: 140px" required></textarea>
                                 <label for="message"><i class="fas fa-comments text-primary me-2"></i>Mesajınız</label>
                             </div>
-
-                            <!-- Honeypot spam koruması -->
-                            <input type="text" name="_honey" style="display:none">
 
                             <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" id="submitButton">
                                 <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
@@ -552,51 +542,66 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <script>
-        // Initialize AOS
+        // Initialize AOS and GLightbox (existing)
         AOS.init();
-
-        // Initialize GLightbox
         const lightbox = GLightbox({
             touchNavigation: true,
             loop: true,
             autoplayVideos: true
         });
 
-        // Form başarı mesajı kontrolü
-        document.addEventListener('DOMContentLoaded', function () {
-            // URL parametrelerini kontrol et
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('formSuccess') === 'true') {
-                // Başarı mesajını göster
-                const successMessage = document.getElementById('formSuccessMessage');
-                successMessage.classList.add('show');
+        // EmailJS initialization
+        (function () {
+            // EmailJS servisi için başlangıç ayarları
+            emailjs.init("97zB4uzso3TzKXCw"); // EmailJS'den alacağınız User ID
 
-                // URL'den parametreyi temizle (sayfayı tazelemeden)
-                const newURL = window.location.pathname + window.location.hash;
-                history.replaceState(null, '', newURL);
+            // Form gönderim fonksiyonu
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
 
-                // 5 saniye sonra mesajı gizle
-                setTimeout(() => {
-                    successMessage.classList.remove('show');
-                }, 5000);
-            }
-        });
-
-        // Form gönderim animasyonu
-        const contactForm = document.getElementById('contactForm');
-        const submitButton = document.getElementById('submitButton');
-        const submitSpinner = document.getElementById('submitSpinner');
-
-        if (contactForm) {
-            contactForm.addEventListener('submit', function () {
                 // Submit butonunu devre dışı bırak ve spinner'ı göster
+                const submitButton = document.getElementById('submitButton');
+                const submitSpinner = document.getElementById('submitSpinner');
+
                 submitButton.disabled = true;
                 submitSpinner.classList.remove('d-none');
+
+                // EmailJS ile e-posta gönderimi
+                emailjs.sendForm('service_5gn0j0h', 'template_eq0bxem', this)
+                    .then(function () {
+                        // Başarı durumu
+                        document.getElementById('formSuccessMessage').classList.add('show');
+                        document.getElementById('contactForm').reset();
+
+                        // 5 saniye sonra mesajı gizle
+                        setTimeout(() => {
+                            document.getElementById('formSuccessMessage').classList.remove('show');
+                        }, 5000);
+
+                        // Submit butonunu normale döndür
+                        submitButton.disabled = false;
+                        submitSpinner.classList.add('d-none');
+                    }, function (error) {
+                        // Hata durumu
+                        console.log('Form gönderim hatası:', error);
+                        document.getElementById('formErrorMessage').classList.add('show');
+
+                        // 5 saniye sonra mesajı gizle
+                        setTimeout(() => {
+                            document.getElementById('formErrorMessage').classList.remove('show');
+                        }, 5000);
+
+                        // Submit butonunu normale döndür
+                        submitButton.disabled = false;
+                        submitSpinner.classList.add('d-none');
+                    });
             });
-        }
+        })();
     </script>
 </body>
 
