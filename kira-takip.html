@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kira Takip - TÜFE'ye Göre Kira Hesaplama</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://suleymanckr07.github.io/kira-takip.html">
+    <meta name="description"
+        content="Kira Takip uygulaması ile TÜFE oranlarına göre kira artış hesaplamalarını yapabilir, kiracı ve daire bilgilerini düzenleyebilir ve kira gelirlerinizi takip edebilirsiniz.">
+    <meta name="keywords"
+        content="kira takip, TÜFE, kira artış oranı, kira hesaplama, daire yönetimi, emlak takip, kiracı yönetimi">
+    <meta name="author" content="Süleyman Çakır">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suleymanckr07.github.io/kira-takip.html">
+    <meta property="og:title" content="Kira Takip - TÜFE'ye Göre Kira Hesaplama">
+    <meta property="og:description"
+        content="Kira Takip uygulaması ile TÜFE oranlarına göre kira artış hesaplamalarını yapabilir ve kira gelirlerinizi takip edebilirsiniz.">
+    <meta property="og:image" content="https://suleymanckr07.github.io/images/kira/kira-logo.png">
+    <!-- Schema.org for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Kira Takip",
+      "operatingSystem": "Android",
+      "applicationCategory": "FinanceApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": "250",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "description": "TÜFE oranlarına göre kira artış hesaplama, kiracı ve daire yönetimi yapabileceğiniz, internet bağlantısı gerektirmeden çalışan ücretsiz bir uygulama.",
+      "image": "https://suleymanckr07.github.io/images/kira/kira-logo.png",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sc_kira_takip",
+      "author": {
+        "@type": "Person",
+        "name": "Süleyman Çakır"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Süleyman Çakır Logo" class="navbar-logo">
+                Süleyman Çakır
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kira-takip.html">Kira Takip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kira-takip-privacy.html">Gizlilik Politikası</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/kira/kira-logo.png" alt="Kira Takip Logo" class="app-logo me-3"
+                            style="width: 60px; height: 60px;">
+                        <h1 class="fw-bold text-white mb-0">Kira Takip</h1>
+                    </div>
+                    <p class="lead text-white-50 mb-4">TÜFE'ye göre kira hesaplama, daire yönetimi ve gelir takibi</p>
+                    <div class="app-features mb-4">
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <i class="fas fa-check-circle me-2"></i>
+                            <span>Güncel TÜFE oranlarına göre kira hesaplama</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <i class="fas fa-check-circle me-2"></i>
+                            <span>Kiracı ve daire bilgileri takibi</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <i class="fas fa-check-circle me-2"></i>
+                            <span>Gelir istatistikleri ve ödeme takibi</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white">
+                            <i class="fas fa-check-circle me-2"></i>
+                            <span>Tamamen ücretsiz ve veri gizliliği</span>
+                        </div>
+                    </div>
+                    <div class="download-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.sc_kira_takip"
+                            class="btn btn-success btn-lg rounded-pill me-3 mb-2 mb-md-0">
+                            <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                        </a>
+                        <a href="kira-takip-privacy.html" class="btn btn-outline-light btn-lg rounded-pill">
+                            <i class="fas fa-shield-alt me-2"></i>Gizlilik Politikası
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-flex justify-content-center" data-aos="fade-left"
+                    data-aos-duration="1000">
+                    <img src="images/kira/mockup.png" alt="Kira Takip Mockup" class="img-fluid hero-app-image">
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Özellikleri</span></h2>
+
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-calculator feature-icon"></i>
+                            </div>
+                            <h4>TÜFE Hesaplama</h4>
+                            <p>Türkiye İstatistik Kurumu (TÜİK) tarafından yayınlanan en güncel TÜFE oranlarını
+                                kullanarak yasal kira artış hesaplaması yapın.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-building feature-icon"></i>
+                            </div>
+                            <h4>Daire Yönetimi</h4>
+                            <p>Tüm dairelerinizi ekleyin, daire özelliklerini ve detaylarını kaydedin, kira
+                                kontratlarının sürelerini takip edin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-user-tie feature-icon"></i>
+                            </div>
+                            <h4>Kiracı Takibi</h4>
+                            <p>Kiracı bilgilerini saklayın, iletişim bilgilerini kaydedin ve kira ödeme geçmişlerini
+                                görüntüleyin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-chart-bar feature-icon"></i>
+                            </div>
+                            <h4>Gelir Raporları</h4>
+                            <p>Aylık ve yıllık bazda gelir raporları görüntüleyin, gelecekteki kira gelirlerinizi tahmin
+                                edin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Feature 5 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-bell feature-icon"></i>
+                            </div>
+                            <h4>Hatırlatıcılar</h4>
+                            <p>Kira ödeme ve sözleşme yenileme tarihleri için hatırlatıcı ayarlayın, önemli tarihleri
+                                kaçırmayın.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-file-alt feature-icon"></i>
+                            </div>
+                            <h4>Sözleşme Takibi</h4>
+                            <p>Kira sözleşmelerinizi kaydederek bitiş tarihlerini ve yenileme koşullarını izleyin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-shield-alt feature-icon"></i>
+                            </div>
+                            <h4>Veri Gizliliği</h4>
+                            <p>Verileriniz sadece cihazınızda saklanır. İnternet erişimi gerekmez ve hiçbir veri
+                                sunuculara gönderilmez.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4"
+                                style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                                <i class="fas fa-sync-alt feature-icon"></i>
+                            </div>
+                            <h4>Veri Yedekleme</h4>
+                            <p>Verilerinizi yedekleyin ve geri yükleyin, cihazınızı değiştirirken bile verileriniz
+                                güvende kalsın.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Görüntüleri</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/kira/1.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 1">
+                            <img src="images/kira/1.png" alt="Kira Takip Screenshot 1"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <a href="images/kira/2.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 2">
+                            <img src="images/kira/2.png" alt="Kira Takip Screenshot 2"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <a href="images/kira/3.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 3">
+                            <img src="images/kira/3.png" alt="Kira Takip Screenshot 3"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="screenshot-container">
+                        <a href="images/kira/4.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 4">
+                            <img src="images/kira/4.png" alt="Kira Takip Screenshot 4"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/kira/5.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 5">
+                            <img src="images/kira/5.png" alt="Kira Takip Screenshot 5"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <a href="images/kira/6.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 6">
+                            <img src="images/kira/6.png" alt="Kira Takip Screenshot 6"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <a href="images/kira/7.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 7">
+                            <img src="images/kira/7.png" alt="Kira Takip Screenshot 7"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="screenshot-container">
+                        <a href="images/kira/8.png" class="glightbox" data-glightbox="title: Kira Takip Screenshot 8">
+                            <img src="images/kira/8.png" alt="Kira Takip Screenshot 8"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Sık Sorulan <span class="highlight">Sorular</span></h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Kira Takip uygulaması tamamen ücretsiz mi?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, Kira Takip uygulaması tamamen ücretsizdir ve hiçbir gizli ücret içermez. Tüm
+                                    özelliklere ücretsiz olarak erişebilirsiniz.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    TÜFE oranları güncel mi?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, uygulama TC Merkez Bankası ve TÜİK tarafından yayınlanan en güncel TÜFE
+                                    oranlarını kullanır. Veriler düzenli olarak güncellenir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Verilerim güvende mi?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Kesinlikle! Verileriniz sadece kendi cihazınızda yerel olarak saklanır.
+                                    Sunucularımıza veya üçüncü taraf hizmetlere hiçbir veri gönderilmez. Uygulamamız
+                                    veri gizliliğine büyük önem verir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Verilerimi yedekleyebilir miyim?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, uygulama içindeki yedekleme özelliğini kullanarak tüm verilerinizi
+                                    yedekleyebilir ve gerektiğinde geri yükleyebilirsiniz. Bu, cihaz değişikliğinde veya
+                                    uygulama yeniden yüklendiğinde verilerinizi korumanızı sağlar.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Kira hesaplamaları yasal olarak doğru mu?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Uygulamamız, Türkiye'deki yasal kira artış sınırlarını ve güncel TÜFE oranlarını
+                                    temel alarak hesaplamalar yapar. Bununla birlikte, her zaman resmi makamlardan ve
+                                    yasal danışmanlardan teyit almanızı öneririz, çünkü yasal düzenlemeler değişebilir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-5 bg-light">
+        <div class="container py-4 text-center">
+            <h2 class="section-title mb-4">Hemen İndirin!</h2>
+            <p class="lead mb-5">Kira Takip uygulaması ile kira hesaplamalarınızı ve daire yönetiminizi kolaylaştırın
+            </p>
+            <div class="download-buttons justify-content-center">
+                <a href="https://play.google.com/store/apps/details?id=com.sc_kira_takip"
+                    class="btn btn-success btn-lg rounded-pill">
+                    <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="images/logo.png" alt="Süleyman Çakır Logo" class="footer-logo me-2" width="30">
+                    <span>&copy; 2024 Süleyman Çakır. Tüm Hakları Saklıdır.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="woo.html" class="text-white-50 text-decoration-none">Woo: AI</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="dugun-planlayacim.html" class="text-white-50 text-decoration-none">Düğün
+                                Planlayacım</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="kira-takip.html" class="text-white-50 text-decoration-none">Kira Takip</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="kira-takip-privacy.html" class="text-white-50 text-decoration-none">Gizlilik
+                                Politikası</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <small class="text-white-50">Kira Takip uygulaması, Flutter ile geliştirilmiş tamamen offline
+                        çalışan bir kira yönetim uygulamasıdır.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Initialize GLightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</body>
+
+</html>
