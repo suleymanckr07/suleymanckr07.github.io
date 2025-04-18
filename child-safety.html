@@ -346,6 +346,7 @@
         .timeline {
             position: relative;
             padding-left: 30px;
+            margin-top: 2rem;
         }
 
         .timeline::before {
@@ -361,26 +362,41 @@
         .timeline-item {
             position: relative;
             margin-bottom: 2rem;
+            padding-left: 2rem;
         }
 
         .timeline-date {
             position: absolute;
             left: -30px;
-            top: 0;
+            top: 50%;
+            transform: translateY(-50%);
             background: #1a1a2e;
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .timeline-content {
-            padding-left: 2rem;
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-left: 1rem;
         }
 
         .timeline-content h4 {
             color: #1a1a2e;
             margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .timeline-content p {
+            color: #666;
+            margin-bottom: 0;
         }
 
         .permanent-alert {
@@ -394,6 +410,27 @@
         .permanent-alert i {
             font-size: 1.2rem;
             color: #1a1a2e;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                padding-left: 20px;
+            }
+
+            .timeline-item {
+                padding-left: 1.5rem;
+            }
+
+            .timeline-date {
+                left: -20px;
+                min-width: 80px;
+                font-size: 0.9rem;
+            }
+
+            .timeline-content {
+                padding: 1rem;
+                margin-left: 0.5rem;
+            }
         }
     </style>
 </body>
