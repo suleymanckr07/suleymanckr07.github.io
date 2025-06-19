@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Team - Halısaha Kadrom Uygulaması | Süleyman Çakır</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/footbal-team/logo.png" type="image/png">
+    <!-- Meta Tags -->
+    <meta name="description"
+        content="Football Team, Flutter ile geliştirilmiş takım yönetimi uygulamasıdır. Takımınızı yönetin, maçları takip edin ve istatistikleri görüntüleyin!">
+    <meta name="keywords" content="Football Team, takım yönetimi, futbol uygulaması, flutter, Süleyman Çakır">
+    <meta name="author" content="Süleyman Çakır">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Football Team - Takım Yönetimi Uygulaması">
+    <meta property="og:description" content="Flutter ile geliştirilmiş takım yönetimi uygulaması.">
+    <meta property="og:image" content="https://suleymanckr07.github.io/images/footbal-team/logo.png">
+    <meta property="og:url" content="https://suleymanckr07.github.io/football-team.html">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/footbal-team/logo.png" alt="Football Team Logo" class="navbar-logo">
+                Football Team
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="football-privacy.html">Gizlilik Politikası</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms-of-service.html">Hizmet Şartları</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/footbal-team/logo.png" alt="Football Team Logo" class="app-logo me-3"
+                            style="width: 60px; height: 60px;">
+                        <h1 class="display-4 fw-bold text-white mb-0">Football Team</h1>
+                    </div>
+                    <p class="lead text-white-50 my-4">
+                        Flutter ile geliştirilmiş, halı saha ve profesyonel maçlar için kadro ve diziliş yönetimi
+                        uygulaması.
+                        7'li ve 11'li formatlar için kadro oluşturun, dizilişleri belirleyin ve takımınızı organize
+                        edin!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.sc_football_team"
+                            class="btn btn-success btn-lg rounded-pill me-3">
+                            <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                        </a>
+                        <a href="#features" class="btn btn-outline-light btn-lg rounded-pill">
+                            <i class="fas fa-info-circle me-2"></i>Özellikleri Keşfet
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="images/footbal-team/1.png" alt="Football Team App" class="img-fluid rounded-3 shadow-lg"
+                        style="max-height: 500px;">
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- App Description Section -->
+    <section id="about-app" class="py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section-title">Football Team <span class="highlight">Hakkında</span></h2>
+                    <p class="lead mb-4">
+                        Football Team, halı saha ve profesyonel maçlar için geliştirilmiş kapsamlı bir kadro ve diziliş
+                        yönetimi uygulamasıdır.
+                    </p>
+                    <p>
+                        7'li, 8'li, 9'lu, 10'lu, 11'li formatlar için özel dizilişler oluşturun, oyuncularınızı
+                        pozisyonlara yerleştirin
+                        ve
+                        takımınızı en etkili şekilde organize edin. Halı saha maçlarından profesyonel karşılaşmalara
+                        kadar
+                        her format için ideal kadro yönetimi artık parmaklarınızın ucunda!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Öne Çıkan <span class="highlight">Özellikler</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-users feature-icon"></i>
+                            </div>
+                            <h4>Kadro Yönetimi</h4>
+                            <p>7'li, 8'li, 9'lu, 10'lu, 11'li formatlar için kadro oluşturun, yedek oyuncuları
+                                belirleyin ve takım
+                                listesini düzenleyin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-th feature-icon"></i>
+                            </div>
+                            <h4>Diziliş Seçenekleri</h4>
+                            <p>Halı saha için 2-3-1, 3-2-1 gibi 7'li dizilişler ve tam saha için 4-4-2, 4-3-3 gibi 11'li
+                                dizilişler arasından seçim yapın.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-exchange-alt feature-icon"></i>
+                            </div>
+                            <h4>Pozisyon Belirleme</h4>
+                            <p>Her oyuncuyu tercih ettiği pozisyona yerleştirin, değişiklikleri kolayca yapın ve
+                                alternatif dizilişler oluşturun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-share-alt feature-icon"></i>
+                            </div>
+                            <h4>Kadro Paylaşımı</h4>
+                            <p>Oluşturduğunuz kadro ve dizilişleri takım arkadaşlarınızla paylaşın, maç öncesi herkes
+                                pozisyonunu bilsin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Görüntüleri</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/footbal-team/1.png" class="glightbox"
+                            data-glightbox="title: Football Team Screenshot 1">
+                            <img src="images/footbal-team/1.png" alt="Football Team Screenshot 1"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <a href="images/footbal-team/2.png" class="glightbox"
+                            data-glightbox="title: Football Team Screenshot 2">
+                            <img src="images/footbal-team/2.png" alt="Football Team Screenshot 2"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <a href="images/footbal-team/3.png" class="glightbox"
+                            data-glightbox="title: Football Team Screenshot 3">
+                            <img src="images/footbal-team/3.png" alt="Football Team Screenshot 3"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="screenshot-container">
+                        <a href="images/footbal-team/4.png" class="glightbox"
+                            data-glightbox="title: Football Team Screenshot 4">
+                            <img src="images/footbal-team/4.png" alt="Football Team Screenshot 4"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/footbal-team/5.png" class="glightbox"
+                            data-glightbox="title: Football Team Screenshot 5">
+                            <img src="images/footbal-team/5.png" alt="Football Team Screenshot 5"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Nasıl <span class="highlight">Çalışır?</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number">1</div>
+                            <h4 class="mt-4">Oyuncuları Ekleyin</h4>
+                            <p>Takım arkadaşlarınızı ekleyin ve tercih ettikleri pozisyonları belirleyin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number">2</div>
+                            <h4 class="mt-4">Dizilişi Seçin</h4>
+                            <p>7'li veya 11'li format için uygun dizilişi belirleyin ve oyuncuları yerleştirin.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number">3</div>
+                            <h4 class="mt-4">Takip ve Analiz</h4>
+                            <p>Performansları takip edin, istatistikleri analiz edin ve raporlar oluşturun.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features Section -->
+    <!-- <section id="special-features" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Özel <span class="highlight">Özellikler</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-clipboard-list feature-icon"></i>
+                            </div>
+                            <h4>Detaylı İstatistikler</h4>
+                            <p>Maç, oyuncu ve takım bazında detaylı istatistikler ve analizler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-bell feature-icon"></i>
+                            </div>
+                            <h4>Bildirim Sistemi</h4>
+                            <p>Maç, antrenman ve önemli etkinlikler için otomatik bildirimler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-share-alt feature-icon"></i>
+                            </div>
+                            <h4>Kolay Paylaşım</h4>
+                            <p>Program ve sonuçları takım üyeleriyle kolayca paylaşın.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-cloud feature-icon"></i>
+                            </div>
+                            <h4>Bulut Yedekleme</h4>
+                            <p>Tüm verileriniz güvenle bulutta yedeklenir ve senkronize edilir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Download Section -->
+    <section id="download" class="py-5 bg-primary text-white">
+        <div class="container py-4 text-center">
+            <div data-aos="zoom-in" data-aos-duration="800">
+                <h2 class="mb-4">Hemen İndirin, Takımınızı Profesyonelce Yönetin!</h2>
+                <p class="lead mb-5">Google Play'den ücretsiz olarak indirebilirsiniz.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.sc_football_team"
+                    class="btn btn-lg btn-light rounded-pill">
+                    <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Sık Sorulan <span class="highlight">Sorular</span></h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Halısaha kadrom uygulaması tamamen ücretsiz mi?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, Halısaha kadrom uygulaması temel özellikleriyle tamamen ücretsizdir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Hangi dizilişleri kullanabilirim?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Halı saha için 2-3-1, 3-2-1, 2-2-2 gibi 7'li dizilişleri ve tam saha için 4-4-2,
+                                    4-3-3, 3-5-2 gibi 11'li dizilişleri kullanabilirsiniz. Ayrıca kendi özel
+                                    dizilişlerinizi de oluşturabilirsiniz.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Verilerim güvende mi?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, tüm verileriniz güvenli sunucularda saklanır ve düzenli olarak yedeklenir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="images/footbal-team/logo.png" alt="Football Team Logo" class="footer-logo me-2"
+                        width="30">
+                    <span>&copy; 2024 Football Team. Tüm Hakları Saklıdır.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="football-privacy.html" class="text-white-50 text-decoration-none">Gizlilik
+                                Politikası</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="terms-of-service.html" class="text-white-50 text-decoration-none">Hizmet
+                                Şartları</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <small class="text-white-50">Football Team, Flutter ile geliştirilmiş halı saha ve profesyonel
+                        maçlar için kadro ve diziliş yönetimi uygulamasıdır.
+                        <a href="index.html" class="text-white-50">Süleyman Çakır</a> tarafından tasarlanmıştır.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Initialize GLightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</body>
+
+</html>
