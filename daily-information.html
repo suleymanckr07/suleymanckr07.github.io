@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günlük Bilgi - Günlük Bilgi Paylaşım Platformu | Süleyman Çakır</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/daily_information/daily_logo.png" type="image/png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://suleymanckr07.github.io/daily-information.html">
+    <!-- Meta Tags -->
+    <meta name="description"
+        content="Günlük Bilgi, Flutter ile geliştirilmiş günlük bilgi paylaşım platformudur. Her gün yeni bilgiler öğrenin, favorilerinizi kaydedin ve arkadaşlarınızla paylaşın!">
+    <meta name="keywords"
+        content="Günlük Bilgi, bilgi paylaşımı, günlük bilgiler, eğitim uygulaması, flutter, Süleyman Çakır, genel kültür">
+    <meta name="author" content="Süleyman Çakır">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Günlük Bilgi - Günlük Bilgi Paylaşım Platformu">
+    <meta property="og:description"
+        content="Günlük Bilgi, Flutter ile geliştirilmiş günlük bilgi paylaşım platformudur.">
+    <meta property="og:image" content="https://suleymanckr07.github.io/images/daily_information/daily_logo.png">
+    <meta property="og:url" content="https://suleymanckr07.github.io/daily-information.html">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Günlük Bilgi - Günlük Bilgi Paylaşım Platformu">
+    <meta name="twitter:description" content="Flutter ile geliştirilmiş, günlük bilgi paylaşım platformu.">
+    <meta name="twitter:image" content="https://suleymanckr07.github.io/images/daily_information/daily_logo.png">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Günlük Bilgi",
+      "operatingSystem": "Android",
+      "applicationCategory": "EducationalApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "ratingCount": "200",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "description": "Flutter ile geliştirilmiş, günlük bilgi paylaşım platformu. Her gün yeni bilgiler öğrenin!",
+      "image": "https://suleymanckr07.github.io/images/daily_information/daily_logo.png",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sc_daily_information",
+      "author": {
+        "@type": "Person",
+        "name": "Süleyman Çakır"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/daily_information/daily_logo.png" alt="Günlük Bilgi Logo" class="navbar-logo">
+                Günlük Bilgi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="daily-information-privacy.html">Gizlilik Politikası</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms-of-service.html">Hizmet Şartları</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/daily_information/daily_logo.png" alt="Günlük Bilgi Logo" class="app-logo me-3"
+                            style="width: 60px; height: 60px;">
+                        <h1 class="display-4 fw-bold text-white mb-0">Günlük Bilgi</h1>
+                    </div>
+                    <p class="lead text-white-50 my-4">
+                        Flutter ile geliştirilmiş günlük bilgi paylaşım platformu.
+                        Her gün yeni bilgiler öğrenin, genel kültürünüzü artırın!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.sc_daily_information"
+                            class="btn btn-success btn-lg rounded-pill me-3">
+                            <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                        </a>
+                        <a href="#features" class="btn btn-outline-light btn-lg rounded-pill">
+                            <i class="fas fa-info-circle me-2"></i>Özellikleri Keşfet
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="images/daily_information/1.png" alt="Günlük Bilgi App"
+                        class="img-fluid rounded-3 shadow-lg" style="max-height: 500px;">
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- App Description Section -->
+    <section id="about-app" class="py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section-title">Günlük Bilgi <span class="highlight">Hakkında</span></h2>
+                    <p class="lead mb-4">
+                        Günlük Bilgi, Flutter ile geliştirilen, günlük bilgi paylaşım platformudur.
+                    </p>
+                    <p>
+                        Bilgi çağında yaşadığımız bu dönemde, her gün yeni şeyler öğrenmek ve genel kültürümüzü artırmak
+                        artık çok daha kolay! Günlük Bilgi uygulaması ile farklı kategorilerde ilginç ve faydalı
+                        bilgileri keşfedin, beğendiğiniz bilgileri favorilerinize ekleyin ve arkadaşlarınızla paylaşın.
+                        Anlık bildirimler sayesinde hiçbir yeni bilgiyi kaçırmayın!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Öne Çıkan <span class="highlight">Özellikler</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-lightbulb feature-icon"></i>
+                            </div>
+                            <h4>Günlük Yeni Bilgiler</h4>
+                            <p>Her gün farklı kategorilerde yeni ve ilginç bilgiler öğrenin, genel kültürünüzü artırın.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-bell feature-icon"></i>
+                            </div>
+                            <h4>Anlık Bildirimler</h4>
+                            <p>Yeni bilgiler yayınlandığında anında bildirim alın, hiçbir şeyi kaçırmayın.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-heart feature-icon"></i>
+                            </div>
+                            <h4>Favori Kaydetme</h4>
+                            <p>Beğendiğiniz bilgileri favorilerinize ekleyin, daha sonra kolayca erişin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-share-alt feature-icon"></i>
+                            </div>
+                            <h4>Sosyal Paylaşım</h4>
+                            <p>İlginç bulduğunuz bilgileri arkadaşlarınızla paylaşın, bilgiyi yayın.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Görüntüleri</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/daily_information/1.png" class="glightbox"
+                            data-glightbox="title: Günlük Bilgi Screenshot 1">
+                            <img src="images/daily_information/1.png" alt="Günlük Bilgi Screenshot 1"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <a href="images/daily_information/2.png" class="glightbox"
+                            data-glightbox="title: Günlük Bilgi Screenshot 2">
+                            <img src="images/daily_information/2.png" alt="Günlük Bilgi Screenshot 2"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <a href="images/daily_information/3.png" class="glightbox"
+                            data-glightbox="title: Günlük Bilgi Screenshot 3">
+                            <img src="images/daily_information/3.png" alt="Günlük Bilgi Screenshot 3"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="screenshot-container">
+                        <a href="images/daily_information/4.png" class="glightbox"
+                            data-glightbox="title: Günlük Bilgi Screenshot 4">
+                            <img src="images/daily_information/4.png" alt="Günlük Bilgi Screenshot 4"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="screenshot-container">
+                        <a href="images/daily_information/5.png" class="glightbox"
+                            data-glightbox="title: Günlük Bilgi Screenshot 5">
+                            <img src="images/daily_information/5.png" alt="Günlük Bilgi Screenshot 5"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="screenshot-container">
+                        <a href="images/daily_information/6.png" class="glightbox"
+                            data-glightbox="title: Günlük Bilgi Screenshot 6">
+                            <img src="images/daily_information/6.png" alt="Günlük Bilgi Screenshot 6"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="screenshot-container">
+                        <a href="images/daily_information/7.png" class="glightbox"
+                            data-glightbox="title: Günlük Bilgi Screenshot 7">
+                            <img src="images/daily_information/7.png" alt="Günlük Bilgi Screenshot 7"
+                                class="img-fluid rounded-3 shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Nasıl <span class="highlight">Çalışır?</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number">1</div>
+                            <h4 class="mt-4">Uygulamayı İndirin</h4>
+                            <p>Google Play Store'dan Günlük Bilgi uygulamasını indirin ve hesabınızı oluşturun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number">2</div>
+                            <h4 class="mt-4">Bildirimleri Açın</h4>
+                            <p>Yeni bilgiler yayınlandığında anında haberdar olmak için bildirimleri etkinleştirin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number">3</div>
+                            <h4 class="mt-4">Öğrenin ve Paylaşın</h4>
+                            <p>Günlük bilgileri okuyun, favorilerinizi kaydedin ve arkadaşlarınızla paylaşın.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Kullanıcı <span class="highlight">Yorumları</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"Bu uygulama sayesinde her gün yeni bir şey öğreniyorum.
+                                Özellikle
+                                favori kaydetme özelliği çok kullanışlı. Arkadaşlarımla paylaştığım bilgiler çok ilgi
+                                görüyor!"</p>
+                            <div class="testimonial-author mt-4">
+                                <h5 class="mb-1">Zeynep K.</h5>
+                                <small class="text-muted">Öğrenci</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"Bildirimler sayesinde hiçbir yeni bilgiyi kaçırmıyorum.
+                                Kategoriler
+                                çok çeşitli ve her gün farklı konularda bilgi paylaşılıyor. Genel kültürüm gerçekten
+                                arttı."</p>
+                            <div class="testimonial-author mt-4">
+                                <h5 class="mb-1">Mehmet A.</h5>
+                                <small class="text-muted">Öğretmen</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="card testimonial-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"Ailece kullanıyoruz. Çocuklarım da çok seviyor. Eğitici ve
+                                eğlenceli bilgiler paylaşılıyor. Özellikle paylaşım özelliği sayesinde aile içinde
+                                güzel sohbetler başlıyor."</p>
+                            <div class="testimonial-author mt-4">
+                                <h5 class="mb-1">Ayşe T.</h5>
+                                <small class="text-muted">Ev Hanımı</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features Section -->
+    <section id="special-features" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Bilgi Dünyasının <span class="highlight">Kapılarını</span> Açın
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-book-open feature-icon"></i>
+                            </div>
+                            <h4>Çeşitli Kategoriler</h4>
+                            <p>Bilim, tarih, sanat, spor, teknoloji ve daha birçok kategoride günlük bilgiler
+                                sunuyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-search feature-icon"></i>
+                            </div>
+                            <h4>Kolay Arama</h4>
+                            <p>Geçmiş bilgiler arasında arama yapın, istediğiniz konuyu kolayca bulun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-users feature-icon"></i>
+                            </div>
+                            <h4>Topluluk</h4>
+                            <p>Diğer kullanıcılarla etkileşime geçin, bilgi paylaşımında bulunun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
+                    <div class="card feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon-container mb-4">
+                                <i class="fas fa-chart-line feature-icon"></i>
+                            </div>
+                            <h4>İlerleme Takibi</h4>
+                            <p>Öğrendiğiniz bilgileri takip edin, genel kültür seviyenizi görün.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-5 bg-info text-white">
+        <div class="container py-4 text-center">
+            <div data-aos="zoom-in" data-aos-duration="800">
+                <h2 class="mb-4">Hemen İndirin, Bilgi Dünyasını Keşfedin!</h2>
+                <p class="lead mb-5">Google Play'den ücretsiz olarak indirebilirsiniz.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.sc_daily_information"
+                    class="btn btn-lg btn-light rounded-pill">
+                    <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Sık Sorulan <span class="highlight">Sorular</span></h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Günlük Bilgi uygulaması tamamen ücretsiz mi?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet, Günlük Bilgi uygulaması temel özellikleriyle tamamen ücretsizdir. Bazı premium
+                                    özellikler için uygulama içi satın alma seçenekleri sunulmaktadır, ancak bunlar
+                                    isteğe bağlıdır.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Günde kaç tane yeni bilgi paylaşılıyor?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Her gün farklı kategorilerde 3-5 yeni bilgi paylaşılmaktadır. Bilgiler kaliteli ve
+                                    doğrulanmış kaynaklardan seçilmektedir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Favori kaydettiğim bilgileri nasıl görüntüleyebilirim?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Favori kaydettiğiniz bilgiler "Favorilerim" bölümünde saklanır. Bu bölüme uygulama
+                                    ana menüsünden kolayca erişebilirsiniz.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Bildirimleri nasıl yönetebilirim?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Uygulama ayarlarından bildirim tercihlerinizi değiştirebilirsiniz. Günlük, haftalık
+                                    veya bildirimleri tamamen kapatabilirsiniz.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="images/daily_information/daily_logo.png" alt="Günlük Bilgi Logo" class="footer-logo me-2"
+                        width="30">
+                    <span>&copy; 2025 Günlük Bilgi. Tüm Hakları Saklıdır.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="daily-information.html" class="text-white-50 text-decoration-none">Günlük Bilgi</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="daily-information-privacy.html" class="text-white-50 text-decoration-none">Gizlilik
+                                Politikası</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-white-50">|</span>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="terms-of-service.html" class="text-white-50 text-decoration-none">Hizmet
+                                Şartları</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <small class="text-white-50">Günlük Bilgi, Flutter ile geliştirilmiş günlük bilgi paylaşım
+                        platformudur. <a href="index.html" class="text-white-50">Süleyman Çakır</a> tarafından
+                        tasarlanmıştır.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Initialize GLightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</body>
+
+</html>
