@@ -8,11 +8,11 @@
       "color": "#2196F3",
       "platforms": {
         "ios": {
-          "url": "https://apps.apple.com/tr/app/woo-ai/id6738264848?l=tr",
+          "url": "https://apps.apple.com/tr/app/woo-ai/id6738264848",
           "available": false
         },
         "android": {
-          "url": "https://play.google.com/store/apps/details?id=com.sc.woo",
+          "url": "https://play.google.com/store/apps/details?id=com.woo.tales",
           "available": true
         }
       }
@@ -25,11 +25,11 @@
       "color": "#9C27B0",
       "platforms": {
         "ios": {
-          "url": "https://apps.apple.com/tr/app/itiraf%C4%B1m-var/id6749323931?l=tr",
+          "url": "https://apps.apple.com/tr/app/itiraf%C4%B1m-var/id6749323931",
           "available": true
         },
         "android": {
-          "url": "https://play.google.com/store/apps/details?id=com.sc.confess&hl=tr",
+          "url": "https://play.google.com/store/apps/details?id=com.sc.confess",
           "available": true
         }
       }
@@ -42,7 +42,7 @@
       "color": "#4CAF50",
       "platforms": {
         "ios": {
-          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567?l=tr",
+          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567",
           "available": false
         },
         "android": {
@@ -59,7 +59,7 @@
       "color": "#FF9800",
       "platforms": {
         "ios": {
-          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567?l=tr",
+          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567",
           "available": false
         },
         "android": {
