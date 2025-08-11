@@ -1,0 +1,89 @@
+{
+  "apps": [
+    {
+      "id": "woo_ai",
+      "title": "Woo: AI",
+      "description": "Yeni yerleri keşfetmek için yapay zeka destekli",
+      "logo": "https://suleymanckr07.github.io/images/woo-logo.png",
+      "color": "#2196F3",
+      "platforms": {
+        "ios": {
+          "url": "https://apps.apple.com/tr/app/woo-ai/id6738264848?l=tr",
+          "available": false
+        },
+        "android": {
+          "url": "https://play.google.com/store/apps/details?id=com.sc.woo",
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "confess",
+      "title": "itirafım var!",
+      "description": "İtirafın var ama kimseye söyleyemiyorsun ya peki anonim olarak paylaşıp içini dökmek ister misin..",
+      "logo": "https://suleymanckr07.github.io/images/confess/confess.png",
+      "color": "#9C27B0",
+      "platforms": {
+        "ios": {
+          "url": "https://apps.apple.com/tr/app/itiraf%C4%B1m-var/id6749323931?l=tr",
+          "available": true
+        },
+        "android": {
+          "url": "https://play.google.com/store/apps/details?id=com.sc.confess&hl=tr",
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "football_team",
+      "title": "Halısaha Kadrom",
+      "description": "Halısaha kadromunuzu yönetin ve maçlarını takip edin",
+      "logo": "https://scmobilestudio.netlify.app/images/footbal-team/logo.png",
+      "color": "#4CAF50",
+      "platforms": {
+        "ios": {
+          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567?l=tr",
+          "available": false
+        },
+        "android": {
+          "url": "https://play.google.com/store/apps/details?id=com.sc.football_team",
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "watched",
+      "title": "izlemeliyim!",
+      "description": "İzlediklerinizi takip edin ve izlemek istediğiniz film & dizileri kolayca bulun",
+      "logo": "https://scmobilestudio.netlify.app/images/watched/watched-logo.png",
+      "color": "#FF9800",
+      "platforms": {
+        "ios": {
+          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567?l=tr",
+          "available": false
+        },
+        "android": {
+          "url": "https://play.google.com/store/apps/details?id=com.sc.watched",
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "daily_information",
+      "title": "Günlük Bilgi",
+      "description": "Günlük birbirinden farklı bilgiler telefonunuzda..",
+      "logo": "https://scmobilestudio.netlify.app/images/daily_information/daily_logo.png",
+      "color": "#2196F3",
+      "platforms": {
+        "ios": {
+          "url": "https://apps.apple.com/tr/app/g%C3%BCnl%C3%BCk-bilgi/id6749371652",
+          "available": true
+        },
+        "android": {
+          "url": "https://play.google.com/store/apps/details?id=com.sc.daily_information",
+          "available": true
+        }
+      }
+    }
+  ]
+}
