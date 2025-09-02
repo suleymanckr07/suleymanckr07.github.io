@@ -42,8 +42,8 @@
       "color": "#4CAF50",
       "platforms": {
         "ios": {
-          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567",
-          "available": false
+          "url": "https://apps.apple.com/tr/app/halisaha-kadrom/id6749378738",
+          "available": true
         },
         "android": {
           "url": "https://play.google.com/store/apps/details?id=com.sc.football_team",
@@ -59,8 +59,8 @@
       "color": "#FF9800",
       "platforms": {
         "ios": {
-          "url": "https://apps.apple.com/tr/app/kira-takip/id6741234567",
-          "available": false
+          "url": "https://apps.apple.com/tr/app/izlemeliyim/id6749468704?l=tr",
+          "available": true
         },
         "android": {
           "url": "https://play.google.com/store/apps/details?id=com.sc.watched",
