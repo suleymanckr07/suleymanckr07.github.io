@@ -1,6 +1,6 @@
-# Woo: AI Website
+# Turistly Website
 
-Welcome to the Woo: AI website! This project is designed to showcase the Woo: AI social media application, highlighting its features, providing information about the app, and offering download links.
+Welcome to the Turistly website! This project is designed to showcase the Turistly social media application, highlighting its features, providing information about the app, and offering download links.
 
 ## Project Structure
 
@@ -17,9 +17,9 @@ woo-ai-website
 │   ├── main.js                 # Custom JavaScript for functionality
 │   └── animations.js           # JavaScript for triggering animations
 ├── images
-│   ├── logo.svg                # Logo for the Woo: AI application
+│   ├── logo.svg                # Logo for the Turistly application
 │   ├── hero-banner.svg         # Hero banner image for the homepage
-│   ├── app-screenshot.svg      # Screenshot of the Woo: AI application
+│   ├── app-screenshot.svg      # Screenshot of the Turistly application
 │   ├── download-badges
 │   │   ├── app-store.svg       # Badge for the Apple App Store
 │   │   └── google-play.svg     # Badge for the Google Play Store
@@ -30,7 +30,7 @@ woo-ai-website
 │       └── events-feature.svg    # Events features illustration
 ├── index.html                  # Main HTML file for the homepage
 ├── features.html               # Detailed information about app features
-├── about.html                  # Information about the Woo: AI application
+├── about.html                  # Information about the Turistly application
 ├── contact.html                # Contact form or information
 ├── privacy-policy.html         # Privacy policy details
 ├── terms-of-service.html       # Terms of service for using the app
@@ -39,7 +39,7 @@ woo-ai-website
 
 ## Features
 
-- **User-Friendly Interface**: The Woo: AI application offers an intuitive and engaging user experience.
+- **User-Friendly Interface**: The Turistly application offers an intuitive and engaging user experience.
 - **Social Features**: Users can connect, share content, and interact with their community.
 - **AI Capabilities**: Advanced AI features enhance user engagement and content discovery.
 - **Event Management**: Users can create and participate in community events.
@@ -47,7 +47,7 @@ woo-ai-website
 
 ## Getting Started
 
-To get started with the Woo: AI website:
+To get started with the Turistly website:
 
 1. Clone the repository:
    ```

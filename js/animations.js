@@ -1,4 +1,4 @@
-// This file contains JavaScript for triggering animations on the Woo: AI website.
+// This file contains JavaScript for triggering animations on the Turistly website.
 
 document.addEventListener('DOMContentLoaded', function() {
     const elementsToAnimate = document.querySelectorAll('.animate');
