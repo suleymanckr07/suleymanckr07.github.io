@@ -9,7 +9,7 @@
       "platforms": {
         "ios": {
           "url": "https://apps.apple.com/us/app/turistly-travel-social/id6749243524",
-          "available": false
+          "available": true
         },
         "android": {
           "url": "https://play.google.com/store/apps/details?id=com.woo.tales",
