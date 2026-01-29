@@ -4,446 +4,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>İtirafım Var - Anonim İtiraf ve Paylaşım Platformu</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/confess/confess.png" type="image/png">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <title>İtirafım Var | Süleyman Çakır</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="İtirafım Var - Anonim itiraf platformu. Düşüncelerinizi özgürce paylaşın.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation -->
+
+    <!-- Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- GLightbox CSS -->
+    <!-- GLightbox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://suleymanckr07.github.io/confess.html">
-    <meta name="description"
-        content="İtirafım Var uygulaması ile anonim veya isimli olarak itiraflarınızı paylaşabilir, yorum yapabilir ve diğer kullanıcılarla etkileşimde bulunabilirsiniz.">
-    <meta name="keywords" content="itiraf, anonim paylaşım, sosyal medya, yorum, beğeni, etkileşim, paylaşım platformu">
-    <meta name="author" content="Süleyman Çakır">
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://suleymanckr07.github.io/confess.html">
-    <meta property="og:title" content="İtirafım Var - Anonim İtiraf ve Paylaşım Platformu">
-    <meta property="og:description"
-        content="Anonim veya isimli olarak itiraflarınızı paylaşın, yorum yapın ve diğer kullanıcılarla etkileşimde bulunun.">
-    <meta property="og:image" content="https://suleymanckr07.github.io/images/confess/confess.png">
-    <!-- Schema.org for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "İtirafım Var",
-      "operatingSystem": "Android",
-      "applicationCategory": "SocialNetworkingApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "500",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "description": "Anonim veya isimli olarak itiraflarınızı paylaşabileceğiniz, yorum yapabileceğiniz ve diğer kullanıcılarla etkileşimde bulunabileceğiniz sosyal paylaşım platformu.",
-      "image": "https://suleymanckr07.github.io/images/confess/confess.png",
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sc_confess",
-      "author": {
-        "@type": "Person",
-        "name": "Süleyman Çakır"
-      }
-    }
-    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="shortcut icon" href="images/confess/confess.png" type="image/png">
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/confess/confess.png" alt="İtirafım Var Logo" class="navbar-logo">
-                itirafım var!
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo">
+                Süleyman Çakır
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link active">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="confess.html">itirafım var!</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="confess-privacy.html">Gizlilik Politikası</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">İletişim</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section" style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);">
-        <div class="overlay"></div>
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="images/confess/confess.png" alt="İtirafım Var Logo" class="app-logo me-3"
-                            style="width: 60px; height: 60px;">
-                        <h1 class="fw-bold text-white mb-0">itirafım var!</h1>
+    <!-- App Hero Section -->
+    <section class="hero" style="min-height: 80vh;">
+        <div class="hero-visual"
+            style="background: radial-gradient(circle, rgba(236, 72, 153, 0.2) 0%, transparent 70%);"></div>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div data-aos="fade-right">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <img src="images/confess/confess.png" alt="App Logo"
+                            style="width: 80px; height: 80px; border-radius: 20px; box-shadow: var(--shadow-md);">
+                        <span
+                            style="background: rgba(236, 72, 153, 0.2); color: #f472b6; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(236, 72, 153, 0.3);">Social
+                            & Anonymous</span>
                     </div>
-                    <p class="lead text-white-50 mb-4">Anonim veya isimli olarak itiraflarınızı paylaşın</p>
-                    <div class="app-features mb-4">
-                        <div class="d-flex align-items-center text-white mb-3">
-                            <i class="fas fa-check-circle me-2"></i>
-                            <span>Anonim veya isimli paylaşım seçeneği</span>
-                        </div>
-                        <div class="d-flex align-items-center text-white mb-3">
-                            <i class="fas fa-check-circle me-2"></i>
-                            <span>Yorum yapma ve beğeni özellikleri</span>
-                        </div>
-                        <div class="d-flex align-items-center text-white mb-3">
-                            <i class="fas fa-check-circle me-2"></i>
-                            <span>Kategorilere göre paylaşım</span>
-                        </div>
-                        <div class="d-flex align-items-center text-white">
-                            <i class="fas fa-check-circle me-2"></i>
-                            <span>Güvenli ve moderatörlü platform</span>
-                        </div>
-                    </div>
-                    <div class="download-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.sc_confess"
-                            class="btn btn-success btn-lg rounded-pill me-3 mb-2 mb-md-0">
-                            <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                    <h1>İtirafım Var</h1>
+                    <p class="lead" style="font-size: 1.25rem;">İçinizden geçenleri özgürce paylaşabileceğiniz,
+                        dilerseniz anonim kalabileceğiniz güvenli bir platform.</p>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://play.google.com/store/apps/details?id=com.sc_confess" class="btn btn-primary"
+                            style="background: linear-gradient(135deg, #db2777 0%, #be185d 100%);  box-shadow: 0 4px 15px rgba(219, 39, 119, 0.4);">
+                            <i class="fab fa-google-play"></i> Hemen İndir
                         </a>
-                        <a href="confess-privacy.html" class="btn btn-outline-light btn-lg rounded-pill">
-                            <i class="fas fa-shield-alt me-2"></i>Gizlilik Politikası
+                        <a href="#features" class="btn btn-glass">
+                            Özellikler
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="wave-bottom">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#ffffff" fill-opacity="1"
-                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-        </div>
-    </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-5">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Özellikleri</span></h2>
-
-            <div class="row g-4">
-                <!-- Feature 1 -->
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4"
-                                style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);">
-                                <i class="fas fa-user-secret feature-icon"></i>
-                            </div>
-                            <h4>Anonim Paylaşım</h4>
-                            <p>Kimliğinizi gizleyerek itiraflarınızı güvenle paylaşın. Anonim kullanıcı olarak
-                                etkileşimde bulunun.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4"
-                                style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);">
-                                <i class="fas fa-comments feature-icon"></i>
-                            </div>
-                            <h4>Etkileşim</h4>
-                            <p>Diğer kullanıcıların paylaşımlarına yorum yapın, beğenin ve etkileşimde bulunun.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4"
-                                style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);">
-                                <i class="fas fa-tags feature-icon"></i>
-                            </div>
-                            <h4>Kategoriler</h4>
-                            <p>Paylaşımlarınızı kategorilere ayırın ve ilgilendiğiniz konulardaki itirafları kolayca
-                                bulun.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4"
-                                style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);">
-                                <i class="fas fa-shield-alt feature-icon"></i>
-                            </div>
-                            <h4>Moderasyon</h4>
-                            <p>Uygulama içeriği moderatörler tarafından kontrol edilir ve uygunsuz içerikler engellenir.
-                            </p>
-                        </div>
-                    </div>
+                <div data-aos="fade-left" style="position: relative;">
+                    <img src="images/confess/1.png" alt="App Screenshot"
+                        style="width: 100%; max-width: 350px; border-radius: 30px; border: 4px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-lg); margin: 0 auto; display: block; transform: rotate(-5deg);">
+                    <img src="images/confess/2.png" alt="App Screenshot"
+                        style="width: 100%; max-width: 350px; border-radius: 30px; border: 4px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-lg); position: absolute; top: 10%; right: 10%; transform: rotate(5deg); z-index: -1; opacity: 0.6;">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="py-5 bg-light">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Görüntüleri</span></h2>
-            <div class="row g-4">
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
-                    <div class="screenshot-container">
-                        <a href="images/confess/1.png" class="glightbox" data-glightbox="title: İtirafım Var Ana Ekran">
-                            <img src="images/confess/1.png" alt="İtirafım Var Ana Ekran"
-                                class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
+    <!-- Features Grid -->
+    <section id="features">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span>Özellikler</span>
+                <h2>Özgürce Paylaş</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="glass-card" data-aos="fade-up">
+                    <i class="fas fa-user-secret" style="font-size: 2rem; color: #f472b6; margin-bottom: 1.5rem;"></i>
+                    <h3>Tamamen Anonim</h3>
+                    <p>Kimliğinizi gizleyerek paylaşım yapın. Sizi kimse tanımasın, sadece düşünceleriniz konuşsun.</p>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="screenshot-container">
-                        <a href="images/confess/2.png" class="glightbox" data-glightbox="title: İtirafım Var Paylaşım">
-                            <img src="images/confess/2.png" alt="İtirafım Var Paylaşım"
-                                class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-comments" style="font-size: 2rem; color: #f472b6; margin-bottom: 1.5rem;"></i>
+                    <h3>Etkileşim</h3>
+                    <p>Diğer kullanıcıların itiraflarını okuyun, yorum yapın ve beğenin. Toplulukla bağ kurun.</p>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="screenshot-container">
-                        <a href="images/confess/3.png" class="glightbox" data-glightbox="title: İtirafım Var Yorumlar">
-                            <img src="images/confess/3.png" alt="İtirafım Var Yorumlar"
-                                class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="screenshot-container">
-                        <a href="images/confess/4.png" class="glightbox" data-glightbox="title: İtirafım Var Profil">
-                            <img src="images/confess/4.png" alt="İtirafım Var Profil"
-                                class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="screenshot-container">
-                        <a href="images/confess/5.png" class="glightbox" data-glightbox="title: İtirafım Var Profil">
-                            <img src="images/confess/5.png" alt="İtirafım Var Profil"
-                                class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="screenshot-container">
-                        <a href="images/confess/6.png" class="glightbox" data-glightbox="title: İtirafım Var Profil">
-                            <img src="images/confess/6.png" alt="İtirafım Var Profil"
-                                class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="screenshot-container">
-                        <a href="images/confess/7.png" class="glightbox" data-glightbox="title: İtirafım Var Profil">
-                            <img src="images/confess/7.png" alt="İtirafım Var Profil"
-                                class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt" style="font-size: 2rem; color: #f472b6; margin-bottom: 1.5rem;"></i>
+                    <h3>Güvenli Ortam</h3>
+                    <p>Moderatörler tarafından kontrol edilen içerikler sayesinde güvenli ve saygılı bir ortam.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-5">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Sık Sorulan <span class="highlight">Sorular</span></h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Uygulama tamamen ücretsiz mi?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Evet, İtirafım Var uygulaması tamamen ücretsizdir ve hiçbir gizli ücret içermez. Tüm
-                                    özelliklere ücretsiz olarak erişebilirsiniz.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Anonim paylaşım nasıl çalışır?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Anonim paylaşım seçeneğini kullandığınızda, paylaşımınız "Anonim" olarak görünecek
-                                    ve
-                                    kimliğiniz gizlenecektir. Sadece moderatörler gerekli durumlarda kimliğinizi
-                                    görebilir.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    İçerik moderasyonu nasıl yapılıyor?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Tüm paylaşımlar moderatörler tarafından kontrol edilir. Uygunsuz içerikler, nefret
-                                    söylemi ve yasalara aykırı paylaşımlar engellenir ve kullanıcılar uyarılır.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Verilerim güvende mi?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Kullanıcı verileriniz güvenle saklanır ve üçüncü taraflarla paylaşılmaz. Detaylı
-                                    bilgi için <a href="confess-privacy.html">Gizlilik Politikası</a>'nı
-                                    inceleyebilirsiniz.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <span>Arayüz</span>
+                <h2>Uygulama Görüntüleri</h2>
             </div>
-        </div>
-    </section>
 
-    <!-- Download Section -->
-    <section id="download" class="py-5 bg-light">
-        <div class="container py-4 text-center">
-            <h2 class="section-title mb-4">Hemen İndirin!</h2>
-            <p class="lead mb-5">İtirafım Var uygulaması ile düşüncelerinizi özgürce paylaşın</p>
-            <div class="download-buttons justify-content-center">
-                <a href="https://play.google.com/store/apps/details?id=com.sc_confess"
-                    class="btn btn-success btn-lg rounded-pill">
-                    <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <a href="images/confess/1.png" class="glightbox">
+                    <img src="images/confess/1.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="images/confess/2.png" class="glightbox">
+                    <img src="images/confess/2.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="images/confess/3.png" class="glightbox">
+                    <img src="images/confess/3.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="images/confess/4.png" class="glightbox">
+                    <img src="images/confess/4.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <!-- <footer class="py-4 bg-dark text-white">
+    <footer
+        style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="images/confess/confess.png" alt="İtirafım Var Logo" class="footer-logo me-2" width="30">
-                    <span>&copy; 2025 itirafım var!. Tüm Hakları Saklıdır.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
-                        <i class="fas fa-arrow-up"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="woo.html" class="text-white-50 text-decoration-none">Turistly</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="dugun-planlayacim.html" class="text-white-50 text-decoration-none">Düğün
-                                Planlayacım</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="kira-takip.html" class="text-white-50 text-decoration-none">Kira Takip</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="confess.html" class="text-white-50 text-decoration-none">İtirafım Var</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="confess-privacy.html" class="text-white-50 text-decoration-none">Gizlilik
-                                Politikası</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <small class="text-white-50">itirafım var! uygulaması, anonim veya isimli olarak itiraflarınızı
-                        paylaşabileceğiniz güvenli bir sosyal paylaşım platformudur.</small>
-                </div>
+            <p>&copy; 2026 İtirafım Var - Süleyman Çakır. Tüm hakları saklıdır.</p>
+            <div style="margin-top: 1rem;">
+                <a href="confess-privacy.html" style="margin: 0 10px; color: var(--text-light);">Gizlilik Politikası</a>
+                <!-- <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);">Hizmet Şartları</a> -->
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init();
 
-        // Initialize GLightbox
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
         const lightbox = GLightbox({
             touchNavigation: true,
             loop: true,
             autoplayVideos: true
+        });
+
+        // Simple Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (window.innerWidth <= 992) {
+            mobileBtn.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 992) {
+                mobileBtn.style.display = 'block';
+            } else {
+                mobileBtn.style.display = 'none';
+                navLinks.style.display = 'flex';
+            }
         });
     </script>
 </body>

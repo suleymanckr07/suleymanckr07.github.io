@@ -4,606 +4,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woo: Yapay Zeka Destekli Seyahat ve Gezi Uygulaması | Süleyman Çakır</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- GLightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/1.png" type="image/png">
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://suleymanckr07.github.io/woo.html">
+    <title>Turistly | Süleyman Çakır</title>
+
     <!-- Meta Tags -->
     <meta name="description"
-        content="Turistly, Flutter ile geliştirilmiş yapay zeka destekli bir seyahat ve gezi uygulamasıdır. Dünyayı keşfet, anılar biriktir, yapay zeka ile seyahat et!">
-    <meta name="keywords"
-        content="Woo, AI, yapay zeka, seyahat uygulaması, gezi uygulaması, flutter, Süleyman Çakır, seyahat asistanı">
-    <meta name="author" content="Süleyman Çakır">
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Woo: Yapay Zeka Destekli Seyahat ve Gezi Uygulaması">
-    <meta property="og:description"
-        content="Turistly, Flutter ile geliştirilmiş yapay zeka destekli bir seyahat ve gezi uygulamasıdır.">
-    <meta property="og:image" content="https://suleymanckr07.github.io/images/1.png">
-    <meta property="og:url" content="https://suleymanckr07.github.io/woo.html">
-    <meta property="og:type" content="website">
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Woo: Yapay Zeka Destekli Seyahat ve Gezi Uygulaması">
-    <meta name="twitter:description"
-        content="Flutter ile geliştirilmiş, yapay zeka destekli seyahat ve gezi uygulaması.">
-    <meta name="twitter:image" content="https://suleymanckr07.github.io/images/1.png">
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Turistly",
-      "operatingSystem": "Android",
-      "applicationCategory": "TravelApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "500",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "description": "Flutter ile geliştirilmiş, yapay zeka destekli seyahat ve gezi uygulaması. Dünyayı keşfetmenin en eğlenceli yolu!",
-      "image": "https://suleymanckr07.github.io/images/1.png",
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.woo.tales",
-      "author": {
-        "@type": "Person",
-        "name": "Süleyman Çakır"
-      }
-    }
-    </script>
+        content="Turistly - Yapay zeka destekli seyahat asistanı. Rota planlama, öneriler ve daha fazlası.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="shortcut icon" href="images/1.png" type="image/png">
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/1.png" alt="Turistly Logo" class="navbar-logo">
-                Turistly
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo">
+                Süleyman Çakır
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link active">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="privacy-policy.html">Gizlilik Politikası</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="terms-of-service.html">Hizmet Şartları</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">İletişim</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="overlay"></div>
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="images/1.png" alt="Woo Logo" class="app-logo me-3" style="width: 60px; height: 60px;">
-                        <h1 class="display-4 fw-bold text-white mb-0">Woo</h1>
+    <!-- App Hero Section -->
+    <section class="hero" style="min-height: 80vh;">
+        <div class="hero-visual"
+            style="background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);"></div>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div data-aos="fade-right">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <img src="images/1.png" alt="App Logo"
+                            style="width: 80px; height: 80px; border-radius: 20px; box-shadow: var(--shadow-md);">
+                        <span
+                            style="background: rgba(99, 102, 241, 0.2); color: #818cf8; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(99, 102, 241, 0.3);">AI
+                            Travel Assistant</span>
                     </div>
-                    <p class="lead text-white-50 my-4">
-                        Flutter ile geliştirilmiş, yapay zeka destekli seyahat ve gezi uygulaması.
-                        Dünyayı keşfetmenin en eğlenceli yolu!
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.woo.tales"
-                            class="btn btn-success btn-lg rounded-pill me-3">
-                            <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+                    <h1>Turistly</h1>
+                    <p class="lead" style="font-size: 1.25rem;">Dünyayı keşfetmek artık çok daha akıllıca. Yapay zeka
+                        destekli rehberiniz ile size özel rotalar oluşturun, gizli kalmış güzellikleri keşfedin.</p>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://play.google.com/store/apps/details?id=com.woo.tales" class="btn btn-primary"
+                            style="box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);">
+                            <i class="fab fa-google-play"></i> Hemen İndir
                         </a>
-                        <a href="#features" class="btn btn-outline-light btn-lg rounded-pill">
-                            <i class="fas fa-info-circle me-2"></i>Özellikleri Keşfet
+                        <a href="#features" class="btn btn-glass">
+                            Özellikler
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
-                    <img src="images/features/woo-splash.png" alt="Woo App" class="img-fluid rounded-3 shadow-lg"
-                        style="max-height: 500px;">
+
+                <div data-aos="fade-left" style="position: relative;">
+                    <img src="images/features/1.png" alt="App Screenshot"
+                        style="width: 100%; max-width: 350px; border-radius: 30px; border: 4px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-lg); margin: 0 auto; display: block; transform: rotate(-5deg);">
+                    <img src="images/features/2.png" alt="App Screenshot"
+                        style="width: 100%; max-width: 350px; border-radius: 30px; border: 4px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-lg); position: absolute; top: 10%; right: 10%; transform: rotate(5deg); z-index: -1; opacity: 0.6;">
                 </div>
             </div>
         </div>
-        <div class="wave-bottom">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#ffffff" fill-opacity="1"
-                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-        </div>
     </section>
 
-    <!-- App Description Section -->
-    <section id="about-app" class="py-5">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="section-title">Woo <span class="highlight">Hakkında</span></h2>
-                    <p class="lead mb-4">
-                        Turistly, Flutter ile geliştirilen, yapay zeka destekli seyahat ve gezi uygulamasıdır.
-                    </p>
-                    <p>
-                        Dünyayı keşfetmek, her köşesinde yeni anılar biriktirmek ve unutulmaz maceralara atılmak
-                        isteyenler için tasarlanan Woo, yalnızca bir yolculuk planlama aracı değil, aynı zamanda yapay
-                        zekânın büyüsüyle zenginleşmiş kişisel bir rehberdir. Seyahat tutkunları için tasarlanan bu
-                        benzersiz uygulama ile dünyayı keşfederken hem zamandan hem de enerjiden tasarruf edin,
-                        unutulmaz deneyimlerle tanışın!
+    <!-- Features Grid -->
+    <section id="features">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span>Neler Yapabilirsiniz?</span>
+                <h2>Yapay Zeka ile Seyahat</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="glass-card" data-aos="fade-up">
+                    <i class="fas fa-robot" style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
+                    <h3>AI Destekli Rota</h3>
+                    <p>İlgi alanlarınızı belirtin, yapay zeka size en uygun gezi rotasını saniyeler içinde oluştursun.
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-5 bg-light">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Öne Çıkan <span class="highlight">Özellikler</span></h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-globe feature-icon"></i>
-                            </div>
-                            <h4>Keşif Dolu Bir Dünya</h4>
-                            <p>Doğal güzelliklerden tarihi alanlara, macera dolu rotalardan sakin sahillere kadar her
-                                zevke uygun öneriler.</p>
-                        </div>
-                    </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-language" style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
+                    <h3>Anlık Çeviri</h3>
+                    <p>Dil engeline takılmayın. Yerel halkla iletişim kurmak için anlık çeviri özelliğini kullanın.</p>
                 </div>
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-robot feature-icon"></i>
-                            </div>
-                            <h4>AI Destekli Öneriler</h4>
-                            <p>Yapay zeka algoritması, seyahat alışkanlıklarınızı analiz ederek size özel, tam da
-                                hayalinizdeki gibi destinasyonlar sunar.</p>
-                        </div>
-                    </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-map-marked-alt"
+                        style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
+                    <h3>Bütçe Dostu</h3>
+                    <p>Bütçenizi yönetin, harcamalarınızı takip edin ve en uygun fiyatlı yerleri keşfedin.</p>
                 </div>
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-camera feature-icon"></i>
-                            </div>
-                            <h4>Anılarınızı Paylaşın</h4>
-                            <p>Gezdiklerinizi diğer gezginlerle paylaşın, onların maceralarını takip ederek yeni
-                                ilhamlar alın.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-map-marked-alt feature-icon"></i>
-                            </div>
-                            <h4>AI Destekli Rota Planlama</h4>
-                            <p>Yapay zekâ, zamanınızı ve bütçenizi en verimli şekilde kullanmanıza yardımcı olur.</p>
-                        </div>
-                    </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-camera" style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
+                    <h3>Anılarını Paylaş</h3>
+                    <p>Gezdiğiniz yerleri, çektiğiniz fotoğrafları diğer gezginlerle paylaşın ve ilham olun.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="py-5">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Uygulama <span class="highlight">Görüntüleri</span></h2>
-            <div class="row g-4">
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
-                    <div class="screenshot-container">
-                        <a href="images/features/1.png" class="glightbox" data-glightbox="title: Woo Screenshot 1">
-                            <img src="images/features/1.png" alt="Woo Screenshot 1" class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="screenshot-container">
-                        <a href="images/features/2.png" class="glightbox" data-glightbox="title: Woo Screenshot 2">
-                            <img src="images/features/2.png" alt="Woo Screenshot 2" class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="screenshot-container">
-                        <a href="images/features/3.png" class="glightbox" data-glightbox="title: Woo Screenshot 3">
-                            <img src="images/features/3.png" alt="Woo Screenshot 3" class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="screenshot-container">
-                        <a href="images/features/4.png" class="glightbox" data-glightbox="title: Woo Screenshot 4">
-                            <img src="images/features/4.png" alt="Woo Screenshot 4" class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
+    <!-- Testimonials -->
+    <section>
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span>Kullanıcılar Ne Diyor?</span>
+                <h2>Mutlu Gezginler</h2>
             </div>
-            <div class="row g-4 mt-2">
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800">
-                    <div class="screenshot-container">
-                        <a href="images/features/5.png" class="glightbox" data-glightbox="title: Woo Screenshot 5">
-                            <img src="images/features/5.png" alt="Woo Screenshot 5" class="img-fluid rounded-3 shadow">
-                        </a>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="glass-card" data-aos="fade-up">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Seyahat planlamayı bu kadar kolaylaştıran
+                        başka bir uygulama görmedim. Yapay zeka önerileri nokta atışı!"</p>
+                    <h5 style="margin-bottom: 0;">Ahmet Y.</h5>
+                    <small style="color: var(--text-muted);">Gezgin</small>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="screenshot-container">
-                        <a href="images/features/6.png" class="glightbox" data-glightbox="title: Woo Screenshot 6">
-                            <img src="images/features/6.png" alt="Woo Screenshot 6" class="img-fluid rounded-3 shadow">
-                        </a>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="screenshot-container">
-                        <a href="images/features/7.png" class="glightbox" data-glightbox="title: Woo Screenshot 7">
-                            <img src="images/features/7.png" alt="Woo Screenshot 7" class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="screenshot-container">
-                        <a href="images/features/8.png" class="glightbox" data-glightbox="title: Woo Screenshot 8">
-                            <img src="images/features/8.png" alt="Woo Screenshot 8" class="img-fluid rounded-3 shadow">
-                        </a>
-                    </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Yurt dışında dil sorunu yaşamadan gezmemi
+                        sağladı. Çeviri özelliği hayat kurtarıcı."</p>
+                    <h5 style="margin-bottom: 0;">Mehmet S.</h5>
+                    <small style="color: var(--text-muted);">Macera Tutkunu</small>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="py-5 bg-light">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Nasıl <span class="highlight">Çalışır?</span></h2>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="step-number">1</div>
-                            <h4 class="mt-4">Destinasyon Seçin</h4>
-                            <p>Keşfetmek istediğiniz yeri belirleyin veya yapay zekadan size özel öneriler alın.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="step-number">2</div>
-                            <h4 class="mt-4">Rotanızı Planlayın</h4>
-                            <p>Yapay zeka ile zamanınızı ve bütçenizi en verimli şekilde kullanacak rotayı oluşturun.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="step-number">3</div>
-                            <h4 class="mt-4">Keşfedin ve Paylaşın</h4>
-                            <p>Seyahatinizi gerçekleştirin, anılarınızı kaydedin ve topluluğumuzla paylaşın.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <span>Arayüz</span>
+                <h2>Uygulama Görüntüleri</h2>
             </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Kullanıcı <span class="highlight">Yorumları</span></h2>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800">
-                    <div class="card testimonial-card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                            </div>
-                            <p class="testimonial-text">"Bu uygulama sayesinde seyahatlerim çok daha verimli ve
-                                eğlenceli hale geldi. Yapay zeka önerileri gerçekten de benim tarzıma uygun yerler
-                                sunuyor!"</p>
-                            <div class="testimonial-author mt-4">
-                                <h5 class="mb-1">Ahmet Y.</h5>
-                                <small class="text-muted">Gezgin</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="card testimonial-card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                            </div>
-                            <p class="testimonial-text">"Ailece çıktığımız tatillerde Woo'yu kullanıyoruz. Çocukların
-                                ilgisini çekecek yerler bulmamıza yardımcı oluyor ve rota planlaması sayesinde
-                                zamanımızı çok iyi kullanıyoruz."</p>
-                            <div class="testimonial-author mt-4">
-                                <h5 class="mb-1">Ayşe T.</h5>
-                                <small class="text-muted">Aile Gezgini</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="card testimonial-card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star-half-alt text-warning"></i>
-                            </div>
-                            <p class="testimonial-text">"Sırt çantalı gezgin olarak birçok uygulama denedim, ama Woo
-                                gerçekten fark yaratıyor. Özellikle bütçe dostu önerileri ve yerel kültürle ilgili
-                                bilgileri çok faydalı."</p>
-                            <div class="testimonial-author mt-4">
-                                <h5 class="mb-1">Mehmet S.</h5>
-                                <small class="text-muted">Macera Tutkunu</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Special Features Section -->
-    <section id="special-features" class="py-5 bg-light">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Yapay Zekânın <span class="highlight">Büyüsüyle</span> Daha
-                Fazlası</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-language feature-icon"></i>
-                            </div>
-                            <h4>Çeviri Desteği</h4>
-                            <p>Dil bariyerlerini aşın! Gittiğiniz ülkede kolayca iletişim kurabilmeniz için yapay zekâ
-                                destekli çeviri aracı her zaman yanınızda.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-book-open feature-icon"></i>
-                            </div>
-                            <h4>Hikâyeler ve Bilgiler</h4>
-                            <p>Ziyaret ettiğiniz yerlerin tarihi, kültürü ve bilinmeyen yönleri hakkında yapay zekâdan
-                                bilgi alın.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-user-tie feature-icon"></i>
-                            </div>
-                            <h4>Kişisel Asistan</h4>
-                            <p>Gittiğiniz şehirde hava durumu, toplu taşıma, restoran önerileri gibi birçok bilgiyi
-                                yapay zekâdan anında öğrenin.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
-                    <div class="card feature-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon-container mb-4">
-                                <i class="fas fa-users feature-icon"></i>
-                            </div>
-                            <h4>Seyahat Topluluğu</h4>
-                            <p>Aynı tutkuyu paylaşan insanlarla tanışın, deneyimlerinizi paylaşarak yeni dostluklar
-                                kurun.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="py-5 bg-primary text-white">
-        <div class="container py-4 text-center">
-            <div data-aos="zoom-in" data-aos-duration="800">
-                <h2 class="mb-4">Hemen İndirin, Dünyayı Keşfetmeye Başlayın!</h2>
-                <p class="lead mb-5">Google Play'den ücretsiz olarak indirebilirsiniz.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.woo.tales"
-                    class="btn btn-lg btn-light rounded-pill">
-                    <i class="fab fa-google-play me-2"></i>Google Play'de İndir
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <a href="images/features/1.png" class="glightbox">
+                    <img src="images/features/1.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="images/features/2.png" class="glightbox">
+                    <img src="images/features/2.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="images/features/3.png" class="glightbox">
+                    <img src="images/features/3.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="images/features/4.png" class="glightbox">
+                    <img src="images/features/4.png" alt="Screenshot"
+                        style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-5">
-        <div class="container py-4">
-            <h2 class="section-title text-center mb-5">Sık Sorulan <span class="highlight">Sorular</span></h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Woo uygulaması tamamen ücretsiz mi?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Evet, Woo uygulaması temel özellikleriyle tamamen ücretsizdir. Bazı premium
-                                    özellikler için uygulama içi satın alma seçenekleri sunulmaktadır, ancak bunlar
-                                    isteğe bağlıdır.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Yapay zeka özelliklerini kullanmak için sürekli internet bağlantısı gerekli mi?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Yapay zeka özellikleri için internet bağlantısı gereklidir. Ancak, önceden
-                                    indirdiğiniz haritalar, kaydedilmiş rotalar ve rehberler çevrimdışı olarak da
-                                    kullanılabilir.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Paylaştığım seyahat bilgileri ve fotoğraflar herkes tarafından görülebilir mi?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Paylaşımlarınızı kimlerin görebileceğini kontrol edebilirsiniz. Gizlilik
-                                    ayarlarınızdan paylaşımlarınızı herkese açık, sadece arkadaşlarınıza veya tamamen
-                                    özel olarak ayarlayabilirsiniz.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Uygulama hangi dilleri destekliyor?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Woo şu anda Türkçe, İngilizce, Almanca, Fransızca, İspanyolca ve İtalyanca dillerini
-                                    desteklemektedir. Çeviri aracı ise 50'den fazla dil arasında çeviri yapabilir.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
+    <footer
+        style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="images/1.png" alt="Woo Logo" class="footer-logo me-2" width="30">
-                    <span>&copy; 2025 Turistly. Tüm Hakları Saklıdır.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
-                        <i class="fas fa-arrow-up"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="woo.html" class="text-white-50 text-decoration-none">Turistly</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="privacy-policy.html" class="text-white-50 text-decoration-none">Gizlilik
-                                Politikası</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="terms-of-service.html" class="text-white-50 text-decoration-none">Hizmet
-                                Şartları</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <small class="text-white-50">Turistly, Flutter ile geliştirilmiş yapay zeka destekli bir seyahat
-                        uygulamasıdır. <a href="index.html" class="text-white-50">Süleyman Çakır</a> tarafından
-                        tasarlanmıştır.</small>
-                </div>
+            <p>&copy; 2026 Turistly - Süleyman Çakır. Tüm hakları saklıdır.</p>
+            <div style="margin-top: 1rem;">
+                <a href="privacy-policy.html" style="margin: 0 10px; color: var(--text-light);">Gizlilik Politikası</a>
+                <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);">Hizmet Şartları</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init();
 
-        // Initialize GLightbox
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
         const lightbox = GLightbox({
             touchNavigation: true,
             loop: true,
             autoplayVideos: true
+        });
+
+        // Simple Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (window.innerWidth <= 992) {
+            mobileBtn.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 992) {
+                mobileBtn.style.display = 'block';
+            } else {
+                mobileBtn.style.display = 'none';
+                navLinks.style.display = 'flex';
+            }
         });
     </script>
 </body>
