@@ -6,30 +6,33 @@
     --bg-dark: #0a0a0f;
     --bg-card: rgba(23, 23, 33, 0.7);
     --bg-card-hover: rgba(30, 30, 45, 0.8);
-    
-    --primary: #6366f1; /* Indigo */
+
+    --primary: #6366f1;
+    /* Indigo */
     --primary-glow: rgba(99, 102, 241, 0.4);
-    
-    --secondary: #ec4899; /* Pink */
+
+    --secondary: #ec4899;
+    /* Pink */
     --secondary-glow: rgba(236, 72, 153, 0.4);
-    
-    --accent: #8b5cf6; /* Violet */
-    
+
+    --accent: #8b5cf6;
+    /* Violet */
+
     --text-main: #ffffff;
     --text-muted: #94a3b8;
     --text-light: #e2e8f0;
-    
+
     --border-light: rgba(255, 255, 255, 0.08);
     --glass-border: 1px solid rgba(255, 255, 255, 0.1);
-    
+
     /* Gradients */
     --gradient-main: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, var(--secondary) 100%);
     --gradient-text: linear-gradient(to right, #fff 20%, #a5b4fc 100%);
-    
+
     /* Spacing & Layout */
     --nav-height: 80px;
     --container-width: 1200px;
-    
+
     /* Effects */
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
@@ -38,7 +41,9 @@
 }
 
 /* Reset & Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,7 +70,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
+    background:
         radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 25%),
         radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.08) 0%, transparent 25%);
     z-index: -1;
@@ -73,19 +78,43 @@ body::before {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     line-height: 1.2;
     color: var(--text-main);
 }
 
-h1 { font-size: 3.5rem; letter-spacing: -0.02em; }
-h2 { font-size: 2.5rem; letter-spacing: -0.01em; }
-h3 { font-size: 1.75rem; }
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.02em;
+}
 
-p { margin-bottom: 1.5rem; color: var(--text-light); }
-.lead { font-size: 1.25rem; color: var(--text-muted); font-weight: 400; }
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
 .text-gradient {
     background: var(--gradient-main);
     -webkit-background-clip: text;
@@ -93,8 +122,15 @@ p { margin-bottom: 1.5rem; color: var(--text-light); }
     background-clip: text;
 }
 
-a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
-ul { list-style: none; }
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
 
 /* Components */
 .container {
@@ -224,11 +260,13 @@ ul { list-style: none; }
     transition: width 0.3s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: white;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -297,14 +335,158 @@ section {
 
 /* Mobile & Responsive */
 @media (max-width: 992px) {
-    .hero h1 { font-size: 3rem; }
-    .nav-links { display: none; } /* TODO: Implement Mobile Menu */
-    .mobile-menu-btn { display: block; }
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* TODO: Implement Mobile Menu */
+    .mobile-menu-btn {
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
-    section { padding: 4rem 0; }
-    .container { padding: 0 1.5rem; }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050510;
+    /* Deeper dark */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+}
+
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.typing-container {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    border-right: 2px solid var(--primary);
+    /* The typwriter cursor */
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    animation:
+        typing 2s steps(30, end),
+        blink-caret 0.75s step-end infinite;
+    max-width: fit-content;
+}
+
+.typing-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loader-line {
+    width: 0;
+    height: 3px;
+    background: var(--gradient-main);
+    margin-top: 10px;
+    border-radius: 10px;
+    animation: expand-line 1s ease-out forwards 1.8s;
+    /* Starts after typing */
+}
+
+.loader-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fade-in-up 1s ease-out forwards 2.2s;
+    /* Starts line expansion */
+}
+
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--primary)
+    }
+}
+
+@keyframes expand-line {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 150px;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }

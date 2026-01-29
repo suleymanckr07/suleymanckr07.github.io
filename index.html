@@ -30,6 +30,17 @@
 
 <body>
 
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="typing-container">
+                <span class="typing-text">SC Mobile Studio</span>
+            </div>
+            <div class="loader-line"></div>
+            <p class="loader-subtitle">Süleyman Çakır</p>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
@@ -269,6 +280,18 @@
         AOS.init({
             duration: 800,
             once: true
+        });
+
+        // Preloader
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            // Ensure animation plays fully (Typing + Line + Fade in = ~3s)
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+                setTimeout(() => {
+                    if (preloader) preloader.style.display = 'none';
+                }, 600);
+            }, 3500);
         });
 
         // Simple Mobile Menu Toggle
