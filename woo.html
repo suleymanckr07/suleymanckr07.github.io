@@ -41,14 +41,19 @@
             </a>
 
             <ul class="nav-links">
-                <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="index.html#about" class="nav-link">Hakkımda</a></li>
-                <li><a href="index.html#portfolio" class="nav-link active">Uygulamalarım</a></li>
-                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+                <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link active" data-i18n="nav_apps">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
             </ul>
+            <!-- Mobile Menu Toggle (To be implemented with JS) -->
             <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
                 <i class="fas fa-bars"></i>
             </button>
+
+            <!-- Language Toggle -->
+            <a href="#" id="language-toggle" class="btn btn-glass"
+                style="margin-left: 1rem; padding: 0.5rem 1rem; min-width: 50px; text-align: center;">EN</a>
         </div>
     </nav>
 
@@ -62,20 +67,21 @@
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <img src="images/1.png" alt="App Logo"
                             style="width: 80px; height: 80px; border-radius: 20px; box-shadow: var(--shadow-md);">
-                        <span
+                        <span data-i18n="tag_ai_travel"
                             style="background: rgba(99, 102, 241, 0.2); color: #818cf8; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(99, 102, 241, 0.3);">AI
                             Travel Assistant</span>
                     </div>
-                    <h1>Turistly</h1>
-                    <p class="lead" style="font-size: 1.25rem;">Dünyayı keşfetmek artık çok daha akıllıca. Yapay zeka
+                    <h1 data-i18n="turistly_hero_title">Yapay Zeka Destekli Seyahat Asistanı</h1>
+                    <p class="lead" style="font-size: 1.25rem;" data-i18n="turistly_hero_desc">Dünyayı keşfetmek artık
+                        çok daha akıllıca. Yapay zeka
                         destekli rehberiniz ile size özel rotalar oluşturun, gizli kalmış güzellikleri keşfedin.</p>
 
                     <div style="display: flex; gap: 1rem; margin-top: 2rem;">
                         <a href="https://play.google.com/store/apps/details?id=com.woo.tales" class="btn btn-primary"
                             style="box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);">
-                            <i class="fab fa-google-play"></i> Hemen İndir
+                            <i class="fab fa-google-play"></i> <span data-i18n="app_download">Hemen İndir</span>
                         </a>
-                        <a href="#features" class="btn btn-glass">
+                        <a href="#features" class="btn btn-glass" data-i18n="app_features">
                             Özellikler
                         </a>
                     </div>
@@ -95,32 +101,36 @@
     <section id="features">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <span>Neler Yapabilirsiniz?</span>
-                <h2>Yapay Zeka ile Seyahat</h2>
+                <span data-i18n="app_features_span">Neler Yapabilirsiniz?</span>
+                <h2 data-i18n="turistly_features_h2">Yapay Zeka ile Seyahat</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 <div class="glass-card" data-aos="fade-up">
                     <i class="fas fa-robot" style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
-                    <h3>AI Destekli Rota</h3>
-                    <p>İlgi alanlarınızı belirtin, yapay zeka size en uygun gezi rotasını saniyeler içinde oluştursun.
+                    <h3 data-i18n="turistly_feature_1_title">AI Destekli Rota</h3>
+                    <p data-i18n="turistly_feature_1_desc">İlgi alanlarınızı belirtin, yapay zeka size en uygun gezi
+                        rotasını saniyeler içinde oluştursun.
                     </p>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-language" style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
-                    <h3>Anlık Çeviri</h3>
-                    <p>Dil engeline takılmayın. Yerel halkla iletişim kurmak için anlık çeviri özelliğini kullanın.</p>
+                    <h3 data-i18n="turistly_feature_2_title">Kişisel Öneriler</h3>
+                    <p data-i18n="turistly_feature_2_desc">Dil engeline takılmayın. Yerel halkla iletişim kurmak için
+                        anlık çeviri özelliğini kullanın.</p>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-map-marked-alt"
                         style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
-                    <h3>Bütçe Dostu</h3>
-                    <p>Bütçenizi yönetin, harcamalarınızı takip edin ve en uygun fiyatlı yerleri keşfedin.</p>
+                    <h3 data-i18n="turistly_feature_3_title">Çevrimdışı Mod</h3>
+                    <p data-i18n="turistly_feature_3_desc">Bütçenizi yönetin, harcamalarınızı takip edin ve en uygun
+                        fiyatlı yerleri keşfedin.</p>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-camera" style="font-size: 2rem; color: #818cf8; margin-bottom: 1.5rem;"></i>
-                    <h3>Anılarını Paylaş</h3>
-                    <p>Gezdiğiniz yerleri, çektiğiniz fotoğrafları diğer gezginlerle paylaşın ve ilham olun.</p>
+                    <h3 data-i18n="turistly_feature_4_title">Anılarını Paylaş</h3>
+                    <p data-i18n="turistly_feature_4_desc">Gezdiğiniz yerleri, çektiğiniz fotoğrafları diğer gezginlerle
+                        paylaşın ve ilham olun.</p>
                 </div>
             </div>
         </div>
@@ -130,8 +140,8 @@
     <section>
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <span>Kullanıcılar Ne Diyor?</span>
-                <h2>Mutlu Gezginler</h2>
+                <span data-i18n="turistly_testimonials_span">Kullanıcılar Ne Diyor?</span>
+                <h2 data-i18n="turistly_testimonials_h2">Mutlu Gezginler</h2>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                 <div class="glass-card" data-aos="fade-up">
@@ -139,20 +149,23 @@
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                             class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Seyahat planlamayı bu kadar kolaylaştıran
+                    <p style="font-style: italic; margin-bottom: 1.5rem;" data-i18n="turistly_testimonial_1_text">
+                        "Seyahat planlamayı bu kadar kolaylaştıran
                         başka bir uygulama görmedim. Yapay zeka önerileri nokta atışı!"</p>
-                    <h5 style="margin-bottom: 0;">Ahmet Y.</h5>
-                    <small style="color: var(--text-muted);">Gezgin</small>
+                    <h5 style="margin-bottom: 0;" data-i18n="turistly_testimonial_1_author">Ahmet Y.</h5>
+                    <small style="color: var(--text-muted);" data-i18n="turistly_testimonial_1_role">Gezgin</small>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
                     <div style="color: #fbbf24; margin-bottom: 1rem;">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                             class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Yurt dışında dil sorunu yaşamadan gezmemi
+                    <p style="font-style: italic; margin-bottom: 1.5rem;" data-i18n="turistly_testimonial_2_text">"Yurt
+                        dışında dil sorunu yaşamadan gezmemi
                         sağladı. Çeviri özelliği hayat kurtarıcı."</p>
-                    <h5 style="margin-bottom: 0;">Mehmet S.</h5>
-                    <small style="color: var(--text-muted);">Macera Tutkunu</small>
+                    <h5 style="margin-bottom: 0;" data-i18n="turistly_testimonial_2_author">Mehmet S.</h5>
+                    <small style="color: var(--text-muted);" data-i18n="turistly_testimonial_2_role">Macera
+                        Tutkunu</small>
                 </div>
             </div>
         </div>
@@ -162,8 +175,8 @@
     <section id="gallery">
         <div class="container">
             <div class="section-title">
-                <span>Arayüz</span>
-                <h2>Uygulama Görüntüleri</h2>
+                <span data-i18n="app_interface_span">Arayüz</span>
+                <h2 data-i18n="app_interface_h2">Uygulama Görüntüleri</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
@@ -195,15 +208,18 @@
     <footer
         style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <p>&copy; 2026 Turistly - Süleyman Çakır. Tüm hakları saklıdır.</p>
+            <p data-i18n="footer_rights">&copy; 2026 Turistly - Süleyman Çakır. Tüm hakları saklıdır.</p>
             <div style="margin-top: 1rem;">
-                <a href="privacy-policy.html" style="margin: 0 10px; color: var(--text-light);">Gizlilik Politikası</a>
-                <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);">Hizmet Şartları</a>
+                <a href="privacy-policy.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_privacy">Gizlilik Politikası</a>
+                <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_terms">Hizmet Şartları</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="js/translations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 

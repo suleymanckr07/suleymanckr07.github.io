@@ -4,261 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hizmet Şartları - Turistly</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/1.png" type="image/png">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <title>Hizmet Şartları | Turistly</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Turistly Hizmet Şartları ve Kullanım Koşulları.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation -->
+
+    <!-- Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://suleymanckr07.github.io/terms-of-service.html">
-    <meta name="description"
-        content="Turistly seyahat uygulamasının hizmet şartları ve kullanım koşulları. Uygulamamızı kullanmadan önce bilmeniz gerekenler.">
-    <meta name="keywords" content="hizmet şartları, kullanım koşulları, Woo AI, seyahat uygulaması, kullanıcı hakları">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Hizmet Şartları - Turistly">
-    <meta property="og:description" content="Turistly seyahat uygulamasının hizmet şartları ve kullanım koşulları.">
-    <meta property="og:image" content="https://suleymanckr07.github.io/images/1.png">
-    <meta property="og:url" content="https://suleymanckr07.github.io/terms-of-service.html">
-    <meta property="og:type" content="website">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="shortcut icon" href="images/1.png" type="image/png">
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/1.png" alt="Turistly Logo" class="navbar-logo">
-                Turistly
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo">
+                Süleyman Çakır
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link" data-i18n="nav_apps">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle (To be implemented with JS) -->
+            <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="privacy-policy.html">Gizlilik Politikası</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="terms-of-service.html">Hizmet Şartları</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">İletişim</a>
-                    </li>
-                </ul>
-            </div>
+
+            <!-- Language Toggle -->
+            <a href="#" id="language-toggle" class="btn btn-glass"
+                style="margin-left: 1rem; padding: 0.5rem 1rem; min-width: 50px; text-align: center;">EN</a>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header"
-        style="background: var(--primary-color); color: white; position: relative; padding-bottom: 120px; z-index: 10;">
-        <div class="container" style="position: relative; z-index: 20;">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
-                    <h1 class="display-4 fw-bold text-white">Hizmet Şartları</h1>
-                    <p class="lead text-white-50">Turistly uygulamasını kullanırken bilmeniz gereken kullanım şartları
-                        ve
-                        koşulları</p>
-                    <div class="d-flex justify-content-center align-items-center mt-3">
-                        <span class="badge bg-light text-dark me-2">Son Güncelleme: 27 Şubat 2025</span>
-                    </div>
+    <section class="hero"
+        style="min-height: 40vh; align-items: center; justify-content: center; text-align: center; padding-top: 100px;">
+        <div class="hero-visual"
+            style="background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);"></div>
+        <div class="container">
+            <div data-aos="fade-up">
+                <h1 data-i18n="app_terms">Hizmet Şartları</h1>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">Turistly uygulamasını kullanarak aşağıdaki
+                    şartları kabul etmiş sayılırsınız.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="btn-glass" style="font-size: 0.9rem; padding: 0.5rem 1rem; border-radius: 50px;">Son
+                        Güncelleme: 27 Şubat 2025</span>
                 </div>
             </div>
-        </div>
-        <div class="wave-bottom" style="position: absolute; bottom: -1px; left: 0; width: 100%; z-index: 15;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#ffffff" fill-opacity="1"
-                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
         </div>
     </section>
 
-    <main class="container py-5">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card border-0 shadow-sm rounded-3 mb-4" data-aos="fade-up" data-aos-duration="800">
-                    <div class="card-body p-4 p-md-5">
-                        <p class="lead">Bu Hizmet Şartları, Turistly uygulamasını kullanırken uymanız gereken kuralları
-                            ve şartları belirler. Uygulamayı kullanarak bu şartları kabul etmiş olursunuz.</p>
+    <!-- Content -->
+    <section id="content" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="glass-card" style="padding: 3rem;" data-aos="fade-up">
 
-                        <h2 class="section-title mt-5">1. Kullanım Hakkı</h2>
-                        <div class="mb-4">
-                            <p>Turistly uygulamasını yalnızca kişisel ve yasal amaçlarla kullanabilirsiniz. Aşağıdaki
-                                eylemler kesinlikle yasaktır:</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-ban text-danger me-2"></i>
-                                    Uygulamayı yasa dışı amaçlarla kullanmak
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-ban text-danger me-2"></i>
-                                    Diğer kullanıcıların deneyimini engellemek veya bozmak
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-ban text-danger me-2"></i>
-                                    Uygulamanın güvenlik önlemlerini aşmaya çalışmak
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-ban text-danger me-2"></i>
-                                    Zararlı yazılım yaymak veya uygulama hizmetlerini kesintiye uğratmak
-                                </li>
-                            </ul>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">1. Kabul Edilen Şartlar</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Bu uygulamayı indirerek veya kullanarak, bu
+                    şartları kabul etmiş olursunuz. Şartları kabul etmiyorsanız, uygulamayı kullanmamalısınız.</p>
 
-                        <h2 class="section-title">2. Kullanıcı Sorumlulukları</h2>
-                        <div class="mb-4">
-                            <p>Kullanıcılar, uygulama üzerinden paylaştıkları içeriklerin sorumluluğunu üstlenir.
-                                Aşağıdaki içerik türlerinin paylaşılması yasaktır:</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
-                                    Yasadışı, tehdit edici, taciz edici veya rahatsız edici içerikler
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
-                                    Nefret söylemi veya ayrımcılık içeren paylaşımlar
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
-                                    Müstehcen, pornografik veya cinsel içerikli materyaller
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
-                                    Başkalarının telif hakkına sahip olduğu içerikler (izinsiz)
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-exclamation-triangle text-warning me-2"></i>
-                                    Spam veya istenmeyen reklam içerikleri
-                                </li>
-                            </ul>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">2. Lisans</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Turistly, kişisel ve ticari olmayan
+                    kullanımınız için size sınırlı, geri alınabilir ve devredilemez bir lisans verir.</p>
 
-                        <h2 class="section-title">3. Fikri Mülkiyet</h2>
-                        <div class="mb-4">
-                            <p>Turistly uygulaması ve içeriği, telif hakkı ve diğer fikri mülkiyet hakları ile
-                                korunmaktadır. Uygulamanın içeriğini izinsiz kullanmak, kopyalamak, değiştirmek veya
-                                dağıtmak yasaktır.</p>
-                            <p>Uygulama üzerinden paylaştığınız içeriğin haklarını korursunuz, ancak Turistly'ye bu
-                                içeriği uygulama içinde kullanma, gösterme ve dağıtma hakkı vermiş olursunuz.</p>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">3. Kullanıcı Davranışları</h2>
+                <p style="margin-bottom: 1rem; color: var(--text-light);">Aşağıdaki davranışlar yasaktır:</p>
+                <ul style="padding-left: 20px; margin-bottom: 2rem; color: var(--text-light);">
+                    <li style="margin-bottom: 0.5rem;">Yasadışı faaliyetlerde bulunmak.</li>
+                    <li style="margin-bottom: 0.5rem;">Diğer kullanıcıları taciz etmek.</li>
+                    <li style="margin-bottom: 0.5rem;">Uygulamanın güvenliğini ihlal etmeye çalışmak.</li>
+                </ul>
 
-                        <h2 class="section-title">4. Hesap Güvenliği</h2>
-                        <div class="mb-4">
-                            <p>Hesabınızın güvenliğinden siz sorumlusunuz. Güçlü bir şifre seçmeli ve hesap
-                                bilgilerinizi gizli tutmalısınız. Hesabınızla gerçekleştirilen tüm etkinliklerden siz
-                                sorumlu olacaksınız.</p>
-                            <p>Hesabınızın yetkisiz kullanımını fark ederseniz, hemen bizimle iletişime geçmelisiniz.
-                            </p>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">4. Fikri Mülkiyet</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Uygulamadaki tüm içerik, tasarım ve kodlar
+                    Süleyman Çakır'a aittir ve telif hakkı kanunları ile korunmaktadır.</p>
 
-                        <h2 class="section-title">5. Hizmet Değişiklikleri</h2>
-                        <div class="mb-4">
-                            <p>Turistly, uygulamanın özelliklerini, içeriğini ve işlevselliğini herhangi bir zamanda
-                                değiştirme, askıya alma veya sonlandırma hakkını saklı tutar. Bu tür değişiklikler için
-                                önceden bildirimde bulunulması zorunlu değildir.</p>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">5. Değişiklikler</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Bu şartları zaman zaman güncelleme hakkımız
+                    saklıdır.</p>
 
-                        <h2 class="section-title">6. Sorumluluk Sınırlaması</h2>
-                        <div class="mb-4">
-                            <p>Turistly, uygulama kullanımından kaynaklanan doğrudan, dolaylı, arızi, özel veya sonuç
-                                olarak ortaya çıkan zararlardan sorumlu tutulamaz. Uygulama "olduğu gibi" sunulmaktadır
-                                ve herhangi bir garanti vermemektedir.</p>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">6. İletişim</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Sorularınız için: <a
+                        href="mailto:wootales@gmail.com" style="color: var(--accent);">wootales@gmail.com</a></p>
 
-                        <h2 class="section-title">7. Uygulanacak Hukuk</h2>
-                        <div class="mb-4">
-                            <p>Bu şartlar Türkiye Cumhuriyeti kanunlarına tabidir ve bu kanunlara göre yorumlanacaktır.
-                            </p>
-                        </div>
-
-                        <h2 class="section-title">8. Değişiklikler</h2>
-                        <div class="mb-4">
-                            <p>Bu şartlar zaman zaman güncellenebilir. Tüm değişiklikler uygulama içinde ve web
-                                sitemizde yayınlanacaktır. Değişiklikleri takip etmekle yükümlüsünüz ve uygulamayı
-                                kullanmaya devam ederek güncellenmiş şartları kabul etmiş sayılırsınız.</p>
-                        </div>
-
-                        <h2 class="section-title">9. İletişim</h2>
-                        <div class="mb-4">
-                            <p>Bu şartlarla ilgili herhangi bir sorunuz veya geri bildiriminiz varsa, lütfen <a
-                                    href="mailto:wootales@gmail.com">wootales@gmail.com</a> adresinden bizimle iletişime
-                                geçin.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
+    <footer
+        style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="images/1.png" alt="Woo Logo" class="footer-logo me-2" width="30">
-                    <span>&copy; 2026 Turistly. Tüm Hakları Saklıdır.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
-                        <i class="fas fa-arrow-up"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="woo.html" class="text-white-50 text-decoration-none">Turistly</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="privacy-policy.html" class="text-white-50 text-decoration-none">Gizlilik
-                                Politikası</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="terms-of-service.html" class="text-white-50 text-decoration-none">Hizmet
-                                Şartları</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <small class="text-white-50">Turistly, Flutter ile geliştirilmiş yapay zeka destekli bir seyahat
-                        uygulamasıdır. <a href="index.html" class="text-white-50">Süleyman Çakır</a> tarafından
-                        tasarlanmıştır.</small>
-                </div>
+            <p>&copy; 2026 Turistly. Tüm hakları saklıdır.</p>
+            <div style="margin-top: 1rem;">
+                <a href="privacy-policy.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_privacy">Gizlilik Politikası</a>
+                <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_terms">Hizmet Şartları</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Simple Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (window.innerWidth <= 992) {
+            mobileBtn.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 992) {
+                mobileBtn.style.display = 'block';
+            } else {
+                mobileBtn.style.display = 'none';
+                navLinks.style.display = 'flex';
+            }
+        });
     </script>
 </body>
 

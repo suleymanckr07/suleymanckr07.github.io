@@ -4,300 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Turistly</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/1.png" type="image/png">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <title>Gizlilik Politikası | Turistly</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Turistly Gizlilik Politikası. Verilerinizin güvenliği bizim için önemlidir.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation -->
+
+    <!-- Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://suleymanckr07.github.io/privacy-policy.html">
-    <meta name="description"
-        content="Turistly seyahat uygulamasının gizlilik politikası. Verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında detaylı bilgiler.">
-    <meta name="keywords" content="gizlilik politikası, Woo AI, seyahat uygulaması, veri gizliliği, kullanıcı hakları">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Gizlilik Politikası - Turistly">
-    <meta property="og:description"
-        content="Turistly seyahat uygulamasının gizlilik politikası. Verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında bilgiler.">
-    <meta property="og:image" content="https://suleymanckr07.github.io/images/1.png">
-    <meta property="og:url" content="https://suleymanckr07.github.io/privacy-policy.html">
-    <meta property="og:type" content="website">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="shortcut icon" href="images/1.png" type="image/png">
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/1.png" alt="Turistly Logo" class="navbar-logo">
-                Turistly
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo">
+                Süleyman Çakır
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link" data-i18n="nav_apps">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle (To be implemented with JS) -->
+            <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="privacy-policy.html">Gizlilik Politikası</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="terms-of-service.html">Hizmet Şartları</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">İletişim</a>
-                    </li>
-                </ul>
-            </div>
+
+            <!-- Language Toggle -->
+            <a href="#" id="language-toggle" class="btn btn-glass"
+                style="margin-left: 1rem; padding: 0.5rem 1rem; min-width: 50px; text-align: center;">EN</a>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header"
-        style="background: var(--primary-color); color: white; position: relative; padding-bottom: 120px; z-index: 10;">
-        <div class="container" style="position: relative; z-index: 20;">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
-                    <h1 class="display-4 fw-bold text-white">Gizlilik Politikası</h1>
-                    <p class="lead text-white-50">Turistly uygulamasını kullanırken verilerinizi nasıl topladığımız,
-                        kullandığımız ve koruduğumuz hakkında bilgiler</p>
-                    <div class="d-flex justify-content-center align-items-center mt-3">
-                        <span class="badge bg-light text-dark me-2">Son Güncelleme: 27 Şubat 2025</span>
-                    </div>
+    <section class="hero"
+        style="min-height: 40vh; align-items: center; justify-content: center; text-align: center; padding-top: 100px;">
+        <div class="hero-visual"
+            style="background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);"></div>
+        <div class="container">
+            <div data-aos="fade-up">
+                <h1 data-i18n="app_privacy">Gizlilik Politikası</h1>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">Turistly uygulamasını kullanırken verilerinizi
+                    nasıl topladığımız, kullandığımız ve koruduğumuz hakkında bilgiler.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="btn-glass" style="font-size: 0.9rem; padding: 0.5rem 1rem; border-radius: 50px;">Son
+                        Güncelleme: 27 Şubat 2025</span>
                 </div>
             </div>
-        </div>
-        <div class="wave-bottom" style="position: absolute; bottom: -1px; left: 0; width: 100%; z-index: 15;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#ffffff" fill-opacity="1"
-                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
         </div>
     </section>
 
-    <main class="container py-5">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card border-0 shadow-sm rounded-3 mb-4" data-aos="fade-up" data-aos-duration="800">
-                    <div class="card-body p-4 p-md-5">
-                        <h2 class="section-title">1. Hangi Verileri Topluyoruz?</h2>
-                        <div class="mb-4">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-user-circle text-primary me-2"></i>
-                                    <strong>Kayıt Verileri:</strong> Ad, kullanıcı adı, e-posta adresi, şifre ve profil
-                                    fotoğrafı.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
-                                    <strong>Konum Bilgileri:</strong> İçerikleri kişiselleştirmek ve yakındaki
-                                    etkinlikleri göstermek için.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-share-alt text-primary me-2"></i>
-                                    <strong>İçerik Paylaşımları:</strong> Fotoğraflar, videolar, yorumlar, beğeniler ve
-                                    hikayeler.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-comments text-primary me-2"></i>
-                                    <strong>İletişim Verileri:</strong> Mesajlar, grup sohbetleri ve etkileşimler.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">
-                                    <i class="fas fa-credit-card text-primary me-2"></i>
-                                    <strong>Ödeme Bilgileri:</strong> Eğer uygulama içi satın alma veya abonelik
-                                    hizmetleri sunuluyorsa, ödeme işlemleri için gerekli bilgiler.
-                                </li>
-                            </ul>
-                        </div>
+    <!-- Content -->
+    <section id="content" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="glass-card" style="padding: 3rem;" data-aos="fade-up">
 
-                        <h2 class="section-title">2. Verilerinizi Nasıl Kullanıyoruz?</h2>
-                        <div class="mb-4">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">Uygulama deneyiminizi kişiselleştirmek.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">Size özel içerikler ve öneriler sunmak.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">Güvenliği sağlamak ve dolandırıcılığı
-                                    önlemek.</li>
-                                <li class="list-group-item bg-transparent px-0">Yasal gereklilikleri yerine getirmek.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">Uygulama performansını analiz etmek ve
-                                    geliştirmek.</li>
-                                <li class="list-group-item bg-transparent px-0">Hizmetlerinize ilişkin geri bildirimleri
-                                    değerlendirmek.</li>
-                            </ul>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">1. Hangi Verileri Topluyoruz?</h2>
+                <ul style="list-style: none; padding-left: 0; margin-bottom: 2rem; color: var(--text-light);">
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-user-circle"
+                            style="color: var(--primary); margin-right: 10px;"></i> <strong>Kayıt Verileri:</strong> Ad,
+                        kullanıcı adı, e-posta adresi, şifre ve profil fotoğrafı.</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--primary); margin-right: 10px;"></i> <strong>Konum Bilgileri:</strong>
+                        İçerikleri kişiselleştirmek ve yakındaki etkinlikleri göstermek için.</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-share-alt"
+                            style="color: var(--primary); margin-right: 10px;"></i> <strong>İçerik
+                            Paylaşımları:</strong> Fotoğraflar, videolar, yorumlar, beğeniler ve hikayeler.</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-comments"
+                            style="color: var(--primary); margin-right: 10px;"></i> <strong>İletişim Verileri:</strong>
+                        Mesajlar, grup sohbetleri ve etkileşimler.</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-credit-card"
+                            style="color: var(--primary); margin-right: 10px;"></i> <strong>Ödeme Bilgileri:</strong>
+                        Şayet uygulama içi satın alma kullanılıyorsa gerekli bilgiler.</li>
+                </ul>
 
-                        <h2 class="section-title">3. Hukuki Dayanaklar</h2>
-                        <div class="mb-4">
-                            <p>Kişisel verileriniz, aşağıdaki yasal dayanaklara dayanarak işlenmektedir:</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">Sözleşmenin ifası.</li>
-                                <li class="list-group-item bg-transparent px-0">Hukuki yükümlülüklerin yerine
-                                    getirilmesi.</li>
-                                <li class="list-group-item bg-transparent px-0">Açık rızanızın bulunması.</li>
-                                <li class="list-group-item bg-transparent px-0">Meşru menfaatlerimizin korunması.</li>
-                            </ul>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">2. Verilerinizi Nasıl Kullanıyoruz?</h2>
+                <ul style="padding-left: 20px; margin-bottom: 2rem; color: var(--text-light);">
+                    <li style="margin-bottom: 0.5rem;">Uygulama deneyiminizi kişiselleştirmek.</li>
+                    <li style="margin-bottom: 0.5rem;">Size özel içerikler ve öneriler sunmak.</li>
+                    <li style="margin-bottom: 0.5rem;">Güvenliği sağlamak ve dolandırıcılığı önlemek.</li>
+                    <li style="margin-bottom: 0.5rem;">Yasal gereklilikleri yerine getirmek.</li>
+                    <li style="margin-bottom: 0.5rem;">Uygulama performansını analiz etmek ve geliştirmek.</li>
+                </ul>
 
-                        <h2 class="section-title">4. Konum Bilgilerinizin Kullanımı</h2>
-                        <div class="mb-4">
-                            <p>Turistly, <strong>arka planda konum erişimi kullanmaz</strong>. Konum verileriniz şu
-                                amaçlarla kullanılır:</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">Yakınınızdaki popüler gönderileri
-                                    göstermek.</li>
-                                <li class="list-group-item bg-transparent px-0">Gezdiğiniz yerleri haritada
-                                    işaretleyebilmek.</li>
-                                <li class="list-group-item bg-transparent px-0">Konum bazlı öneriler sunmak.</li>
-                            </ul>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">3. Veri Güvenliği</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Woo, verilerinizi korumak için sektör
+                    standardı şifreleme, güvenlik duvarları ve erişim kontrolleri kullanır. Verileriniz bizimle güvende.
+                </p>
 
-                        <h2 class="section-title">5. Uluslararası Veri Aktarımı</h2>
-                        <div class="mb-4">
-                            <p>Verileriniz, Turistly'nin hizmet aldığı yurt dışındaki sunuculara aktarılabilir.</p>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">4. Üçüncü Taraf Hizmetler</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Uygulamamızda analitik (Google Analytics,
+                    Firebase) ve reklam hizmetleri gibi güvenilir üçüncü taraf hizmetler kullanılabilir. Bu hizmetler
+                    kendi gizlilik politikalarına tabidir.</p>
 
-                        <h2 class="section-title">6. Veri Taşınabilirliği</h2>
-                        <div class="mb-4">
-                            <p>Kullanıcılar, kendi verilerini talep ederek farklı platformlara taşıyabilir.</p>
-                        </div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary);">5. İletişim</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Herhangi bir sorunuz varsa, lütfen bizimle
+                    iletişime geçin: <a href="mailto:wootales@gmail.com"
+                        style="color: var(--accent);">wootales@gmail.com</a></p>
 
-                        <h2 class="section-title">7. Çerezler ve Takip Teknolojileri</h2>
-                        <div class="mb-4">
-                            <p>Woo, kullanıcı deneyimini geliştirmek için çerezler ve benzeri teknolojiler kullanır.</p>
-                        </div>
-
-                        <h2 class="section-title">8. Kullanıcı Hakları</h2>
-                        <div class="mb-4">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">Kendi verilerine erişme, düzeltme ve
-                                    silme hakkı.</li>
-                                <li class="list-group-item bg-transparent px-0">Veri işleme sürecine itiraz etme hakkı.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">Hesap silme ve verilerin tamamen
-                                    kaldırılmasını talep etme hakkı.</li>
-                                <li class="list-group-item bg-transparent px-0">Veri taşınabilirliği talep etme hakkı.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">İzninize dayalı işlemleri geri çekme
-                                    hakkı.</li>
-                                <li class="list-group-item bg-transparent px-0">Profilinizin gizliliğini yönetme hakkı.
-                                </li>
-                                <li class="list-group-item bg-transparent px-0">Çerez ve takip teknolojilerini devre
-                                    dışı bırakma hakkı.</li>
-                            </ul>
-                        </div>
-
-                        <h2 class="section-title">9. Açık Rıza Gerektiren İşlemler</h2>
-                        <div class="mb-4">
-                            <p>Reklam, pazarlama ve konum bazlı içerikler gibi işlemler için açık rızanız alınmaktadır.
-                            </p>
-                        </div>
-
-                        <h2 class="section-title">10. Güvenlik Önlemleri</h2>
-                        <div class="mb-4">
-                            <p>Woo, verilerinizi korumak için <strong>şifreleme, güvenlik duvarları ve erişim
-                                    kontrolleri</strong> kullanır.</p>
-                        </div>
-
-                        <h2 class="section-title">11. Üçüncü Taraf Hizmetler ve Paylaşımlar</h2>
-                        <div class="mb-4">
-                            <p>Woo, aşağıdaki üçüncü taraf hizmetlerini kullanabilir ve belirli verileri paylaşabilir:
-                            </p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent px-0">Google Analytics ve Firebase gibi analiz
-                                    araçları.</li>
-                                <li class="list-group-item bg-transparent px-0">Ödeme işlemleri için üçüncü taraf ödeme
-                                    sağlayıcıları.</li>
-                                <li class="list-group-item bg-transparent px-0">Reklam ve pazarlama amacıyla üçüncü
-                                    taraf reklam ağları.</li>
-                            </ul>
-                        </div>
-
-                        <h2 class="section-title">12. Değişiklikler</h2>
-                        <div class="mb-4">
-                            <p>Gizlilik politikamız zaman zaman güncellenebilir. Tüm değişiklikleri uygulama içinde veya
-                                web sitemizde yayınlarız.</p>
-                        </div>
-
-                        <h2 class="section-title">13. İletişim</h2>
-                        <div class="mb-4"></div>
-                        <p>Herhangi bir sorunuz varsa, lütfen <a href="mailto:wootales@gmail.com">wootales@gmail.com</a>
-                            adresinden bize ulaşın.</p>
-                    </div>
-                </div>
             </div>
         </div>
-        </div>
-    </main>
+    </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
+    <footer
+        style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="images/1.png" alt="Woo Logo" class="footer-logo me-2" width="30">
-                    <span>&copy; 2026 Turistly. Tüm Hakları Saklıdır.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
-                        <i class="fas fa-arrow-up"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="woo.html" class="text-white-50 text-decoration-none">Turistly</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="privacy-policy.html" class="text-white-50 text-decoration-none">Gizlilik
-                                Politikası</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="terms-of-service.html" class="text-white-50 text-decoration-none">Hizmet
-                                Şartları</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <small class="text-white-50">Turistly, Flutter ile geliştirilmiş yapay zeka destekli bir seyahat
-                        uygulamasıdır. <a href="index.html" class="text-white-50">Süleyman Çakır</a> tarafından
-                        tasarlanmıştır.</small>
-                </div>
+            <p>&copy; 2026 Turistly. Tüm hakları saklıdır.</p>
+            <div style="margin-top: 1rem;">
+                <a href="privacy-policy.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_privacy">Gizlilik Politikası</a>
+                <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_terms">Hizmet Şartları</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Simple Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (window.innerWidth <= 992) {
+            mobileBtn.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 992) {
+                mobileBtn.style.display = 'block';
+            } else {
+                mobileBtn.style.display = 'none';
+                navLinks.style.display = 'flex';
+            }
+        });
     </script>
 </body>
 

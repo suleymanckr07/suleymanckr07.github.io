@@ -4,393 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>İtirafım Var - Gizlilik Politikası</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/confess/confess.png" type="image/png">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <title>Gizlilik Politikası | İtirafım Var</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="İtirafım Var Gizlilik Politikası. Anonimlik ve veri güvenliği.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation -->
+
+    <!-- Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://suleymanckr07.github.io/confess-privacy.html">
-    <meta name="description"
-        content="İtirafım Var uygulamasının gizlilik politikası. Kullanıcı verilerinin nasıl toplandığı, kullanıldığı ve korunduğu hakkında bilgi.">
-    <meta name="keywords"
-        content="itiraf, gizlilik politikası, veri güvenliği, kullanıcı verileri, anonim paylaşım, sosyal medya">
-    <meta name="author" content="Süleyman Çakır">
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://suleymanckr07.github.io/confess-privacy.html">
-    <meta property="og:title" content="İtirafım Var - Gizlilik Politikası">
-    <meta property="og:description"
-        content="İtirafım Var uygulamasının gizlilik politikası. Kullanıcı verilerinin nasıl toplandığı, kullanıldığı ve korunduğu hakkında bilgi.">
-    <meta property="og:image" content="https://suleymanckr07.github.io/images/confess/confess.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="shortcut icon" href="images/confess/confess.png" type="image/png">
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/confess/confess.png" alt="İtirafım Var Logo" class="navbar-logo">
-                itirafım Var!
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo">
+                Süleyman Çakır
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link" data-i18n="nav_apps">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle (To be implemented with JS) -->
+            <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="confess.html">itirafım var!</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="confess-privacy.html">Gizlilik Politikası</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">İletişim</a>
-                    </li>
-                </ul>
-            </div>
+
+            <!-- Language Toggle -->
+            <a href="#" id="language-toggle" class="btn btn-glass"
+                style="margin-left: 1rem; padding: 0.5rem 1rem; min-width: 50px; text-align: center;">EN</a>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header"
-        style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%); color: white; position: relative; padding-bottom: 120px; z-index: 10;">
-        <div class="container" style="position: relative; z-index: 20;">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
-                    <h1 class="display-4 fw-bold text-white">Gizlilik Politikası</h1>
-                    <p class="lead text-white-50">itirafım var! uygulamasında veri koruma ve gizlilik hakkında bilgiler
-                    </p>
-                    <div class="d-flex justify-content-center align-items-center mt-3">
-                        <span class="badge bg-light text-dark me-2">Son Güncelleme: 1 Mart 2025</span>
-                    </div>
+    <section class="hero"
+        style="min-height: 40vh; align-items: center; justify-content: center; text-align: center; padding-top: 100px;">
+        <div class="hero-visual"
+            style="background: radial-gradient(circle, rgba(236, 72, 153, 0.2) 0%, transparent 70%);"></div>
+        <div class="container">
+            <div data-aos="fade-up">
+                <h1 data-i18n="app_privacy">Gizlilik Politikası</h1>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">İtirafım Var uygulamasında veri koruma ve
+                    gizlilik hakkında bilgiler.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="btn-glass" style="font-size: 0.9rem; padding: 0.5rem 1rem; border-radius: 50px;">Son
+                        Güncelleme: 27 Şubat 2025</span>
                 </div>
             </div>
-        </div>
-        <div class="wave-bottom" style="position: absolute; bottom: -1px; left: 0; width: 100%; z-index: 15;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#ffffff" fill-opacity="1"
-                    d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,176C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
         </div>
     </section>
 
-    <!-- Privacy Policy Content -->
-    <main class="py-5">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="card border-0 shadow-sm rounded-3">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="privacy-intro mb-5">
-                                <div class="d-flex align-items-center mb-4">
-                                    <i class="fas fa-shield-alt text-purple fs-1 me-3"></i>
-                                    <div>
-                                        <h2 class="section-title mb-0">itirafım var! Gizlilik Politikası</h2>
-                                        <p class="text-muted">Verilerinizi nasıl <strong>koruduğumuz</strong> hakkında
-                                            bilgiler</p>
-                                    </div>
-                                </div>
-                                <div class="alert alert-info alert-dismissible fade show permanent-alert" role="alert">
-                                    <i class="fas fa-info-circle me-2"></i>
-                                    <strong>Önemli Bilgilendirme:</strong> itirafım var! uygulaması, kullanıcı
-                                    verilerinin
-                                    güvenliğini ve gizliliğini en üst düzeyde tutmayı hedefler. Anonim paylaşımlarınız
-                                    güvende.
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                        aria-label="Close"></button>
-                                </div>
-                            </div>
+    <!-- Content -->
+    <section id="content" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="glass-card" style="padding: 3rem;" data-aos="fade-up">
 
-                            <h2 class="section-title">1. Veri Toplama ve Kullanım</h2>
-                            <div class="mb-4">
-                                <p><strong>itirafım var! uygulaması:</strong></p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent px-0">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        <strong>Anonim paylaşımlarınızı korur</strong> - Kimliğiniz gizli kalır.
-                                    </li>
-                                    <li class="list-group-item bg-transparent px-0">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        <strong>Verilerinizi şifreler</strong> - Güvenli sunucu altyapısı kullanır.
-                                    </li>
-                                    <li class="list-group-item bg-transparent px-0">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        <strong>Moderasyon sağlar</strong> - Uygunsuz içerikleri engeller.
-                                    </li>
-                                    <li class="list-group-item bg-transparent px-0">
-                                        <i class="fas fa-check-circle text-success me-2"></i>
-                                        <strong>Gizliliğinizi önceler</strong> - Verileriniz güvende tutulur.
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <h2 class="section-title">2. Toplanan Bilgiler</h2>
-                            <div class="mb-4">
-                                <h3>2.1 Kullanıcı Hesabı Bilgileri</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent px-0">E-posta adresi</li>
-                                    <li class="list-group-item bg-transparent px-0">Kullanıcı adı</li>
-                                    <li class="list-group-item bg-transparent px-0">Profil fotoğrafı (isteğe bağlı)</li>
-                                </ul>
-
-                                <h3 class="mt-4">2.2 Uygulama Kullanım Verileri</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent px-0">Paylaşılan itiraflar ve içerikler
-                                    </li>
-                                    <li class="list-group-item bg-transparent px-0">Yapılan yorumlar</li>
-                                    <li class="list-group-item bg-transparent px-0">Beğeniler ve etkileşimler</li>
-                                    <li class="list-group-item bg-transparent px-0">Kullanıcı tercihleri ve ayarlar</li>
-                                </ul>
-                            </div>
-
-                            <h2 class="section-title">3. Veri Güvenliği</h2>
-                            <div class="mb-4">
-                                <p>Kullanıcı verilerinizi korumak için uygun teknik ve organizasyonel önlemler alıyoruz:
-                                </p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent px-0">Verilerin şifrelenmesi</li>
-                                    <li class="list-group-item bg-transparent px-0">Güvenli sunucu altyapısı</li>
-                                    <li class="list-group-item bg-transparent px-0">Düzenli güvenlik güncellemeleri</li>
-                                    <li class="list-group-item bg-transparent px-0">Erişim kontrolleri</li>
-                                </ul>
-                            </div>
-
-                            <h2 class="section-title">4. Anonim Paylaşımlar</h2>
-                            <div class="mb-4">
-                                <p>Anonim olarak paylaşılan itiraflar, kullanıcı kimliği gizlenerek yayınlanır. Ancak,
-                                    yasal
-                                    zorunluluklar veya uygulama kurallarının ihlali durumunda, moderatörler gerekli
-                                    gördüklerinde anonim kullanıcıların kimliklerini görebilir.</p>
-                            </div>
-
-                            <h2 class="section-title">5. Veri Paylaşımı</h2>
-                            <div class="mb-4">
-                                <p>Kullanıcı verilerinizi üçüncü taraflarla paylaşmıyoruz, ancak aşağıdaki durumlarda
-                                    paylaşım
-                                    yapılabilir:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent px-0">Yasal zorunluluklar</li>
-                                    <li class="list-group-item bg-transparent px-0">Uygulama kurallarının ihlali</li>
-                                    <li class="list-group-item bg-transparent px-0">Kullanıcı güvenliğinin tehdit
-                                        edilmesi</li>
-                                </ul>
-                            </div>
-
-                            <h2 class="section-title">6. Kullanıcı Hakları</h2>
-                            <div class="mb-4">
-                                <p>Kullanıcılarımız aşağıdaki haklara sahiptir:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent px-0">Hesap bilgilerine erişim</li>
-                                    <li class="list-group-item bg-transparent px-0">Verilerin düzeltilmesi</li>
-                                    <li class="list-group-item bg-transparent px-0">Hesabın silinmesi</li>
-                                    <li class="list-group-item bg-transparent px-0">Veri kullanımına itiraz etme</li>
-                                    <li class="list-group-item bg-transparent px-0">Veri taşınabilirliği</li>
-                                </ul>
-                            </div>
-
-                            <h2 class="section-title">7. Değişiklikler</h2>
-                            <div class="mb-4">
-                                <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler
-                                    yapıldığında,
-                                    kullanıcılarımızı uygulama içi bildirimlerle bilgilendireceğiz.</p>
-                            </div>
-
-                            <h2 class="section-title">8. İletişim</h2>
-                            <div class="mb-4">
-                                <p>Gizlilik politikamız hakkında sorularınız veya endişeleriniz varsa, lütfen bizimle
-                                    iletişime
-                                    geçin:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent px-0">E-posta:
-                                        scmobilestudio@gmail.com</li>
-                                    <li class="list-group-item bg-transparent px-0">Uygulama içi destek sistemi</li>
-                                </ul>
-                            </div>
-
-                            <div class="alert alert-info mt-5">
-                                <div class="d-flex">
-                                    <div class="me-3">
-                                        <i class="fas fa-lightbulb fs-2 text-purple"></i>
-                                    </div>
-                                    <div>
-                                        <h5>Önemli Not</h5>
-                                        <p class="mb-0">itirafım var!, anonim veya isimli olarak itiraflarınızı güvenle
-                                            paylaşabileceğiniz, gizliliğinizi önemseyen ve verilerinizi korumaya
-                                            odaklanan bir
-                                            sosyal paylaşım platformudur. Kullanıcı güvenliği bizim için önceliktir.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div
+                    style="background: rgba(236, 72, 153, 0.1); border-left: 4px solid var(--secondary); padding: 1.5rem; margin-bottom: 2rem; border-radius: 4px;">
+                    <h4 style="color: var(--secondary); margin-bottom: 0.5rem;"><i class="fas fa-user-secret"></i>
+                        Anonimlik Garantisi</h4>
+                    <p style="margin-bottom: 0;">Bu platformda paylaştığınız itiraflar anonim olarak yayınlanır.
+                        Kimliğiniz gizli tutulur.</p>
                 </div>
+
+                <h2 style="margin-bottom: 1.5rem; color: var(--secondary);">1. Toplanan Bilgiler</h2>
+                <ul style="list-style: none; padding-left: 0; margin-bottom: 2rem; color: var(--text-light);">
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-envelope"
+                            style="color: var(--secondary); margin-right: 10px;"></i> <strong>Hesap Bilgileri:</strong>
+                        E-posta ve kullanıcı adı (sadece giriş için).</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-pencil-alt"
+                            style="color: var(--secondary); margin-right: 10px;"></i> <strong>İçerik:</strong>
+                        Paylaştığınız anonim itiraflar ve yorumlar.</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-heart"
+                            style="color: var(--secondary); margin-right: 10px;"></i> <strong>Etkileşimler:</strong>
+                        Beğeniler ve favoriler.</li>
+                </ul>
+
+                <h2 style="margin-bottom: 1.5rem; color: var(--secondary);">2. Veri Güvenliği</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Anonim verileriniz şifrelenmiş sunucularımızda
+                    saklanır. Uygunsuz içerikler moderasyon ekibimiz tarafından kontrol edilir ve gerekirse kaldırılır.
+                </p>
+
+                <h2 style="margin-bottom: 1.5rem; color: var(--secondary);">3. Üçüncü Taraflar</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Verileriniz reklam amaçlı üçüncü taraflarla
+                    paylaşılmaz. Sadece analitik ve performans takibi için Firebase kullanılmaktadır.</p>
+
+                <h2 style="margin-bottom: 1.5rem; color: var(--secondary);">4. İletişim</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Destek için: <a
+                        href="mailto:scmobilestudio@gmail.com"
+                        style="color: var(--text-main);">scmobilestudio@gmail.com</a></p>
+
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
+    <footer
+        style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="images/confess/confess.png" alt="İtirafım Var Logo" class="footer-logo me-2" width="30">
-                    <span>&copy; 2026 itirafım var!. Tüm Hakları Saklıdır.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
-                        <i class="fas fa-arrow-up"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="index.html" class="text-white-50 text-decoration-none">Ana Sayfa</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="woo.html" class="text-white-50 text-decoration-none">Turistly</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="dugun-planlayacim.html" class="text-white-50 text-decoration-none">Düğün
-                                Planlayacım</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="kira-takip.html" class="text-white-50 text-decoration-none">Kira Takip</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="confess.html" class="text-white-50 text-decoration-none">İtirafım Var</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="text-white-50">|</span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="confess-privacy.html" class="text-white-50 text-decoration-none">Gizlilik
-                                Politikası</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <small class="text-white-50">İtirafım Var uygulaması, anonim veya isimli olarak itiraflarınızı
-                        paylaşabileceğiniz güvenli bir sosyal paylaşım platformudur.</small>
-                </div>
+            <p>&copy; 2026 İtirafım Var. Tüm hakları saklıdır.</p>
+            <div style="margin-top: 1rem;">
+                <a href="confess-privacy.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_privacy">Gizlilik Politikası</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            once: true
+        });
 
-        // Önemli bilgilendirme kalıcı olarak görünecek
-        document.addEventListener('DOMContentLoaded', function () {
-            var permanentAlerts = document.querySelectorAll('.permanent-alert');
-            permanentAlerts.forEach(function (alert) {
-                // alert kapatma düğmesini devre dışı bırak
-                var closeButton = alert.querySelector('.btn-close');
-                if (closeButton) {
-                    closeButton.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        // Sadece görsel bir efekt olarak hafifçe titreme
-                        alert.classList.add('shake');
-                        setTimeout(function () {
-                            alert.classList.remove('shake');
-                        }, 500);
-                        return false;
-                    });
-                }
-            });
+        // Simple Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (window.innerWidth <= 992) {
+            mobileBtn.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 992) {
+                mobileBtn.style.display = 'block';
+            } else {
+                mobileBtn.style.display = 'none';
+                navLinks.style.display = 'flex';
+            }
         });
     </script>
-    <style>
-        /* Önemli bilgilendirme uyarısını daha belirgin yap */
-        .permanent-alert {
-            border-left: 5px solid #9C27B0;
-            background-color: rgba(156, 39, 176, 0.15);
-            padding: 15px;
-            margin-bottom: 25px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .permanent-alert i {
-            font-size: 1.2rem;
-            color: #9C27B0;
-        }
-
-        /* Kapatma düğmesini devre dışı olduğunu belirtmek için stilini değiştir */
-        .permanent-alert .btn-close {
-            opacity: 0.5;
-        }
-
-        .permanent-alert .btn-close:hover {
-            opacity: 0.7;
-        }
-
-        /* Titreme animasyonu */
-        @keyframes shake {
-            0% {
-                transform: translateX(0);
-            }
-
-            25% {
-                transform: translateX(5px);
-            }
-
-            50% {
-                transform: translateX(-5px);
-            }
-
-            75% {
-                transform: translateX(5px);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        .shake {
-            animation: shake 0.5s;
-        }
-
-        /* Mor renk teması */
-        .text-purple {
-            color: #9C27B0 !important;
-        }
-
-        .bg-purple {
-            background-color: #9C27B0 !important;
-        }
-    </style>
 </body>
 
 </html>

@@ -4,142 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Team - Gizlilik Politikası | Süleyman Çakır</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/footbal-team/logo.png" type="image/png">
+    <title>Gizlilik Politikası | Football Team</title>
+
     <!-- Meta Tags -->
-    <meta name="description"
-        content="Football Team uygulaması gizlilik politikası. Verilerinizi nasıl topladığımızı ve kullandığımızı öğrenin.">
-    <meta name="keywords" content="Football Team, gizlilik politikası, veri güvenliği, kullanıcı hakları">
-    <meta name="author" content="Süleyman Çakır">
+    <meta name="description" content="Football Team Gizlilik Politikası.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="shortcut icon" href="images/footbal-team/logo.png" type="image/png">
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/footbal-team/logo.png" alt="Football Team Logo" class="navbar-logo">
-                Football Team
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo">
+                Süleyman Çakır
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link" data-i18n="nav_apps">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle (To be implemented with JS) -->
+            <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="football-team.html">Halısaha Kadrom</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="football-privacy.html">Gizlilik Politikası</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">İletişim</a>
-                    </li>
-                </ul>
-            </div>
+
+            <!-- Language Toggle -->
+            <a href="#" id="language-toggle" class="btn btn-glass"
+                style="margin-left: 1rem; padding: 0.5rem 1rem; min-width: 50px; text-align: center;">EN</a>
         </div>
     </nav>
 
-    <!-- Privacy Policy Section -->
-    <section class="privacy-policy-section py-5">
-        <div class="container py-4">
-            <h1 class="section-title text-center mb-5">Football Team <span class="highlight">Gizlilik Politikası</span>
-            </h1>
+    <!-- Page Header -->
+    <section class="hero"
+        style="min-height: 40vh; align-items: center; justify-content: center; text-align: center; padding-top: 100px;">
+        <div class="hero-visual"
+            style="background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);"></div>
+        <div class="container">
+            <div data-aos="fade-up">
+                <h1 data-i18n="app_privacy">Gizlilik Politikası</h1>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">Football Team (Kadro Kur) uygulaması veri
+                    politikaları.</p>
+                <div style="margin-top: 1rem;">
+                    <span class="btn-glass" style="font-size: 0.9rem; padding: 0.5rem 1rem; border-radius: 50px;">Son
+                        Güncelleme: 27 Şubat 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="privacy-content">
-                <p>Son güncellenme: 1 Mart 2024</p>
+    <!-- Content -->
+    <section id="content" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="glass-card" style="padding: 3rem;" data-aos="fade-up">
 
-                <h2>1. Giriş</h2>
-                <p>Football Team uygulamasını kullandığınız için teşekkür ederiz. Gizliliğiniz bizim için önemlidir. Bu
-                    gizlilik politikası, bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.</p>
+                <h2 style="margin-bottom: 1.5rem; color: #3b82f6;">1. Takım Verileri</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Uygulama içerisinde oluşturduğunuz kadrolar ve
+                    oyuncu isimleri yerel cihazınızda saklanır. Bu verileri sunucularımıza yüklemeyiz.</p>
 
-                <h2>2. Toplanan Bilgiler</h2>
-                <p>Uygulamamız aşağıdaki bilgileri toplayabilir:</p>
-                <ul>
-                    <li>Kullanıcı profil bilgileri</li>
-                    <li>Takım ve oyuncu tercihleri</li>
-                    <li>Uygulama kullanım verileri</li>
-                    <li>Cihaz bilgileri</li>
-                </ul>
+                <h2 style="margin-bottom: 1.5rem; color: #3b82f6;">2. Paylaşım Özelliği</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Kadro paylaşımı yaptığınızda, kadro görseli
+                    oluşturulur ve seçtiğiniz sosyal medya uygulamasına aktarılır. Bu işlem sırasında kişisel
+                    verileriniz toplanmaz.</p>
 
-                <h2>3. Bilgilerin Kullanımı</h2>
-                <p>Topladığımız bilgileri aşağıdaki amaçlarla kullanırız:</p>
-                <ul>
-                    <li>Hizmetlerimizi sağlamak ve iyileştirmek</li>
-                    <li>Kişiselleştirilmiş içerik sunmak</li>
-                    <li>Teknik sorunları çözmek</li>
-                    <li>Kullanıcı deneyimini geliştirmek</li>
-                </ul>
+                <h2 style="margin-bottom: 1.5rem; color: #3b82f6;">3. Reklamlar</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Uygulamamızda Google AdMob reklamları
+                    gösterilebilir. Bu servis, size uygun reklamları göstermek için reklam kimliğinizi kullanabilir.</p>
 
-                <h2>4. Bilgi Paylaşımı</h2>
-                <p>Kullanıcı bilgilerini üçüncü taraflarla paylaşmayız, ancak aşağıdaki durumlar istisnadır:</p>
-                <ul>
-                    <li>Yasal zorunluluklar</li>
-                    <li>Kullanıcı izni olması</li>
-                    <li>Hizmet sağlayıcılarımız</li>
-                </ul>
+                <h2 style="margin-bottom: 1.5rem; color: #3b82f6;">4. İletişim</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-light);">Destek: <a
+                        href="mailto:scmobilestudio@gmail.com"
+                        style="color: var(--text-main);">scmobilestudio@gmail.com</a></p>
 
-                <h2>5. Veri Güvenliği</h2>
-                <p>Kullanıcı verilerini korumak için endüstri standardı güvenlik önlemleri kullanıyoruz. Ancak, internet
-                    üzerinden hiçbir veri iletiminin %100 güvenli olmadığını unutmayın.</p>
-
-                <h2>6. Kullanıcı Hakları</h2>
-                <p>Kullanıcılarımız aşağıdaki haklara sahiptir:</p>
-                <ul>
-                    <li>Verilerine erişim</li>
-                    <li>Veri düzeltme</li>
-                    <li>Veri silme</li>
-                    <li>Veri taşıma</li>
-                </ul>
-
-                <h2>7. Çocukların Gizliliği</h2>
-                <p>Hizmetlerimiz 13 yaşından küçük çocuklara yönelik değildir. Kasıtlı olarak bu yaş grubundan bilgi
-                    toplamayız.</p>
-
-                <h2>8. Değişiklikler</h2>
-                <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda
-                    kullanıcılarımızı bilgilendireceğiz.</p>
-
-                <h2>9. İletişim</h2>
-                <p>Gizlilik politikamızla ilgili sorularınız için aşağıdaki kanallardan bize ulaşabilirsiniz:</p>
-                <ul>
-                    <li>E-posta: scmobilestudio@gmail.com</li>
-                    <li>Web: <a href="index.html#contact">İletişim Formu</a></li>
-                </ul>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
+    <footer
+        style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="images/footbal-team/logo.png" alt="Football Team Logo" class="footer-logo me-2"
-                        width="30">
-                    <span>&copy; 2026 Football Team. Tüm Hakları Saklıdır.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle back-to-top">
-                        <i class="fas fa-arrow-up"></i>
-                    </a>
-                </div>
+            <p>&copy; 2026 Football Team. Tüm hakları saklıdır.</p>
+            <div style="margin-top: 1rem;">
+                <a href="football-privacy.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_privacy">Gizlilik
+                    Politikası</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Simple Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (window.innerWidth <= 992) {
+            mobileBtn.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 992) {
+                mobileBtn.style.display = 'block';
+            } else {
+                mobileBtn.style.display = 'none';
+                navLinks.style.display = 'flex';
+            }
+        });
+    </script>
 </body>
 
 </html>

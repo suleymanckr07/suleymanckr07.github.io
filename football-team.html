@@ -27,7 +27,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/modern-style.css">
-    <link rel="shortcut icon" href="images/footbal-team/logo.png" type="image/png">
+    <link rel="shortcut icon" href="images/football-team/logo.png" type="image/png">
 </head>
 
 <body>
@@ -42,14 +42,19 @@
             </a>
 
             <ul class="nav-links">
-                <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="index.html#about" class="nav-link">Hakkımda</a></li>
-                <li><a href="index.html#portfolio" class="nav-link active">Uygulamalarım</a></li>
-                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+                <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link active" data-i18n="nav_apps">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
             </ul>
+            <!-- Mobile Menu Toggle (To be implemented with JS) -->
             <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
                 <i class="fas fa-bars"></i>
             </button>
+
+            <!-- Language Toggle -->
+            <a href="#" id="language-toggle" class="btn btn-glass"
+                style="margin-left: 1rem; padding: 0.5rem 1rem; min-width: 50px; text-align: center;">EN</a>
         </div>
     </nav>
 
@@ -61,32 +66,32 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div data-aos="fade-right">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <img src="images/footbal-team/logo.png" alt="App Logo"
+                        <img src="images/football-team/logo.png" alt="App Logo"
                             style="width: 80px; height: 80px; border-radius: 20px; box-shadow: var(--shadow-md);">
-                        <span
-                            style="background: rgba(40, 167, 69, 0.2); color: #4ade80; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(74, 222, 128, 0.3);">Spor
-                            & Takım Yönetimi</span>
+                        <span data-i18n="tag_sport"
+                            style="background: rgba(40, 167, 69, 0.2); color: #4ade80; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(74, 222, 128, 0.3);">Spor</span>
                     </div>
-                    <h1>Football Team</h1>
-                    <p class="lead" style="font-size: 1.25rem;">Halı saha ve profesyonel maçlar için kadro ve diziliş
+                    <h1 data-i18n="football_hero_title">Football Team</h1>
+                    <p class="lead" style="font-size: 1.25rem;" data-i18n="football_hero_desc">Halı saha ve profesyonel
+                        maçlar için kadro ve diziliş
                         yönetimi artık çok kolay. Takımınızı kurun, yönetin ve sahaya çıkın!</p>
 
                     <div style="display: flex; gap: 1rem; margin-top: 2rem;">
                         <a href="https://play.google.com/store/apps/details?id=com.sc_football_team"
                             class="btn btn-primary"
                             style="background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);">
-                            <i class="fab fa-google-play"></i> Hemen İndir
+                            <i class="fab fa-google-play"></i> <span data-i18n="app_download">Hemen İndir</span>
                         </a>
-                        <a href="#features" class="btn btn-glass">
+                        <a href="#features" class="btn btn-glass" data-i18n="app_features">
                             Özellikler
                         </a>
                     </div>
                 </div>
 
                 <div data-aos="fade-left" style="position: relative;">
-                    <img src="images/footbal-team/1.png" alt="App Screenshot"
+                    <img src="images/football-team/1.png" alt="App Screenshot"
                         style="width: 100%; max-width: 350px; border-radius: 30px; border: 4px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-lg); margin: 0 auto; display: block; transform: rotate(-5deg);">
-                    <img src="images/footbal-team/2.png" alt="App Screenshot"
+                    <img src="images/football-team/2.png" alt="App Screenshot"
                         style="width: 100%; max-width: 350px; border-radius: 30px; border: 4px solid rgba(255,255,255,0.1); box-shadow: var(--shadow-lg); position: absolute; top: 10%; right: 10%; transform: rotate(5deg); z-index: -1; opacity: 0.6;">
                 </div>
             </div>
@@ -97,26 +102,29 @@
     <section id="features">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <span>Neler Yapabilirsiniz?</span>
-                <h2>Öne Çıkan Özellikler</h2>
+                <span data-i18n="app_features_span">Neler Yapabilirsiniz?</span>
+                <h2 data-i18n="app_features_h2">Öne Çıkan Özellikler</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 <div class="glass-card" data-aos="fade-up">
                     <i class="fas fa-users" style="font-size: 2rem; color: #4ade80; margin-bottom: 1.5rem;"></i>
-                    <h3>Kadro Yönetimi</h3>
-                    <p>7'li, 8'li, 9'lu ve 11'li formatlarda dilediğiniz gibi kadro oluşturun. Yedeklerinizi belirleyin.
+                    <h3 data-i18n="football_feature_1_title">Kadro Yönetimi</h3>
+                    <p data-i18n="football_feature_1_desc">7'li, 8'li, 9'lu ve 11'li formatlarda dilediğiniz gibi kadro
+                        oluşturun. Yedeklerinizi belirleyin.
                     </p>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-chess-board" style="font-size: 2rem; color: #4ade80; margin-bottom: 1.5rem;"></i>
-                    <h3>Taktik & Diziliş</h3>
-                    <p>Farklı saha formatları için hazır dizilişleri kullanın veya kendi taktiğinizi yaratın.</p>
+                    <h3 data-i18n="football_feature_2_title">Taktik & Diziliş</h3>
+                    <p data-i18n="football_feature_2_desc">Farklı saha formatları için hazır dizilişleri kullanın veya
+                        kendi taktiğinizi yaratın.</p>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-share-alt" style="font-size: 2rem; color: #4ade80; margin-bottom: 1.5rem;"></i>
-                    <h3>Paylaş & Yönet</h3>
-                    <p>Oluşturduğunuz kadroyu tek tıkla arkadaşlarınızla paylaşın. Takım içi iletişimi güçlendirin.</p>
+                    <h3 data-i18n="football_feature_3_title">Paylaş & Yönet</h3>
+                    <p data-i18n="football_feature_3_desc">Oluşturduğunuz kadroyu tek tıkla arkadaşlarınızla paylaşın.
+                        Takım içi iletişimi güçlendirin.</p>
                 </div>
             </div>
         </div>
@@ -126,28 +134,28 @@
     <section id="gallery">
         <div class="container">
             <div class="section-title">
-                <span>Arayüz</span>
-                <h2>Uygulama Görüntüleri</h2>
+                <span data-i18n="app_interface_span">Arayüz</span>
+                <h2 data-i18n="app_interface_h2">Uygulama Görüntüleri</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
-                <a href="images/footbal-team/1.png" class="glightbox">
-                    <img src="images/footbal-team/1.png" alt="Screenshot"
+                <a href="images/football-team/1.png" class="glightbox">
+                    <img src="images/football-team/1.png" alt="Screenshot"
                         style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
                         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
-                <a href="images/footbal-team/2.png" class="glightbox">
-                    <img src="images/footbal-team/2.png" alt="Screenshot"
+                <a href="images/football-team/2.png" class="glightbox">
+                    <img src="images/football-team/2.png" alt="Screenshot"
                         style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
                         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
-                <a href="images/footbal-team/3.png" class="glightbox">
-                    <img src="images/footbal-team/3.png" alt="Screenshot"
+                <a href="images/football-team/3.png" class="glightbox">
+                    <img src="images/football-team/3.png" alt="Screenshot"
                         style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
                         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
-                <a href="images/footbal-team/4.png" class="glightbox">
-                    <img src="images/footbal-team/4.png" alt="Screenshot"
+                <a href="images/football-team/4.png" class="glightbox">
+                    <img src="images/football-team/4.png" alt="Screenshot"
                         style="width: 100%; border-radius: 12px; transition: transform 0.3s;"
                         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
@@ -159,16 +167,19 @@
     <footer
         style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <p>&copy; 2026 Football Team - Süleyman Çakır. Tüm hakları saklıdır.</p>
+            <p data-i18n="footer_rights">&copy; 2026 Halısaha Kadrom - Süleyman Çakır. Tüm hakları saklıdır.</p>
             <div style="margin-top: 1rem;">
-                <a href="football-privacy.html" style="margin: 0 10px; color: var(--text-light);">Gizlilik
+                <a href="football-privacy.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_privacy">Gizlilik
                     Politikası</a>
-                <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);">Hizmet Şartları</a>
+                <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_terms">Hizmet Şartları</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="js/translations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 

@@ -40,14 +40,19 @@
             </a>
 
             <ul class="nav-links">
-                <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="index.html#about" class="nav-link">Hakkımda</a></li>
-                <li><a href="index.html#portfolio" class="nav-link active">Uygulamalarım</a></li>
-                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+                <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link" data-i18n="nav_about">Hakkımda</a></li>
+                <li><a href="index.html#portfolio" class="nav-link active" data-i18n="nav_apps">Uygulamalarım</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
             </ul>
+            <!-- Mobile Menu Toggle (To be implemented with JS) -->
             <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem; display: none;">
                 <i class="fas fa-bars"></i>
             </button>
+
+            <!-- Language Toggle -->
+            <a href="#" id="language-toggle" class="btn btn-glass"
+                style="margin-left: 1rem; padding: 0.5rem 1rem; min-width: 50px; text-align: center;">EN</a>
         </div>
     </nav>
 
@@ -61,20 +66,20 @@
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <img src="images/confess/confess.png" alt="App Logo"
                             style="width: 80px; height: 80px; border-radius: 20px; box-shadow: var(--shadow-md);">
-                        <span
-                            style="background: rgba(236, 72, 153, 0.2); color: #f472b6; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(236, 72, 153, 0.3);">Social
-                            & Anonymous</span>
+                        <span data-i18n="tag_social"
+                            style="background: rgba(236, 72, 153, 0.2); color: #f472b6; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; border: 1px solid rgba(236, 72, 153, 0.3);">Social</span>
                     </div>
-                    <h1>İtirafım Var</h1>
-                    <p class="lead" style="font-size: 1.25rem;">İçinizden geçenleri özgürce paylaşabileceğiniz,
+                    <h1 data-i18n="card_confess_title">İtirafım Var</h1>
+                    <p class="lead" style="font-size: 1.25rem;" data-i18n="confess_hero_desc">İçinizden geçenleri
+                        özgürce paylaşabileceğiniz,
                         dilerseniz anonim kalabileceğiniz güvenli bir platform.</p>
 
                     <div style="display: flex; gap: 1rem; margin-top: 2rem;">
                         <a href="https://play.google.com/store/apps/details?id=com.sc_confess" class="btn btn-primary"
                             style="background: linear-gradient(135deg, #db2777 0%, #be185d 100%);  box-shadow: 0 4px 15px rgba(219, 39, 119, 0.4);">
-                            <i class="fab fa-google-play"></i> Hemen İndir
+                            <i class="fab fa-google-play"></i> <span data-i18n="app_download">Hemen İndir</span>
                         </a>
-                        <a href="#features" class="btn btn-glass">
+                        <a href="#features" class="btn btn-glass" data-i18n="app_features">
                             Özellikler
                         </a>
                     </div>
@@ -94,25 +99,28 @@
     <section id="features">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <span>Özellikler</span>
-                <h2>Özgürce Paylaş</h2>
+                <span data-i18n="confess_features_span">Özellikler</span>
+                <h2 data-i18n="confess_features_h2">Özgürce Paylaş</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 <div class="glass-card" data-aos="fade-up">
                     <i class="fas fa-user-secret" style="font-size: 2rem; color: #f472b6; margin-bottom: 1.5rem;"></i>
-                    <h3>Tamamen Anonim</h3>
-                    <p>Kimliğinizi gizleyerek paylaşım yapın. Sizi kimse tanımasın, sadece düşünceleriniz konuşsun.</p>
+                    <h3 data-i18n="confess_feature_1_title">Tamamen Anonim</h3>
+                    <p data-i18n="confess_feature_1_desc">Kimliğinizi gizleyerek paylaşım yapın. Sizi kimse tanımasın,
+                        sadece düşünceleriniz konuşsun.</p>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-comments" style="font-size: 2rem; color: #f472b6; margin-bottom: 1.5rem;"></i>
-                    <h3>Etkileşim</h3>
-                    <p>Diğer kullanıcıların itiraflarını okuyun, yorum yapın ve beğenin. Toplulukla bağ kurun.</p>
+                    <h3 data-i18n="confess_feature_interaction_title">Etkileşim</h3>
+                    <p data-i18n="confess_feature_interaction_desc">Diğer kullanıcıların itiraflarını okuyun, yorum
+                        yapın ve beğenin. Toplulukla bağ kurun.</p>
                 </div>
                 <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-shield-alt" style="font-size: 2rem; color: #f472b6; margin-bottom: 1.5rem;"></i>
-                    <h3>Güvenli Ortam</h3>
-                    <p>Moderatörler tarafından kontrol edilen içerikler sayesinde güvenli ve saygılı bir ortam.</p>
+                    <h3 data-i18n="confess_feature_2_title">Güvenli Ortam</h3>
+                    <p data-i18n="confess_feature_2_desc">Moderatörler tarafından kontrol edilen içerikler sayesinde
+                        güvenli ve saygılı bir ortam.</p>
                 </div>
             </div>
         </div>
@@ -122,8 +130,8 @@
     <section id="gallery">
         <div class="container">
             <div class="section-title">
-                <span>Arayüz</span>
-                <h2>Uygulama Görüntüleri</h2>
+                <span data-i18n="app_interface_span">Arayüz</span>
+                <h2 data-i18n="app_interface_h2">Uygulama Görüntüleri</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
@@ -155,15 +163,17 @@
     <footer
         style="padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 4rem;">
         <div class="container">
-            <p>&copy; 2026 İtirafım Var - Süleyman Çakır. Tüm hakları saklıdır.</p>
+            <p data-i18n="footer_rights">&copy; 2026 İtirafım Var - Süleyman Çakır. Tüm hakları saklıdır.</p>
             <div style="margin-top: 1rem;">
-                <a href="confess-privacy.html" style="margin: 0 10px; color: var(--text-light);">Gizlilik Politikası</a>
+                <a href="confess-privacy.html" style="margin: 0 10px; color: var(--text-light);"
+                    data-i18n="app_privacy">Gizlilik Politikası</a>
                 <!-- <a href="terms-of-service.html" style="margin: 0 10px; color: var(--text-light);">Hizmet Şartları</a> -->
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="js/translations.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
