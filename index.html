@@ -94,8 +94,8 @@
                 <li><a href="#contact" class="nav-link" data-i18n="nav_contact">İletişim</a></li>
             </ul>
 
-            <!-- Mobile Menu Toggle (To be implemented with JS) -->
-            <button class="btn btn-glass mobile-menu-btn" style="display: none; padding: 0.5rem;">
+            <!-- Mobile Menu Toggle -->
+            <button class="btn btn-glass mobile-menu-btn" style="padding: 0.5rem;">
                 <i class="fas fa-bars"></i>
             </button>
 
@@ -320,70 +320,63 @@
             once: true
         });
 
-        // Preloader
-        window.addEventListener('load', () => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Preloader
             const preloader = document.getElementById('preloader');
-            // Ensure animation plays fully (Typing + Line + Fade in = ~3s)
             setTimeout(() => {
                 document.body.classList.add('loaded');
                 setTimeout(() => {
                     if (preloader) preloader.style.display = 'none';
                 }, 600);
             }, 3500);
-        });
 
-        // Mobile Menu Toggle
-        const mobileBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
+            // Mobile Menu
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
 
-        // Initial check
-        if (window.innerWidth <= 992) {
-            mobileBtn.style.display = 'block';
-        }
+            if (mobileBtn && navLinks) {
+                mobileBtn.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent bubbling
+                    navLinks.classList.toggle('active');
 
-        // Toggle Click
-        mobileBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            // Change icon
-            const icon = mobileBtn.querySelector('i');
-            if (navLinks.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
+                    // Icon Toggle
+                    const icon = mobileBtn.querySelector('i');
+                    if (icon) {
+                        if (navLinks.classList.contains('active')) {
+                            icon.classList.remove('fa-bars');
+                            icon.classList.add('fa-times');
+                        } else {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+
+                // Close on link click
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        const icon = mobileBtn.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+
+                // Close on click outside
+                document.addEventListener('click', (e) => {
+                    if (!mobileBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                        const icon = mobileBtn.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
             }
         });
-
-        // Close menu when a link is clicked
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 992) {
-                    navLinks.classList.remove('active');
-                    mobileBtn.querySelector('i').classList.remove('fa-times');
-                    mobileBtn.querySelector('i').classList.add('fa-bars');
-                }
-            });
-        });
-
-        // Resize Handler
-        window.addEventListener('resize', () => {
-            if (window.innerWidth <= 992) {
-                mobileBtn.style.display = 'block';
-            } else {
-                mobileBtn.style.display = 'none';
-                navLinks.style.display = 'flex';
-                // Reset icon and class if resizing to desktop
-                navLinks.classList.remove('active');
-                if (mobileBtn.querySelector('i')) {
-                    mobileBtn.querySelector('i').classList.remove('fa-times');
-                    mobileBtn.querySelector('i').classList.add('fa-bars');
-                }
-            }
-        });
-
-        // Note: For full mobile functionality, we would add a click listener to toggle a 'show' class
-        // For this static version, we keep it simple or expand if requested.
     </script>
 </body>
 
