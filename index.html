@@ -4,11 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Süleyman Çakır | Flutter Geliştirici & UI/UX Tasarımcı</title>
+    <title>Süleyman Çakır | Flutter Geliştirici & Mobil Uygulama Uzmanı</title>
 
-    <!-- Meta Tags -->
+    <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Süleyman Çakır - Flutter ve Yapay Zeka entegreli mobil uygulamalar geliştiren yazılım mühendisi. Portfolyo ve projeler.">
+        content="Süleyman Çakır - Flutter ve Yapay Zeka ile iOS ve Android için modern mobil uygulamalar geliştiren Yazılım Mühendisi. Turistly, Halısaha Kadrom ve daha fazlası.">
+    <meta name="keywords"
+        content="Süleyman Çakır, Flutter Geliştirici, Flutter Developer, Mobil Uygulama Geliştirme, Yazılım Mühendisi, iOS, Android, Yapay Zeka, Turistly, Halısaha Kadrom, İtirafım Var, İzlemeliyim">
+    <meta name="author" content="Süleyman Çakır">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://suleymanckr07.github.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suleymanckr07.github.io/">
+    <meta property="og:title" content="Süleyman Çakır | Flutter Geliştirici & Mobil Uygulama Uzmanı">
+    <meta property="og:description"
+        content="Süleyman Çakır - Flutter ve Yapay Zeka ile iOS ve Android için modern mobil uygulamalar geliştiren Yazılım Mühendisi.">
+    <meta property="og:image" content="https://suleymanckr07.github.io/images/preview-card.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://suleymanckr07.github.io/">
+    <meta property="twitter:title" content="Süleyman Çakır | Flutter Geliştirici & Mobil Uygulama Uzmanı">
+    <meta property="twitter:description"
+        content="Süleyman Çakır - Flutter ve Yapay Zeka ile iOS ve Android için modern mobil uygulamalar geliştiren Yazılım Mühendisi.">
+    <meta property="twitter:image" content="https://suleymanckr07.github.io/images/preview-card.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Süleyman Çakır",
+      "url": "https://suleymanckr07.github.io/",
+      "jobTitle": "Software Engineer & Flutter Developer",
+      "sameAs": [
+        "https://www.linkedin.com/in/suleymancakir0/",
+        "https://github.com/suleymanckr07",
+        "https://www.instagram.com/suleymancakir07"
+      ],
+      "knowsAbout": ["Flutter", "Dart", "Mobile App Development", "Artificial Intelligence", "UI/UX Design"]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -294,20 +332,53 @@
             }, 3500);
         });
 
-        // Simple Mobile Menu Toggle
+        // Mobile Menu Toggle
         const mobileBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
 
+        // Initial check
         if (window.innerWidth <= 992) {
             mobileBtn.style.display = 'block';
         }
 
+        // Toggle Click
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            // Change icon
+            const icon = mobileBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navLinks.classList.remove('active');
+                    mobileBtn.querySelector('i').classList.remove('fa-times');
+                    mobileBtn.querySelector('i').classList.add('fa-bars');
+                }
+            });
+        });
+
+        // Resize Handler
         window.addEventListener('resize', () => {
             if (window.innerWidth <= 992) {
                 mobileBtn.style.display = 'block';
             } else {
                 mobileBtn.style.display = 'none';
                 navLinks.style.display = 'flex';
+                // Reset icon and class if resizing to desktop
+                navLinks.classList.remove('active');
+                if (mobileBtn.querySelector('i')) {
+                    mobileBtn.querySelector('i').classList.remove('fa-times');
+                    mobileBtn.querySelector('i').classList.add('fa-bars');
+                }
             }
         });
 
