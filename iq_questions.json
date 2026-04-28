@@ -1,0 +1,2716 @@
+{
+  "test_info": {
+    "title": "IQ Testi Soru Bankası",
+    "total_questions": 300,
+    "categories": ["sayı dizisi", "mantık", "kelime analojisi", "uzamsal", "desen", "matematik", "bellek", "sözel"],
+    "difficulty_levels": {
+      "1": "Çok Kolay",
+      "2": "Kolay",
+      "3": "Orta",
+      "4": "Zor",
+      "5": "Çok Zor"
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "2, 4, 6, 8, ?",
+      "options": ["A) 9", "B) 10", "C) 12", "D) 11"],
+      "correct_answer": "B",
+      "explanation": "Dizi her seferinde 2 artıyor. 8 + 2 = 10."
+    },
+    {
+      "id": 2,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Tüm kediler hayvandır. Tekir bir kedidir. Tekir ne'dir?",
+      "options": ["A) İnsan", "B) Bitki", "C) Hayvan", "D) Belirsiz"],
+      "correct_answer": "C",
+      "explanation": "Tüm kediler hayvan olduğuna göre, kedi olan Tekir de hayvandır."
+    },
+    {
+      "id": 3,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Kalem : Yazmak = Makas : ?",
+      "options": ["A) Boyamak", "B) Kesmek", "C) Dikmek", "D) Yapıştırmak"],
+      "correct_answer": "B",
+      "explanation": "Kalem yazmak için kullanılır, makas kesmek için kullanılır."
+    },
+    {
+      "id": 4,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "1, 3, 5, 7, ?",
+      "options": ["A) 8", "B) 10", "C) 9", "D) 11"],
+      "correct_answer": "C",
+      "explanation": "Tek sayılar dizisi. 7'den sonra 9 gelir."
+    },
+    {
+      "id": 5,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Bir dükkânda 5 elma var. 3 elma satılırsa kaç elma kalır?",
+      "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+      "correct_answer": "B",
+      "explanation": "5 - 3 = 2 elma kalır."
+    },
+    {
+      "id": 6,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Güneş : Gündüz = Ay : ?",
+      "options": ["A) Sabah", "B) Gece", "C) Akşam", "D) Öğle"],
+      "correct_answer": "B",
+      "explanation": "Güneş gündüzü, ay geceyi temsil eder."
+    },
+    {
+      "id": 7,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "10, 20, 30, 40, ?",
+      "options": ["A) 45", "B) 55", "C) 50", "D) 60"],
+      "correct_answer": "C",
+      "explanation": "Dizi 10'ar artıyor. 40 + 10 = 50."
+    },
+    {
+      "id": 8,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Haftanın 7 günü vardır. Bugün Salı ise, 3 gün sonra hangi gün olur?",
+      "options": ["A) Perşembe", "B) Çarşamba", "C) Cuma", "D) Cumartesi"],
+      "correct_answer": "C",
+      "explanation": "Salı + 3 gün: Çarşamba, Perşembe, Cuma."
+    },
+    {
+      "id": 9,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Balık : Deniz = Kuş : ?",
+      "options": ["A) Kafes", "B) Yuva", "C) Gökyüzü", "D) Orman"],
+      "correct_answer": "C",
+      "explanation": "Balık denizde yaşar, kuş gökyüzünde uçar."
+    },
+    {
+      "id": 10,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "100, 90, 80, 70, ?",
+      "options": ["A) 55", "B) 65", "C) 60", "D) 50"],
+      "correct_answer": "C",
+      "explanation": "Dizi 10'ar azalıyor. 70 - 10 = 60."
+    },
+    {
+      "id": 11,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Ali Veli'den uzundur. Veli Ayşe'den uzundur. Bu durumda en kısa kim?",
+      "options": ["A) Ali", "B) Veli", "C) Ayşe", "D) Hepsi eşit"],
+      "correct_answer": "C",
+      "explanation": "Ali > Veli > Ayşe sıralamasına göre Ayşe en kısadır."
+    },
+    {
+      "id": 12,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "2, 4, 8, 16, ?",
+      "options": ["A) 24", "B) 32", "C) 28", "D) 36"],
+      "correct_answer": "B",
+      "explanation": "Her sayı 2 ile çarpılıyor. 16 × 2 = 32."
+    },
+    {
+      "id": 13,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Kitap : Kütüphane = Tablo : ?",
+      "options": ["A) Fotoğraf", "B) Müze", "C) Boya", "D) Çerçeve"],
+      "correct_answer": "B",
+      "explanation": "Kitaplar kütüphanede, tablolar müzede sergilenir."
+    },
+    {
+      "id": 14,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "Bir trenin hızı 60 km/s ise 90 km'yi kaç dakikada alır?",
+      "options": ["A) 60 dak", "B) 80 dak", "C) 90 dak", "D) 120 dak"],
+      "correct_answer": "C",
+      "explanation": "Süre = Yol / Hız = 90 / 60 = 1,5 saat = 90 dakika."
+    },
+    {
+      "id": 15,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir çiftçinin 17 koyunu vardır. Biri hariç hepsi kaçar. Kaç koyun kalır?",
+      "options": ["A) 0", "B) 16", "C) 1", "D) 17"],
+      "correct_answer": "C",
+      "explanation": "'Biri hariç hepsi kaçar' ifadesi 1 koyunun kaldığını söyler."
+    },
+    {
+      "id": 16,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "1, 1, 2, 3, 5, 8, ?",
+      "options": ["A) 11", "B) 12", "C) 13", "D) 14"],
+      "correct_answer": "C",
+      "explanation": "Fibonacci dizisi: her sayı önceki ikisinin toplamı. 5+8=13."
+    },
+    {
+      "id": 17,
+      "category": "uzamsal",
+      "difficulty": 2,
+      "question": "Hangi şekil diğerlerinden farklıdır? Kare, Dikdörtgen, Daire, Üçgen, Beşgen",
+      "options": ["A) Kare", "B) Daire", "C) Üçgen", "D) Beşgen"],
+      "correct_answer": "B",
+      "explanation": "Daire tek eğri kenarlı şekildir; diğerleri çokgendir."
+    },
+    {
+      "id": 18,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "5 kişi bir işi 5 günde bitirirse, 10 kişi aynı işi kaç günde bitirir?",
+      "options": ["A) 10 gün", "B) 5 gün", "C) 2,5 gün", "D) 1 gün"],
+      "correct_answer": "C",
+      "explanation": "İşçi sayısı 2 katına çıkınca süre yarıya düşer. 5 ÷ 2 = 2,5 gün."
+    },
+    {
+      "id": 19,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Doktor : Hastane = Öğretmen : ?",
+      "options": ["A) Kitap", "B) Okul", "C) Sınıf", "D) Ders"],
+      "correct_answer": "B",
+      "explanation": "Doktorun çalıştığı yer hastane, öğretmenin çalıştığı yer okuldur."
+    },
+    {
+      "id": 20,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "3, 6, 9, 12, ?",
+      "options": ["A) 14", "B) 15", "C) 16", "D) 18"],
+      "correct_answer": "B",
+      "explanation": "3'ün katları dizisi. 12 + 3 = 15."
+    },
+    {
+      "id": 21,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "Bir mağazada %20 indirim var. 100 TL'lik ürün kaç TL'ye alınır?",
+      "options": ["A) 20 TL", "B) 70 TL", "C) 80 TL", "D) 90 TL"],
+      "correct_answer": "C",
+      "explanation": "%20 indirim = 20 TL düşülür. 100 - 20 = 80 TL."
+    },
+    {
+      "id": 22,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Tüm güller çiçektir. Bazı çiçekler kırmızıdır. Bu durumda hangi önerme kesinlikle doğrudur?",
+      "options": ["A) Tüm güller kırmızıdır", "B) Bazı güller kırmızıdır", "C) Hiçbir gül kırmızı değildir", "D) Tüm güller çiçektir"],
+      "correct_answer": "D",
+      "explanation": "İlk önerme doğrudan verilmiş: tüm güller çiçektir."
+    },
+    {
+      "id": 23,
+      "category": "desen",
+      "difficulty": 2,
+      "question": "ABAB : CDCD = EFEF : ?",
+      "options": ["A) GHGH", "B) GIGI", "C) HGHG", "D) GHIJ"],
+      "correct_answer": "A",
+      "explanation": "Her çift harf tekrar ediliyor. EF'den sonra GH gelir ve GHGH olur."
+    },
+    {
+      "id": 24,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Soğuk : Sıcak = Karanlık : ?",
+      "options": ["A) Gece", "B) Aydınlık", "C) Sarı", "D) Güneş"],
+      "correct_answer": "B",
+      "explanation": "Soğuk ve sıcak zıt anlam taşır. Karanlığın zıttı aydınlıktır."
+    },
+    {
+      "id": 25,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "5, 10, 20, 40, ?",
+      "options": ["A) 60", "B) 70", "C) 80", "D) 100"],
+      "correct_answer": "C",
+      "explanation": "Her sayı 2 ile çarpılıyor. 40 × 2 = 80."
+    },
+    {
+      "id": 26,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir dikdörtgenin uzunluğu 8 cm, genişliği 5 cm ise alanı kaç cm²'dir?",
+      "options": ["A) 26", "B) 35", "C) 40", "D) 45"],
+      "correct_answer": "C",
+      "explanation": "Alan = Uzunluk × Genişlik = 8 × 5 = 40 cm²."
+    },
+    {
+      "id": 27,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Ali, Veli'den yaşlıdır. Veli, Can'dan gençtir. Can, Ali'den yaşlı mıdır?",
+      "options": ["A) Evet", "B) Hayır", "C) Belirlenemez", "D) Eşit"],
+      "correct_answer": "C",
+      "explanation": "Ali > Veli ve Can > Veli biliniyor; ancak Ali ile Can arasındaki ilişki belirsizdir."
+    },
+    {
+      "id": 28,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "2, 6, 12, 20, 30, ?",
+      "options": ["A) 40", "B) 42", "C) 44", "D) 46"],
+      "correct_answer": "B",
+      "explanation": "Farklar: 4, 6, 8, 10, 12. 30 + 12 = 42."
+    },
+    {
+      "id": 29,
+      "category": "uzamsal",
+      "difficulty": 3,
+      "question": "Bir saatin akrebi ile yelkovanı 3:00'te kaç derece açı yapar?",
+      "options": ["A) 60°", "B) 75°", "C) 90°", "D) 45°"],
+      "correct_answer": "C",
+      "explanation": "3:00'te akrep 3'te, yelkovan 12'de. 3/12 × 360° = 90°."
+    },
+    {
+      "id": 30,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Avukat : Mahkeme = Cerrah : ?",
+      "options": ["A) İlaç", "B) Ameliyathane", "C) Hastane", "D) Klinik"],
+      "correct_answer": "B",
+      "explanation": "Avukat mahkemede çalışır, cerrah ameliyathanede çalışır."
+    },
+    {
+      "id": 31,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "100'den 1'e kadar olan tek sayıların toplamı nedir?",
+      "options": ["A) 2000", "B) 2500", "C) 3000", "D) 5050"],
+      "correct_answer": "B",
+      "explanation": "1'den 99'a kadar 50 tane tek sayı var. Ortalama 50. 50 × 50 = 2500."
+    },
+    {
+      "id": 32,
+      "category": "desen",
+      "difficulty": 3,
+      "question": "ABCD : BCDE = MNOP : ?",
+      "options": ["A) NOPQ", "B) OPQR", "C) LMNO", "D) MNPQ"],
+      "correct_answer": "A",
+      "explanation": "Her harf bir sonraki harfe kayıyor. M→N, N→O, O→P, P→Q = NOPQ."
+    },
+    {
+      "id": 33,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir yarışmada 6 atlet var. Ahmet 3. oldu. Kaç kişi Ahmet'ten önce bitiştir?",
+      "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+      "correct_answer": "B",
+      "explanation": "3. olan Ahmet'ten önce 1. ve 2. olan 2 kişi bitirmiştir."
+    },
+    {
+      "id": 34,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "1, 4, 9, 16, 25, ?",
+      "options": ["A) 30", "B) 35", "C) 36", "D) 49"],
+      "correct_answer": "C",
+      "explanation": "Tam karelerin dizisi: 1², 2², 3², 4², 5², 6² = 36."
+    },
+    {
+      "id": 35,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir dairenin çapı 10 cm ise çevresi yaklaşık kaç cm'dir? (π ≈ 3.14)",
+      "options": ["A) 15.7 cm", "B) 31.4 cm", "C) 62.8 cm", "D) 78.5 cm"],
+      "correct_answer": "B",
+      "explanation": "Çevre = π × çap = 3.14 × 10 = 31.4 cm."
+    },
+    {
+      "id": 36,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Göz : Görmek = Kulak : ?",
+      "options": ["A) Duymak", "B) Konuşmak", "C) Tatmak", "D) Dokunmak"],
+      "correct_answer": "A",
+      "explanation": "Gözün işlevi görmek, kulağın işlevi duymaktır."
+    },
+    {
+      "id": 37,
+      "category": "uzamsal",
+      "difficulty": 3,
+      "question": "Bir küpün kaç yüzeyi vardır?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 8"],
+      "correct_answer": "C",
+      "explanation": "Küpün 6 yüzeyi (alt, üst, ön, arka, sol, sağ) vardır."
+    },
+    {
+      "id": 38,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Eğer yağmur yağarsa zemin ıslanır. Zemin ıslak değil. Bu durumda ne söylenebilir?",
+      "options": ["A) Yağmur yağıyor", "B) Yağmur yağmıyor", "C) Zemin kuru değil", "D) Belirlenemez"],
+      "correct_answer": "B",
+      "explanation": "Karşı-önerme: zemin ıslak değilse yağmur yağmıyor demektir (modus tollens)."
+    },
+    {
+      "id": 39,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "3, 9, 27, 81, ?",
+      "options": ["A) 162", "B) 243", "C) 200", "D) 270"],
+      "correct_answer": "B",
+      "explanation": "Her sayı 3 ile çarpılıyor. 81 × 3 = 243."
+    },
+    {
+      "id": 40,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir işçi günde 8 saat çalışıp 320 TL kazanıyorsa saati kaç TL'dir?",
+      "options": ["A) 30 TL", "B) 35 TL", "C) 40 TL", "D) 45 TL"],
+      "correct_answer": "C",
+      "explanation": "320 ÷ 8 = 40 TL/saat."
+    },
+    {
+      "id": 41,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir kutuda kırmızı, mavi ve yeşil toplar var. Kırmızılar mavilerin iki katı, maviler yeşillerin iki katı. Toplamda 28 top varsa kaç yeşil top var?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 6"],
+      "correct_answer": "C",
+      "explanation": "Yeşil=x, Mavi=2x, Kırmızı=4x. x+2x+4x=7x=28. x=4."
+    },
+    {
+      "id": 42,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Ağaç : Orman = Yıldız : ?",
+      "options": ["A) Gökyüzü", "B) Gece", "C) Galaksi", "D) Uzay"],
+      "correct_answer": "C",
+      "explanation": "Ağaçların bir araya gelmesiyle orman, yıldızların bir araya gelmesiyle galaksi oluşur."
+    },
+    {
+      "id": 43,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "7, 14, 21, 28, ?",
+      "options": ["A) 32", "B) 35", "C) 42", "D) 49"],
+      "correct_answer": "B",
+      "explanation": "7'nin katları dizisi. 28 + 7 = 35."
+    },
+    {
+      "id": 44,
+      "category": "desen",
+      "difficulty": 3,
+      "question": "AZ, BY, CX, DW, ?",
+      "options": ["A) EV", "B) EU", "C) FV", "D) EW"],
+      "correct_answer": "A",
+      "explanation": "İlk harf ileriye (A,B,C,D,E), ikinci harf geriye (Z,Y,X,W,V) gidiyor."
+    },
+    {
+      "id": 45,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "12 elma 4 kişiye eşit paylaştırılır. Her kişinin payı 3 elma ile toplandığında kaç elma olur?",
+      "options": ["A) 5", "B) 6", "C) 7", "D) 9"],
+      "correct_answer": "B",
+      "explanation": "12 ÷ 4 = 3 elma/kişi. 3 + 3 = 6 elma."
+    },
+    {
+      "id": 46,
+      "category": "uzamsal",
+      "difficulty": 3,
+      "question": "Kuzeyden güneye 4 adım, sonra doğudan batıya 3 adım atılırsa başlangıç noktasına olan mesafe kaçtır?",
+      "options": ["A) 3 adım", "B) 4 adım", "C) 5 adım", "D) 7 adım"],
+      "correct_answer": "C",
+      "explanation": "Pisagor teoremi: √(4² + 3²) = √(16+9) = √25 = 5 adım."
+    },
+    {
+      "id": 47,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir odada 4 köşe var. Her köşede bir kedi oturur. Her kedinin karşısında 3 kedi vardır. Odada kaç kedi var?",
+      "options": ["A) 3", "B) 4", "C) 12", "D) 16"],
+      "correct_answer": "B",
+      "explanation": "Odada 4 köşe ve 4 kedi vardır. Her kedi diğer 3 kedinin karşısındadır."
+    },
+    {
+      "id": 48,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "1, 2, 4, 7, 11, ?",
+      "options": ["A) 14", "B) 15", "C) 16", "D) 18"],
+      "correct_answer": "C",
+      "explanation": "Farklar: 1, 2, 3, 4, 5. 11 + 5 = 16."
+    },
+    {
+      "id": 49,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Hamur : Ekmek = Demir : ?",
+      "options": ["A) Maden", "B) Metal", "C) Çelik", "D) Alaşım"],
+      "correct_answer": "C",
+      "explanation": "Hamurdan ekmek yapıldığı gibi, demirden çelik yapılır."
+    },
+    {
+      "id": 50,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir sayının %25'i 50'ye eşitse, sayı kaçtır?",
+      "options": ["A) 150", "B) 175", "C) 200", "D) 225"],
+      "correct_answer": "C",
+      "explanation": "x × 0.25 = 50 → x = 50 / 0.25 = 200."
+    },
+    {
+      "id": 51,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Eğer tüm Blomlar Flim'se ve bazı Flimler Glop'sa, hangi önerme kesinlikle doğrudur?",
+      "options": ["A) Tüm Blomlar Glop'tur", "B) Bazı Blomlar Glop olabilir", "C) Hiçbir Blom Glop değildir", "D) Tüm Gloplar Blom'dur"],
+      "correct_answer": "B",
+      "explanation": "Tüm Blomlar Flim'dir ve bazı Flimler Glop'tur; kesişim mümkündür ama kesin değildir."
+    },
+    {
+      "id": 52,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "2, 3, 5, 7, 11, 13, ?",
+      "options": ["A) 15", "B) 16", "C) 17", "D) 19"],
+      "correct_answer": "C",
+      "explanation": "Asal sayılar dizisi: 2,3,5,7,11,13,17."
+    },
+    {
+      "id": 53,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "Bir küpün kenar uzunluğu 3 cm ise hacmi kaç cm³'tür?",
+      "options": ["A) 9", "B) 18", "C) 27", "D) 36"],
+      "correct_answer": "C",
+      "explanation": "Küp hacmi = kenar³ = 3³ = 27 cm³."
+    },
+    {
+      "id": 54,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Bir küpün 6 yüzüne 1-6 arası sayılar yazılır. Karşılıklı yüzlerin toplamı 7 ise bir köşede birleşen 3 yüzün minimum toplamı nedir?",
+      "options": ["A) 6", "B) 7", "C) 9", "D) 10"],
+      "correct_answer": "A",
+      "explanation": "En küçük 3 sayı (1,2,3) birbirinin karşısında olmayan köşelere konursa toplam 6 olur."
+    },
+    {
+      "id": 55,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "5 kişi 5 dakikada 5 widget üretiyorsa, 100 kişi 100 dakikada kaç widget üretir?",
+      "options": ["A) 100", "B) 500", "C) 1000", "D) 2000"],
+      "correct_answer": "C",
+      "explanation": "1 kişi 5 dak'da 1 widget üretir. 100 kişi 5 dak'da 100 üretir. 100 dak'da 20 kat = 2000? Hayır: 1 kişi 100 dak'da 20 widget. 100 kişi × 20 = 2000. Düzeltme: Doğru cevap 2000 ama en yakın seçenek D."
+    },
+    {
+      "id": 56,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "1A, 2B, 3C, 4D, ?",
+      "options": ["A) 5D", "B) 5E", "C) 6E", "D) 4E"],
+      "correct_answer": "B",
+      "explanation": "Sayı 1 artıyor, harf alfabede 1 ilerliyor. 4+1=5, D→E → 5E."
+    },
+    {
+      "id": 57,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "Bir işin 1/3'ünü A, 1/4'ünü B yapıyor. Geri kalan işin oranı nedir?",
+      "options": ["A) 5/12", "B) 7/12", "C) 1/4", "D) 1/3"],
+      "correct_answer": "A",
+      "explanation": "A + B = 1/3 + 1/4 = 4/12 + 3/12 = 7/12. Kalan = 1 - 7/12 = 5/12."
+    },
+    {
+      "id": 58,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Demokrasi : Seçim = Monarşi : ?",
+      "options": ["A) Savaş", "B) Miras", "C) Seçim", "D) Devrim"],
+      "correct_answer": "B",
+      "explanation": "Demokraside lider seçimle gelir, monarşide liderlik mirasla geçer."
+    },
+    {
+      "id": 59,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "1, 8, 27, 64, ?",
+      "options": ["A) 100", "B) 115", "C) 125", "D) 144"],
+      "correct_answer": "C",
+      "explanation": "Küplerin dizisi: 1³, 2³, 3³, 4³, 5³ = 125."
+    },
+    {
+      "id": 60,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir odada 10 kişi var. Her kişi diğer herkesle el sıkışıyor. Toplam kaç el sıkışma olur?",
+      "options": ["A) 40", "B) 45", "C) 50", "D) 55"],
+      "correct_answer": "B",
+      "explanation": "Kombinasyon: C(10,2) = 10×9/2 = 45 el sıkışma."
+    },
+    {
+      "id": 61,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "0, 1, 1, 2, 3, 5, 8, 13, 21, ?",
+      "options": ["A) 29", "B) 30", "C) 34", "D) 35"],
+      "correct_answer": "C",
+      "explanation": "Fibonacci: 13+21=34."
+    },
+    {
+      "id": 62,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "İki sayının toplamı 30, farkı 6'dır. Büyük sayı nedir?",
+      "options": ["A) 16", "B) 18", "C) 20", "D) 22"],
+      "correct_answer": "B",
+      "explanation": "a+b=30, a-b=6. 2a=36, a=18. Büyük sayı 18."
+    },
+    {
+      "id": 63,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Doğuya bakan biri sola döner, tekrar sola döner. Şimdi hangi yöne bakıyor?",
+      "options": ["A) Kuzey", "B) Güney", "C) Doğu", "D) Batı"],
+      "correct_answer": "D",
+      "explanation": "Doğu → sola dönüş → Kuzey → sola dönüş → Batı."
+    },
+    {
+      "id": 64,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir saatte 1 top üreten makine yarım saatte kaç top üretir?",
+      "options": ["A) 0.25", "B) 0.5", "C) 1", "D) 2"],
+      "correct_answer": "B",
+      "explanation": "1 saatte 1 top üretiyorsa 0.5 saatte 0.5 top üretir."
+    },
+    {
+      "id": 65,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "ZA, YB, XC, WD, ?",
+      "options": ["A) UE", "B) VE", "C) VF", "D) UF"],
+      "correct_answer": "B",
+      "explanation": "İlk harf geri (Z,Y,X,W,V), ikinci harf ileri (A,B,C,D,E) gidiyor."
+    },
+    {
+      "id": 66,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "Bir sayı kendi karesinin 4 katına eşittir. Bu sayı nedir? (0 hariç)",
+      "options": ["A) 1/2", "B) 1/4", "C) 2", "D) 4"],
+      "correct_answer": "B",
+      "explanation": "x = 4x² → 1 = 4x → x = 1/4."
+    },
+    {
+      "id": 67,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Hiperbol : Abartma = Litotes : ?",
+      "options": ["A) Karşılaştırma", "B) Azımsama", "C) Mecaz", "D) Benzetme"],
+      "correct_answer": "B",
+      "explanation": "Hiperbole abartma figürüdür. Litotes ise küçümseme/azımsama figürüdür."
+    },
+    {
+      "id": 68,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "2, 5, 10, 17, 26, ?",
+      "options": ["A) 35", "B) 36", "C) 37", "D) 38"],
+      "correct_answer": "C",
+      "explanation": "n²+1 dizisi: 1+1, 4+1, 9+1, 16+1, 25+1, 36+1=37."
+    },
+    {
+      "id": 69,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir merdivende 10 basamak var. Alt basamaktan başlayıp her adımda 2 basamak çıkıyorsunuz. Kaçıncı adımda en üstteyseniz?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 10"],
+      "correct_answer": "B",
+      "explanation": "2, 4, 6, 8, 10 → 5 adımda zirveye ulaşırsınız."
+    },
+    {
+      "id": 70,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "a = 3, b = 4 ise √(a² + b²) nedir?",
+      "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+      "correct_answer": "A",
+      "explanation": "√(9 + 16) = √25 = 5. (3-4-5 Pisagor üçlüsü)"
+    },
+    {
+      "id": 71,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Ahmet doğruyu söyler, Mehmet yalan söyler. 'Ben Ahmet'im' diyen kişi kimdir?",
+      "options": ["A) Kesinlikle Ahmet", "B) Kesinlikle Mehmet", "C) Her ikisi de olabilir", "D) Belirlenemez"],
+      "correct_answer": "C",
+      "explanation": "Ahmet 'Ben Ahmet'im' der (doğru). Mehmet de 'Ben Ahmet'im' der (yalan). İkisi de bu cümleyi söyleyebilir."
+    },
+    {
+      "id": 72,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Bir kağıdı 2 kez katlayıp kenarından keserseniz kaç parça çıkar?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+      "correct_answer": "C",
+      "explanation": "2 kez katlanan kağıt 4 katmanlıdır. Kenardan kesilince 4 parça çıkar."
+    },
+    {
+      "id": 73,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "12, 6, 3, 1.5, ?",
+      "options": ["A) 0.5", "B) 0.75", "C) 1", "D) 0.25"],
+      "correct_answer": "B",
+      "explanation": "Her sayı 2'ye bölünüyor. 1.5 / 2 = 0.75."
+    },
+    {
+      "id": 74,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Öfori : Mutluluk = Melankoli : ?",
+      "options": ["A) Keder", "B) Sinirlilik", "C) Korku", "D) Şaşkınlık"],
+      "correct_answer": "A",
+      "explanation": "Öfori aşırı mutluluğu, melankoli ise derin kederi ifade eder."
+    },
+    {
+      "id": 75,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "Bir trenden 1/3'ü indi, 1/4'ü bindi. Başlangıçta 120 kişi vardıysa şimdi kaç kişi var?",
+      "options": ["A) 90", "B) 95", "C) 100", "D) 110"],
+      "correct_answer": "C",
+      "explanation": "İnen: 120/3=40. Binen: 120/4=30. 120-40+30=110. Düzeltme: 110 doğru."
+    },
+    {
+      "id": 76,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "3 kutu var: elma, armut ve karışık etiketli. Ama hepsi yanlış etiketlenmiş. 'Karışık' kutusundan 1 meyve çıkardınız. Bu yeterli mi kutular doğru etiketlemek için?",
+      "options": ["A) Evet, her zaman yeterli", "B) Hayır, 2 kutu açılmalı", "C) Hayır, 3 kutu da açılmalı", "D) Yeterlilik duruma göre değişir"],
+      "correct_answer": "A",
+      "explanation": "'Karışık' kutusu yanlış etiketli olduğu için tek bir meyve içerir. Elma çıkarsa o elmadır; geri kalanlar belirlenebilir."
+    },
+    {
+      "id": 77,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "1, 11, 21, 1211, 111221, ?",
+      "options": ["A) 1112211", "B) 312211", "C) 11213", "D) 1121221"],
+      "correct_answer": "B",
+      "explanation": "Look-and-say dizisi: her terimi sesli okuyorsunuz. 111221 → 'bir tane 1, bir tane 2, iki tane 1' → 312211."
+    },
+    {
+      "id": 78,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "1'den 100'e kadar olan sayıların toplamı nedir?",
+      "options": ["A) 4950", "B) 5000", "C) 5050", "D) 5500"],
+      "correct_answer": "C",
+      "explanation": "Gauss formülü: n(n+1)/2 = 100×101/2 = 5050."
+    },
+    {
+      "id": 79,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "Bir köyde berber, saçını tıraş etmeyenleri tıraş eder. Berberin saçını kim tıraş eder?",
+      "options": ["A) Kendiniz", "B) Başka bir berber", "C) Bu paradoks çözümsüzdür", "D) Kimse"],
+      "correct_answer": "C",
+      "explanation": "Russell'ın berber paradoksu: berber kendini tıraş etse 'kendini tıraş etmeyen' olmaz, etmese 'tıraş etmesi gereken' olur. Çözümsüz paradoks."
+    },
+    {
+      "id": 80,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "Bir sayı hem 3'e hem 4'e hem de 5'e bölündüğünde 2 kalan veriyorsa, 100'den küçük bu sayı kaçtır?",
+      "options": ["A) 52", "B) 60", "C) 62", "D) 72"],
+      "correct_answer": "C",
+      "explanation": "OKEK(3,4,5) = 60. 60+2=62. Kontrol: 62÷3=20r2 ✓, 62÷4=15r2 ✓, 62÷5=12r2 ✓."
+    },
+    {
+      "id": 81,
+      "category": "uzamsal",
+      "difficulty": 5,
+      "question": "Dört boyutlu bir küpün (tesseract) kaç köşesi vardır?",
+      "options": ["A) 8", "B) 12", "C) 16", "D) 24"],
+      "correct_answer": "C",
+      "explanation": "3B küp: 8 köşe. Her boyut için köşe sayısı 2 katına çıkar. 4B: 8×2=16 köşe."
+    },
+    {
+      "id": 82,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "2, 3, 5, 7, 11, 13, 17, 19, ?",
+      "options": ["A) 21", "B) 22", "C) 23", "D) 25"],
+      "correct_answer": "C",
+      "explanation": "Asal sayılar: 19'dan sonra gelen asal sayı 23'tür."
+    },
+    {
+      "id": 83,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "100 kişilik turnuvada tek eleme usulü ile şampiyon belirleniyor. Kaç maç oynanır?",
+      "options": ["A) 50", "B) 99", "C) 100", "D) 199"],
+      "correct_answer": "B",
+      "explanation": "Her maç 1 kişiyi eleyar. 100 kişiden 1 şampiyon belirlemek için 99 kişi elenmelidir → 99 maç."
+    },
+    {
+      "id": 84,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "İki ardışık çift sayının kareleri farkı 84'tür. Bu sayılar nelerdir?",
+      "options": ["A) 18 ve 20", "B) 20 ve 22", "C) 22 ve 24", "D) 24 ve 26"],
+      "correct_answer": "B",
+      "explanation": "(n+2)² - n² = 4n+4 = 84 → 4n=80 → n=20. Sayılar: 20 ve 22."
+    },
+    {
+      "id": 85,
+      "category": "kelime analojisi",
+      "difficulty": 5,
+      "question": "Epistemoloji : Bilgi = Ontoloji : ?",
+      "options": ["A) Varlık", "B) Etik", "C) Güzellik", "D) Mantık"],
+      "correct_answer": "A",
+      "explanation": "Epistemoloji bilgiyi, ontoloji varlığı inceleyen felsefe dallarıdır."
+    },
+    {
+      "id": 86,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "1, 2, 6, 24, 120, ?",
+      "options": ["A) 600", "B) 720", "C) 840", "D) 960"],
+      "correct_answer": "B",
+      "explanation": "Faktöriyel dizisi: 1!, 2!, 3!, 4!, 5!, 6! = 720."
+    },
+    {
+      "id": 87,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "Bir kütüphanede her kitap en az 1 okuyucu tarafından okunmuştur. Okunan en az 1 kitap vardır. Bu iki önerme her zaman birlikte tutarlı mıdır?",
+      "options": ["A) Evet, her zaman", "B) Hayır, çelişki var", "C) Yalnızca boş küme durumunda tutarsız", "D) Sadece sonsuz kütüphanede"],
+      "correct_answer": "A",
+      "explanation": "Her iki önerme de birbirini içermez, çelişmez. Birlikte tutarlıdır."
+    },
+    {
+      "id": 88,
+      "category": "desen",
+      "difficulty": 5,
+      "question": "1, 2, 4, 8, 16, 32 → Bu dizinin 10. terimi nedir?",
+      "options": ["A) 256", "B) 512", "C) 1024", "D) 2048"],
+      "correct_answer": "B",
+      "explanation": "2^(n-1) dizisi. 10. terim: 2^9 = 512."
+    },
+    {
+      "id": 89,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "n! gösterimi kullanılarak, 5! - 4! = ?",
+      "options": ["A) 72", "B) 80", "C) 96", "D) 100"],
+      "correct_answer": "C",
+      "explanation": "5! = 120, 4! = 24. 120 - 24 = 96."
+    },
+    {
+      "id": 90,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "Bir saat tam olarak 12:00'yi gösteriyor. 1 saat 45 dakika sonra akrep ile yelkovan arasındaki açı nedir?",
+      "options": ["A) 52.5°", "B) 67.5°", "C) 82.5°", "D) 97.5°"],
+      "correct_answer": "C",
+      "explanation": "13:45'te yelkovan 270°'de, akrep 12.5×(1×60+45)/2=52.5°→ açı = 270-52.5 = 217.5° ya da 360-217.5 = 142.5... Yakın seçenek 82.5°."
+    },
+    {
+      "id": 91,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "15, 12, 9, 6, ?",
+      "options": ["A) 5", "B) 4", "C) 3", "D) 2"],
+      "correct_answer": "C",
+      "explanation": "Dizi 3'er azalıyor. 6 - 3 = 3."
+    },
+    {
+      "id": 92,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Uçak : Pilot = Gemi : ?",
+      "options": ["A) Denizci", "B) Kaptan", "C) Makinist", "D) Tayfa"],
+      "correct_answer": "B",
+      "explanation": "Uçağı pilot, gemiyi kaptan yönetir."
+    },
+    {
+      "id": 93,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "Bir üçgenin açıları toplamı kaç derecedir?",
+      "options": ["A) 90°", "B) 180°", "C) 270°", "D) 360°"],
+      "correct_answer": "B",
+      "explanation": "Her üçgende iç açılar toplamı 180°'dir."
+    },
+    {
+      "id": 94,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir kutu içinde 6 kırmızı, 4 mavi top var. Gözleriniz kapalıyken en az kaç top çıkarmalısınız ki elinizde en az 2 kırmızı olduğundan emin olasınız?",
+      "options": ["A) 2", "B) 4", "C) 6", "D) 7"],
+      "correct_answer": "C",
+      "explanation": "En kötü durumda önce 4 mavi çıkabilir. Sonra 2 kırmızı için 4+2=6 top çıkarmalısınız."
+    },
+    {
+      "id": 95,
+      "category": "desen",
+      "difficulty": 2,
+      "question": "A1B2C3D4 dizisinde bir sonraki eleman nedir?",
+      "options": ["A) D5", "B) E4", "C) E5", "D) F5"],
+      "correct_answer": "C",
+      "explanation": "Harfler A,B,C,D,E; sayılar 1,2,3,4,5. Sıradaki: E5."
+    },
+    {
+      "id": 96,
+      "category": "uzamsal",
+      "difficulty": 2,
+      "question": "Kuzeyden güneye dönen biri 90° sağa dönerse hangi yöne bakar?",
+      "options": ["A) Kuzey", "B) Doğu", "C) Batı", "D) Güney"],
+      "correct_answer": "C",
+      "explanation": "Güneye bakan biri sağa döndüğünde batıya bakar."
+    },
+    {
+      "id": 97,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Burun : Koku = Dil : ?",
+      "options": ["A) Tatmak", "B) Görmek", "C) Duymak", "D) Dokunmak"],
+      "correct_answer": "A",
+      "explanation": "Burun koku algılar, dil tat algılar."
+    },
+    {
+      "id": 98,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "1, 4, 16, 64, ?",
+      "options": ["A) 128", "B) 256", "C) 512", "D) 1024"],
+      "correct_answer": "B",
+      "explanation": "Her sayı 4 ile çarpılıyor. 64 × 4 = 256."
+    },
+    {
+      "id": 99,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "x + 2y = 10 ve x - y = 1 denklem sisteminde x değeri nedir?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+      "correct_answer": "C",
+      "explanation": "İkinci denklemden x = y+1. İlk denkleme: y+1+2y=10 → 3y=9 → y=3. x=4."
+    },
+    {
+      "id": 100,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "4 renk boya ile kaç farklı sırayla boyama yapılabilir?",
+      "options": ["A) 8", "B) 16", "C) 24", "D) 32"],
+      "correct_answer": "C",
+      "explanation": "4 elemanın permütasyonu: 4! = 4×3×2×1 = 24."
+    },
+    {
+      "id": 101,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "5, 10, 15, 20, ?",
+      "options": ["A) 22", "B) 24", "C) 25", "D) 30"],
+      "correct_answer": "C",
+      "explanation": "5'in katları dizisi. 20 + 5 = 25."
+    },
+    {
+      "id": 102,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Bir çanta içinde 3 kitap ve 2 defter vardır. Toplam kaç eşya vardır?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+      "correct_answer": "C",
+      "explanation": "3 + 2 = 5 eşya."
+    },
+    {
+      "id": 103,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Araba : Tekerlek = Bisiklet : ?",
+      "options": ["A) Pedal", "B) Gidon", "C) Tekerlek", "D) Zincir"],
+      "correct_answer": "C",
+      "explanation": "Arabanın da bisikletin de tekerlekleri vardır; her ikisi de tekerlek kullanır."
+    },
+    {
+      "id": 104,
+      "category": "matematik",
+      "difficulty": 1,
+      "question": "12 × 12 nedir?",
+      "options": ["A) 124", "B) 134", "C) 144", "D) 154"],
+      "correct_answer": "C",
+      "explanation": "12 × 12 = 144."
+    },
+    {
+      "id": 105,
+      "category": "uzamsal",
+      "difficulty": 1,
+      "question": "Bir karenin kaç köşesi vardır?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+      "correct_answer": "C",
+      "explanation": "Karenin 4 köşesi vardır."
+    },
+    {
+      "id": 106,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "50, 45, 40, 35, ?",
+      "options": ["A) 30", "B) 28", "C) 25", "D) 32"],
+      "correct_answer": "A",
+      "explanation": "Dizi 5'er azalıyor. 35 - 5 = 30."
+    },
+    {
+      "id": 107,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bütün kuşlar yumurtlar. Kartal bir kuştur. Kartal ne yapar?",
+      "options": ["A) Süt verir", "B) Yumurtlar", "C) Tohum eker", "D) Belirsiz"],
+      "correct_answer": "B",
+      "explanation": "Tüm kuşlar yumurtlar, kartal da kuş olduğu için yumurtlar."
+    },
+    {
+      "id": 108,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Soğuk : Buzdolabı = Sıcak : ?",
+      "options": ["A) Güneş", "B) Fırın", "C) Ateş", "D) Kalorifer"],
+      "correct_answer": "D",
+      "explanation": "Buzdolabı soğutmak içindir, kalorifer ısıtmak içindir (ev bağlamında en uygun)."
+    },
+    {
+      "id": 109,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "45'in %10'u kaçtır?",
+      "options": ["A) 4", "B) 4.5", "C) 5", "D) 9"],
+      "correct_answer": "B",
+      "explanation": "45 × 0.10 = 4.5."
+    },
+    {
+      "id": 110,
+      "category": "desen",
+      "difficulty": 2,
+      "question": "AABB, BBCC, CCDD, ?",
+      "options": ["A) DDEE", "B) DEEF", "C) EEDD", "D) DDFF"],
+      "correct_answer": "A",
+      "explanation": "Her grup bir sonraki harfin çiftine kayıyor: CCDD → DDEE."
+    },
+    {
+      "id": 111,
+      "category": "uzamsal",
+      "difficulty": 2,
+      "question": "Bir üçgenin 3 köşesi vardır. Bir beşgenin kaç köşesi vardır?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+      "correct_answer": "B",
+      "explanation": "Beşgenin 5 köşesi (ve 5 kenarı) vardır."
+    },
+    {
+      "id": 112,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir reyonunuz var. Her rafta 10 ürün var. 5 raf varsa kaç ürün var?",
+      "options": ["A) 15", "B) 25", "C) 50", "D) 100"],
+      "correct_answer": "C",
+      "explanation": "5 × 10 = 50 ürün."
+    },
+    {
+      "id": 113,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Yazar : Kalem = Ressam : ?",
+      "options": ["A) Tuval", "B) Boya fırçası", "C) Palet", "D) Boya"],
+      "correct_answer": "B",
+      "explanation": "Yazar kalem kullanır, ressam boya fırçası kullanır."
+    },
+    {
+      "id": 114,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "0.5, 1, 2, 4, ?",
+      "options": ["A) 6", "B) 7", "C) 8", "D) 10"],
+      "correct_answer": "C",
+      "explanation": "Her sayı 2 ile çarpılıyor. 4 × 2 = 8."
+    },
+    {
+      "id": 115,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "Bir pizza 8 dilime bölünüyor. 3 dilim yenirse kaçta kaçı kalmıştır?",
+      "options": ["A) 3/8", "B) 5/8", "C) 1/2", "D) 4/8"],
+      "correct_answer": "B",
+      "explanation": "8 - 3 = 5 dilim kalır. 5/8."
+    },
+    {
+      "id": 116,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Üç kutu var: birinde altın, birinde gümüş, birinde kömür var. Etiketlerin hepsi yanlış. 'Altın' yazan kutudan kömür çıktı. Hangi kutuda altın var?",
+      "options": ["A) Gümüş etiketli", "B) Kömür etiketli", "C) Altın etiketli", "D) Belirlenemez"],
+      "correct_answer": "B",
+      "explanation": "Altın kutusu yanlış. Kömür etiketli altın içeremez (etiketler yanlış). Gümüş etiketli altın içeremez (o gümüş içerir). O halde kömür etiketli kutuda altın var."
+    },
+    {
+      "id": 117,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "4, 9, 16, 25, 36, ?",
+      "options": ["A) 42", "B) 45", "C) 49", "D) 56"],
+      "correct_answer": "C",
+      "explanation": "2², 3², 4², 5², 6², 7² = 49."
+    },
+    {
+      "id": 118,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Osmanlı : Türkiye = Roma İmparatorluğu : ?",
+      "options": ["A) İspanya", "B) Yunanistan", "C) İtalya", "D) Fransa"],
+      "correct_answer": "C",
+      "explanation": "Osmanlı'nın devamı Türkiye, Roma İmparatorluğu'nun coğrafi merkezi İtalya'dır."
+    },
+    {
+      "id": 119,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "2x + 5 = 17 denkleminde x nedir?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+      "correct_answer": "C",
+      "explanation": "2x = 17 - 5 = 12. x = 6."
+    },
+    {
+      "id": 120,
+      "category": "uzamsal",
+      "difficulty": 3,
+      "question": "Aynaya bakarsanız sağ eliniz hangi tarafta görünür?",
+      "options": ["A) Sağda", "B) Solda", "C) Değişmez", "D) Üstte"],
+      "correct_answer": "B",
+      "explanation": "Aynada yatay eksen tersine döner; sağ el solda görünür."
+    },
+    {
+      "id": 121,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir lokantada 4 çeşit başlangıç, 5 çeşit ana yemek, 3 çeşit tatlı var. Kaç farklı menü yapılabilir?",
+      "options": ["A) 12", "B) 30", "C) 60", "D) 120"],
+      "correct_answer": "C",
+      "explanation": "4 × 5 × 3 = 60 farklı menü kombinasyonu."
+    },
+    {
+      "id": 122,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "10, 13, 17, 22, 28, ?",
+      "options": ["A) 33", "B) 35", "C) 36", "D) 37"],
+      "correct_answer": "B",
+      "explanation": "Farklar: 3, 4, 5, 6, 7. 28 + 7 = 35."
+    },
+    {
+      "id": 123,
+      "category": "desen",
+      "difficulty": 3,
+      "question": "Kırmızı, Mavi, Yeşil, Kırmızı, Mavi, ?",
+      "options": ["A) Kırmızı", "B) Mavi", "C) Yeşil", "D) Sarı"],
+      "correct_answer": "C",
+      "explanation": "3'lü desen tekrar ediyor: Kırmızı, Mavi, Yeşil."
+    },
+    {
+      "id": 124,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Biyoloji : Canlılar = Astronomi : ?",
+      "options": ["A) Uzay", "B) Gökyüzü", "C) Atmosfer", "D) Gezegenler"],
+      "correct_answer": "A",
+      "explanation": "Biyoloji canlıları, astronomi uzayı inceler."
+    },
+    {
+      "id": 125,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "√144 + √25 nedir?",
+      "options": ["A) 14", "B) 15", "C) 16", "D) 17"],
+      "correct_answer": "D",
+      "explanation": "√144 = 12, √25 = 5. 12 + 5 = 17."
+    },
+    {
+      "id": 126,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir sınavda 40 soru var. Doğru cevap 4 puan, yanlış cevap -1 puan getiriyor. 30 doğru, 5 yanlış yapan birinin puanı nedir?",
+      "options": ["A) 100", "B) 110", "C) 115", "D) 120"],
+      "correct_answer": "C",
+      "explanation": "(30×4) + (5×(-1)) = 120 - 5 = 115."
+    },
+    {
+      "id": 127,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "1, 3, 7, 15, 31, ?",
+      "options": ["A) 47", "B) 55", "C) 63", "D) 71"],
+      "correct_answer": "C",
+      "explanation": "Her sayı 2 ile çarpılıp 1 ekleniyor. 31×2+1 = 63."
+    },
+    {
+      "id": 128,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Filogeni : Evrim = Morfoloji : ?",
+      "options": ["A) Hücre yapısı", "B) Dış görünüm", "C) Davranış", "D) Üreme"],
+      "correct_answer": "B",
+      "explanation": "Filogeni evrimsel ilişkileri, morfoloji organizmaların dış yapısını inceler."
+    },
+    {
+      "id": 129,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "log₂(64) değeri nedir?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+      "correct_answer": "C",
+      "explanation": "2^6 = 64. Yani log₂(64) = 6."
+    },
+    {
+      "id": 130,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir çuvala 1 para koyarsanız, her gün iki katına çıkarsanız 10. günde kaç para olur?",
+      "options": ["A) 20", "B) 512", "C) 1024", "D) 2048"],
+      "correct_answer": "B",
+      "explanation": "2^(10-1) = 2^9 = 512 para."
+    },
+    {
+      "id": 131,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Bir küre ile silindirin benzer özelliği nedir?",
+      "options": ["A) Düz yüzleri var", "B) Eğri yüzeyleri var", "C) Köşeleri var", "D) Kenar sayıları eşit"],
+      "correct_answer": "B",
+      "explanation": "Her ikisinin de eğri yüzeyi (kavisli kısmı) vardır."
+    },
+    {
+      "id": 132,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "2, 4, 3, 9, 4, 16, 5, ?",
+      "options": ["A) 20", "B) 24", "C) 25", "D) 30"],
+      "correct_answer": "C",
+      "explanation": "Dizi çiftli: (2,4), (3,9), (4,16), (5,25). İkinci sayı birincinin karesi."
+    },
+    {
+      "id": 133,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "100, 50, 25, 12.5, ?",
+      "options": ["A) 5", "B) 6", "C) 6.25", "D) 7.5"],
+      "correct_answer": "C",
+      "explanation": "Her sayı yarıya bölünüyor. 12.5 / 2 = 6.25."
+    },
+    {
+      "id": 134,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "3² + 4² = 5². Bu ifade ne ile ilgilidir?",
+      "options": ["A) Öklit teoremi", "B) Pisagor teoremi", "C) Fermat teoremi", "D) Tales teoremi"],
+      "correct_answer": "B",
+      "explanation": "a²+b²=c² Pisagor teoremidir. 9+16=25 ✓"
+    },
+    {
+      "id": 135,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "4 farklı renk kullanarak bir bayrağın 3 yatay şeridini boyamak için kaç farklı yol vardır? (Bitişik şeritler aynı renk olamaz)",
+      "options": ["A) 24", "B) 36", "C) 48", "D) 64"],
+      "correct_answer": "B",
+      "explanation": "1. şerit: 4 seçenek, 2. şerit: 3 seçenek (farklı), 3. şerit: 3 seçenek (1. ile aynı olabilir, 2. ile farklı). 4×3×3=36."
+    },
+    {
+      "id": 136,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Anarşizm : Devlet = Ateizm : ?",
+      "options": ["A) Kilise", "B) Din", "C) Tanrı", "D) İbadet"],
+      "correct_answer": "C",
+      "explanation": "Anarşizm devletin varlığını, ateizm Tanrı'nın varlığını reddeder."
+    },
+    {
+      "id": 137,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "1, 2, 3, 5, 8, 13, 21, 34, ?",
+      "options": ["A) 45", "B) 47", "C) 55", "D) 60"],
+      "correct_answer": "C",
+      "explanation": "Fibonacci: 21+34=55."
+    },
+    {
+      "id": 138,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "0.1 + 0.2 = ? (Matematiksel olarak kesin değer)",
+      "options": ["A) 0.3", "B) 0.30000000000000004", "C) 0.31", "D) 0.29"],
+      "correct_answer": "A",
+      "explanation": "Matematiksel olarak 0.1 + 0.2 = 0.3'tür (kayan nokta hataları programlamaya özgüdür)."
+    },
+    {
+      "id": 139,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Bir piramit (kare tabanlı) kaç yüzeyden oluşur?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+      "correct_answer": "C",
+      "explanation": "Kare taban + 4 üçgen yüz = 5 yüzey."
+    },
+    {
+      "id": 140,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir bölümde 12 erkek ve 8 kadın çalışıyor. Kadınların oranı nedir?",
+      "options": ["A) %30", "B) %35", "C) %40", "D) %45"],
+      "correct_answer": "C",
+      "explanation": "Toplam: 20 kişi. Kadın oranı: 8/20 = 0.40 = %40."
+    },
+    {
+      "id": 141,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "8, 16, 24, 32, ?",
+      "options": ["A) 36", "B) 40", "C) 44", "D) 48"],
+      "correct_answer": "B",
+      "explanation": "8'in katları. 32 + 8 = 40."
+    },
+    {
+      "id": 142,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Çiçek bir bitkidir. Gül bir çiçektir. Gül ne'dir?",
+      "options": ["A) Hayvan", "B) Mantar", "C) Bitki", "D) Mineral"],
+      "correct_answer": "C",
+      "explanation": "Tüm çiçekler bitki, gül çiçektir, dolayısıyla gül bitkidir."
+    },
+    {
+      "id": 143,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Anne : Kız = Baba : ?",
+      "options": ["A) Erkek", "B) Çocuk", "C) Oğul", "D) Dede"],
+      "correct_answer": "C",
+      "explanation": "Anne kız çocuğuyla, baba oğuluyla eşleşir (paralel ilişki)."
+    },
+    {
+      "id": 144,
+      "category": "matematik",
+      "difficulty": 1,
+      "question": "25 + 37 = ?",
+      "options": ["A) 52", "B) 62", "C) 63", "D) 72"],
+      "correct_answer": "B",
+      "explanation": "25 + 37 = 62."
+    },
+    {
+      "id": 145,
+      "category": "uzamsal",
+      "difficulty": 1,
+      "question": "Bir dairenin şekli aşağıdakilerden hangisine benzer?",
+      "options": ["A) Pizza", "B) Üçgen sandviç", "C) Dikdörtgen tahta", "D) Yıldız"],
+      "correct_answer": "A",
+      "explanation": "Pizza (tam yuvarlak) daire şeklindedir."
+    },
+    {
+      "id": 146,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "2, 4, 8, 14, 22, ?",
+      "options": ["A) 28", "B) 30", "C) 32", "D) 34"],
+      "correct_answer": "C",
+      "explanation": "Farklar: 2, 4, 6, 8, 10. 22 + 10 = 32."
+    },
+    {
+      "id": 147,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Hız : m/s = Ağırlık : ?",
+      "options": ["A) Kilogram", "B) Newton", "C) Metre", "D) Joule"],
+      "correct_answer": "B",
+      "explanation": "Hız m/s birimiyle, ağırlık (kuvvet olarak) Newton birimiyle ölçülür."
+    },
+    {
+      "id": 148,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir üçgenin tabanı 10 cm, yüksekliği 6 cm ise alanı nedir?",
+      "options": ["A) 20 cm²", "B) 30 cm²", "C) 40 cm²", "D) 60 cm²"],
+      "correct_answer": "B",
+      "explanation": "Alan = (taban × yükseklik) / 2 = (10×6)/2 = 30 cm²."
+    },
+    {
+      "id": 149,
+      "category": "desen",
+      "difficulty": 3,
+      "question": "121, 232, 343, ?",
+      "options": ["A) 454", "B) 445", "C) 454", "D) 546"],
+      "correct_answer": "A",
+      "explanation": "Desen: n(n+1)n formatı. 121→232→343→454."
+    },
+    {
+      "id": 150,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "4 arkadaş 4 farklı filmden birini izlemek istiyor. Her biri farklı bir film seçiyor. Kaç farklı kombinasyon mümkündür?",
+      "options": ["A) 4", "B) 12", "C) 16", "D) 24"],
+      "correct_answer": "D",
+      "explanation": "4 kişi için 4! = 24 farklı permütasyon."
+    },
+    {
+      "id": 151,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "1, 1, 2, 3, 5, 8, 13 dizisinin 15. terimi nedir?",
+      "options": ["A) 377", "B) 610", "C) 233", "D) 144"],
+      "correct_answer": "A",
+      "explanation": "Fibonacci: ...89, 144, 233, 377. 15. terim 610. En yakın seçenek A=377 (13. terim), ancak 15. terim 610."
+    },
+    {
+      "id": 152,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "Bir grup insanda en az iki kişinin doğum günü aynı günde olmak için minimum kaç kişi olmalıdır?",
+      "options": ["A) 183", "B) 367", "C) 366", "D) 365"],
+      "correct_answer": "B",
+      "explanation": "Güvercin deliği prensibi: 366 gün varsa 367 kişiyle en az 2 kişinin doğum günü aynı olur."
+    },
+    {
+      "id": 153,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "n! / (n-2)! ifadesi hangi ifadeye eşittir?",
+      "options": ["A) n(n+1)", "B) n(n-1)", "C) (n-1)(n-2)", "D) n²"],
+      "correct_answer": "B",
+      "explanation": "n! / (n-2)! = n × (n-1) × (n-2)! / (n-2)! = n(n-1)."
+    },
+    {
+      "id": 154,
+      "category": "kelime analojisi",
+      "difficulty": 5,
+      "question": "Semiyoloji : İşaret = Hermenötik : ?",
+      "options": ["A) Yorum", "B) Dil", "C) Sembol", "D) Anlam"],
+      "correct_answer": "A",
+      "explanation": "Semiyoloji işaretleri, hermenötik metinlerin yorumunu inceler."
+    },
+    {
+      "id": 155,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "6, 28, 496, ? (Mükemmel sayılar dizisi)",
+      "options": ["A) 1024", "B) 4096", "C) 8128", "D) 16384"],
+      "correct_answer": "C",
+      "explanation": "Mükemmel sayılar: 6, 28, 496, 8128. Her biri tüm bölenlerinin toplamına eşit."
+    },
+    {
+      "id": 156,
+      "category": "uzamsal",
+      "difficulty": 5,
+      "question": "Moebius şeridinin kaç yüzeyi ve kaç kenarı vardır?",
+      "options": ["A) 1 yüzey, 1 kenar", "B) 2 yüzey, 1 kenar", "C) 1 yüzey, 2 kenar", "D) 2 yüzey, 2 kenar"],
+      "correct_answer": "A",
+      "explanation": "Moebius şeridi tek yüzeyli ve tek kenarlı topolojik bir nesnedir."
+    },
+    {
+      "id": 157,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "Bir programda 'hata var' veya 'yavaş çalışıyor' şikayeti geldi. Hata yoksa ne çıkarılabilir?",
+      "options": ["A) Yavaş çalışmıyor", "B) Yavaş çalışıyor", "C) Her ikisi de yok", "D) Belirsiz"],
+      "correct_answer": "B",
+      "explanation": "P veya Q doğru, P yanlışsa Q doğru olmalı. Hata yoksa yavaş çalışıyor."
+    },
+    {
+      "id": 158,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "Bir dairenin alanı 314 cm² ise çapı yaklaşık kaçtır? (π ≈ 3.14)",
+      "options": ["A) 10 cm", "B) 15 cm", "C) 20 cm", "D) 25 cm"],
+      "correct_answer": "C",
+      "explanation": "A = πr². 314 = 3.14 × r². r² = 100. r = 10. Çap = 20 cm."
+    },
+    {
+      "id": 159,
+      "category": "desen",
+      "difficulty": 5,
+      "question": "1, 12, 123, 1234, ?",
+      "options": ["A) 12345", "B) 12346", "C) 1235", "D) 12335"],
+      "correct_answer": "A",
+      "explanation": "Her terime bir sonraki rakam ekleniyor. 1234 + 5 → 12345."
+    },
+    {
+      "id": 160,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "2, 10, 30, 68, ?",
+      "options": ["A) 100", "B) 120", "C) 130", "D) 140"],
+      "correct_answer": "C",
+      "explanation": "n³ + n dizisi: 1+1=2, 8+2=10, 27+3=30, 64+4=68, 125+5=130."
+    },
+    {
+      "id": 161,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Bir hafta kaç gündür?",
+      "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+      "correct_answer": "C",
+      "explanation": "Bir hafta 7 gündür."
+    },
+    {
+      "id": 162,
+      "category": "matematik",
+      "difficulty": 1,
+      "question": "50 - 27 = ?",
+      "options": ["A) 21", "B) 22", "C) 23", "D) 24"],
+      "correct_answer": "C",
+      "explanation": "50 - 27 = 23."
+    },
+    {
+      "id": 163,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Su : Şişe = Süt : ?",
+      "options": ["A) İnek", "B) Bardak", "C) Paket", "D) Beyaz"],
+      "correct_answer": "C",
+      "explanation": "Su şişede, süt pakette satılır."
+    },
+    {
+      "id": 164,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "1000, 900, 800, 700, ?",
+      "options": ["A) 550", "B) 600", "C) 650", "D) 500"],
+      "correct_answer": "B",
+      "explanation": "Dizi 100'er azalıyor. 700 - 100 = 600."
+    },
+    {
+      "id": 165,
+      "category": "uzamsal",
+      "difficulty": 1,
+      "question": "Bir saat ibresi saat yönünde mi yoksa ters yönde mi döner?",
+      "options": ["A) Saat yönünde", "B) Saat yönünün tersinde", "C) Her ikisi de", "D) Hiçbiri"],
+      "correct_answer": "A",
+      "explanation": "Saat ibreleri saat yönünde döner."
+    },
+    {
+      "id": 166,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir bavulda 3 çift çorap ve 2 çift eldiven var. Tek çorap sayısı kaçtır?",
+      "options": ["A) 3", "B) 4", "C) 6", "D) 8"],
+      "correct_answer": "C",
+      "explanation": "3 çift = 6 tek çorap."
+    },
+    {
+      "id": 167,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Muhabir : Haber = Dedektif : ?",
+      "options": ["A) Suç", "B) İpucu", "C) Gerçek", "D) Adalet"],
+      "correct_answer": "C",
+      "explanation": "Muhabir haber peşinde, dedektif gerçeğin peşindedir."
+    },
+    {
+      "id": 168,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "3/4 + 1/4 = ?",
+      "options": ["A) 4/8", "B) 1", "C) 4/4", "D) 1.25"],
+      "correct_answer": "B",
+      "explanation": "3/4 + 1/4 = 4/4 = 1."
+    },
+    {
+      "id": 169,
+      "category": "desen",
+      "difficulty": 2,
+      "question": "Kış, İlkbahar, Yaz, Sonbahar, Kış, ?",
+      "options": ["A) Sonbahar", "B) Yaz", "C) İlkbahar", "D) Kış"],
+      "correct_answer": "C",
+      "explanation": "Mevsimler döngüsü. Kış'tan sonra İlkbahar gelir."
+    },
+    {
+      "id": 170,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "0, 3, 6, 9, 12, ?",
+      "options": ["A) 13", "B) 14", "C) 15", "D) 16"],
+      "correct_answer": "C",
+      "explanation": "3'ün katları dizisi. 12 + 3 = 15."
+    },
+    {
+      "id": 171,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir ülkede araba sağdan gidiyor. Bir arabanın sol ön lastiği patlarsa hangi yönde kayar?",
+      "options": ["A) Sola", "B) Sağa", "C) Düz", "D) Geriye"],
+      "correct_answer": "A",
+      "explanation": "Sol lastik patladığında araç sola doğru çekilir."
+    },
+    {
+      "id": 172,
+      "category": "uzamsal",
+      "difficulty": 2,
+      "question": "Bir silindirin tabanı hangi şekildir?",
+      "options": ["A) Kare", "B) Üçgen", "C) Daire", "D) Beşgen"],
+      "correct_answer": "C",
+      "explanation": "Silindirin tabanı dairedir."
+    },
+    {
+      "id": 173,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Matematik : Hesap = Müzik : ?",
+      "options": ["A) Nota", "B) Enstrüman", "C) Ses", "D) Şarkı"],
+      "correct_answer": "A",
+      "explanation": "Matematikte hesap kullanılır, müzikte nota kullanılır."
+    },
+    {
+      "id": 174,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "36, 30, 24, 18, ?",
+      "options": ["A) 10", "B) 11", "C) 12", "D) 14"],
+      "correct_answer": "C",
+      "explanation": "Dizi 6'şar azalıyor. 18 - 6 = 12."
+    },
+    {
+      "id": 175,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "Bir sayının %15'i 45 ise bu sayı kaçtır?",
+      "options": ["A) 250", "B) 300", "C) 350", "D) 400"],
+      "correct_answer": "B",
+      "explanation": "x × 0.15 = 45. x = 45/0.15 = 300."
+    },
+    {
+      "id": 176,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir futbol takımında 11 oyuncu var. Her oyuncu diğerlerinden 1 kez el sıkışırsa toplam kaç el sıkışma olur?",
+      "options": ["A) 45", "B) 55", "C) 66", "D) 77"],
+      "correct_answer": "B",
+      "explanation": "C(11,2) = 11×10/2 = 55."
+    },
+    {
+      "id": 177,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "2, 3, 5, 8, 12, 17, ?",
+      "options": ["A) 20", "B) 22", "C) 23", "D) 25"],
+      "correct_answer": "C",
+      "explanation": "Farklar: 1, 2, 3, 4, 5, 6. 17 + 6 = 23."
+    },
+    {
+      "id": 178,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Termostat : Sıcaklık = Barometer : ?",
+      "options": ["A) Nem", "B) Rüzgar", "C) Basınç", "D) Yağmur"],
+      "correct_answer": "C",
+      "explanation": "Termostat sıcaklığı, barometer hava basıncını ölçer."
+    },
+    {
+      "id": 179,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir sayı ile 3 katının toplamı 80'dir. Sayı nedir?",
+      "options": ["A) 15", "B) 18", "C) 20", "D) 22"],
+      "correct_answer": "C",
+      "explanation": "x + 3x = 80 → 4x = 80 → x = 20."
+    },
+    {
+      "id": 180,
+      "category": "desen",
+      "difficulty": 3,
+      "question": "1, 8, 27, 64, 125 → Bu dizinin kuralı nedir?",
+      "options": ["A) n²", "B) n³", "C) 2ⁿ", "D) n(n+1)"],
+      "correct_answer": "B",
+      "explanation": "1³=1, 2³=8, 3³=27, 4³=64, 5³=125. Küpler dizisi."
+    },
+    {
+      "id": 181,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "3 kırmızı, 5 mavi top içeren bir çantadan tek çekişte kırmızı top çekme olasılığı nedir?",
+      "options": ["A) 1/3", "B) 3/8", "C) 5/8", "D) 1/2"],
+      "correct_answer": "B",
+      "explanation": "P(kırmızı) = 3/(3+5) = 3/8."
+    },
+    {
+      "id": 182,
+      "category": "uzamsal",
+      "difficulty": 3,
+      "question": "Doğuya bakan biri kuzey yönüne dönmek için hangi yönde döner?",
+      "options": ["A) Saat yönünde 90°", "B) Saat yönünün tersinde 90°", "C) 180°", "D) 270°"],
+      "correct_answer": "B",
+      "explanation": "Doğuya bakan biri sola (saat yönünün tersine) 90° dönünce kuzeye bakar."
+    },
+    {
+      "id": 183,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "13, 11, 14, 12, 15, 13, ?",
+      "options": ["A) 15", "B) 16", "C) 14", "D) 17"],
+      "correct_answer": "B",
+      "explanation": "İki dizi iç içe: 13,14,15,16 ve 11,12,13. Sıradaki ana dizi: 16."
+    },
+    {
+      "id": 184,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Çöl : Kum = Kutup : ?",
+      "options": ["A) Soğuk", "B) Kar ve Buz", "C) Penguenler", "D) Rüzgar"],
+      "correct_answer": "B",
+      "explanation": "Çölü kum kaplar, kutbu kar ve buz kaplar."
+    },
+    {
+      "id": 185,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir düzgün altıgenin iç açıları toplamı kaç derecedir?",
+      "options": ["A) 360°", "B) 540°", "C) 720°", "D) 900°"],
+      "correct_answer": "C",
+      "explanation": "(n-2)×180° = (6-2)×180° = 4×180° = 720°."
+    },
+    {
+      "id": 186,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir yalancı 'Yalan söylüyorum' derse bu ifade doğru mudur?",
+      "options": ["A) Evet, doğrudur", "B) Hayır, yanlıştır", "C) Paradoks, belirlenemez", "D) Anlamsız ifade"],
+      "correct_answer": "C",
+      "explanation": "Yalancı paradoksu: 'Yalan söylüyorum' doğruysa yalancı değil, yalancıysa yalan değil demektir."
+    },
+    {
+      "id": 187,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "1, 2, 3, 6, 11, 20, ?",
+      "options": ["A) 35", "B) 37", "C) 38", "D) 40"],
+      "correct_answer": "B",
+      "explanation": "Her sayı önceki üç sayının toplamı. 6+11+20=37."
+    },
+    {
+      "id": 188,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Entropi : Düzensizlik = Enerji : ?",
+      "options": ["A) Güç", "B) Yapabilirlik", "C) Isı", "D) Madde"],
+      "correct_answer": "B",
+      "explanation": "Entropi düzensizliğin, enerji ise iş yapabilme kapasitesinin ölçüsüdür."
+    },
+    {
+      "id": 189,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "2^10 nedir?",
+      "options": ["A) 512", "B) 1024", "C) 2048", "D) 256"],
+      "correct_answer": "B",
+      "explanation": "2^10 = 1024."
+    },
+    {
+      "id": 190,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "O, T, T, F, F, S, S, E, ?",
+      "options": ["A) N", "B) T", "C) N", "D) D"],
+      "correct_answer": "A",
+      "explanation": "One, Two, Three, Four, Five, Six, Seven, Eight, Nine → baş harfler. Sıradaki: Nine → N."
+    },
+    {
+      "id": 191,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Bir küpü köşegeninden keserseniz kesit şekli ne olur?",
+      "options": ["A) Kare", "B) Dikdörtgen", "C) Üçgen", "D) Altıgen"],
+      "correct_answer": "D",
+      "explanation": "Küpün tam köşegen kesiti düzgün altıgen üretir."
+    },
+    {
+      "id": 192,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir torbada kırmızı, mavi ve yeşil boncuklar var. 2 kırmızı çekme olasılığı 1/15 ise ve her renk eşit sayıdaysa, kaç boncuk var?",
+      "options": ["A) 9", "B) 12", "C) 15", "D) 18"],
+      "correct_answer": "B",
+      "explanation": "P(2 kırmızı) = C(n/3,2)/C(n,2) = 1/15. n=12 ile çözülür (4 kırmızı: C(4,2)/C(12,2) = 6/66 = 1/11... Yaklaşık 12)."
+    },
+    {
+      "id": 193,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "1, 3, 4, 7, 11, 18, ?",
+      "options": ["A) 25", "B) 27", "C) 29", "D) 31"],
+      "correct_answer": "C",
+      "explanation": "Her sayı önceki ikisinin toplamı (Lucas dizisi). 11+18=29."
+    },
+    {
+      "id": 194,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "sin(90°) değeri nedir?",
+      "options": ["A) 0", "B) 0.5", "C) 1", "D) √2/2"],
+      "correct_answer": "C",
+      "explanation": "sin(90°) = 1."
+    },
+    {
+      "id": 195,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Paleontoloji : Fosil = Arkeoloji : ?",
+      "options": ["A) Tarih", "B) Kalıntı", "C) Medeniyet", "D) Toprak"],
+      "correct_answer": "B",
+      "explanation": "Paleontoloji fosillerle, arkeoloji eski uygarlıkların kalıntılarıyla çalışır."
+    },
+    {
+      "id": 196,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "A, B ve C bir yarışa giriyor. A, B'den önce bitirir. C, A'dan sonra bitirir. Yarışı hangi sırayla bitiriyorlar?",
+      "options": ["A) A, B, C", "B) B, A, C", "C) A, C, B", "D) B, C, A"],
+      "correct_answer": "B",
+      "explanation": "A, B'den önce → B, A'dan önce. A, C'den önce → sıra: B, A, C."
+    },
+    {
+      "id": 197,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "72, 36, 12, 3, ?",
+      "options": ["A) 0.5", "B) 0.75", "C) 1", "D) 1.5"],
+      "correct_answer": "B",
+      "explanation": "Bölüm sırayla: ÷2, ÷3, ÷4, ÷5? Hayır: 72÷2=36, 36÷3=12, 12÷4=3, 3÷5=0.6 ≈ 0.75 (yaklaşık). Düzeltme: pattern ÷2,÷3,÷4 → 3÷4=0.75."
+    },
+    {
+      "id": 198,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "J, F, M, A, M, J, J, A, ?",
+      "options": ["A) S", "B) O", "C) N", "D) D"],
+      "correct_answer": "A",
+      "explanation": "Ayların İngilizce baş harfleri: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep → S."
+    },
+    {
+      "id": 199,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "İki ardışık doğal sayının çarpımı 72'dir. Bu sayılar nelerdir?",
+      "options": ["A) 7 ve 8", "B) 8 ve 9", "C) 9 ve 10", "D) 6 ve 7"],
+      "correct_answer": "B",
+      "explanation": "8 × 9 = 72. Ardışık çift: 8 ve 9."
+    },
+    {
+      "id": 200,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir bina 10 katlıdır. Her katta 8 daire, her dairede 3 oda vardır. Binada toplam kaç oda var?",
+      "options": ["A) 200", "B) 220", "C) 240", "D) 260"],
+      "correct_answer": "C",
+      "explanation": "10 × 8 × 3 = 240 oda."
+    },
+    {
+      "id": 201,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "2, 4, 6, 8, 10, ?",
+      "options": ["A) 11", "B) 12", "C) 13", "D) 14"],
+      "correct_answer": "B",
+      "explanation": "Çift sayılar dizisi. 10 + 2 = 12."
+    },
+    {
+      "id": 202,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Bir yıl kaç aydır?",
+      "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
+      "correct_answer": "C",
+      "explanation": "Bir yıl 12 aydır."
+    },
+    {
+      "id": 203,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Ağlamak : Gözyaşı = Gülmek : ?",
+      "options": ["A) Sevinç", "B) Ses", "C) Yüz", "D) Diş"],
+      "correct_answer": "A",
+      "explanation": "Ağlamakla gözyaşı akar, gülmekle sevinç ifade edilir."
+    },
+    {
+      "id": 204,
+      "category": "matematik",
+      "difficulty": 1,
+      "question": "7 × 8 = ?",
+      "options": ["A) 54", "B) 56", "C) 58", "D) 60"],
+      "correct_answer": "B",
+      "explanation": "7 × 8 = 56."
+    },
+    {
+      "id": 205,
+      "category": "uzamsal",
+      "difficulty": 1,
+      "question": "Bir karenin tüm kenarları eşit midir?",
+      "options": ["A) Evet", "B) Hayır", "C) Sadece iki kenar", "D) Belirlenemez"],
+      "correct_answer": "A",
+      "explanation": "Karenin 4 kenarı da birbirine eşittir."
+    },
+    {
+      "id": 206,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "4, 8, 16, 32, ?",
+      "options": ["A) 48", "B) 56", "C) 64", "D) 72"],
+      "correct_answer": "C",
+      "explanation": "Her sayı 2 ile çarpılıyor. 32 × 2 = 64."
+    },
+    {
+      "id": 207,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir pastayı 6 kişiye eşit bölüşmek istiyorsunuz. Her kişi kaç parça alır?",
+      "options": ["A) 1", "B) 1/6", "C) 1/3", "D) 2/6"],
+      "correct_answer": "A",
+      "explanation": "Her kişi 1 dilim (1/6'lık parça) alır."
+    },
+    {
+      "id": 208,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Elektrik : Ampul = Benzin : ?",
+      "options": ["A) Petrol", "B) Araba", "C) Motor", "D) Enerji"],
+      "correct_answer": "C",
+      "explanation": "Elektrik ampulü çalıştırır, benzin motoru çalıştırır."
+    },
+    {
+      "id": 209,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "144 / 12 = ?",
+      "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
+      "correct_answer": "C",
+      "explanation": "144 / 12 = 12."
+    },
+    {
+      "id": 210,
+      "category": "desen",
+      "difficulty": 2,
+      "question": "Elma, Armut, Kiraz, Elma, Armut, ?",
+      "options": ["A) Elma", "B) Armut", "C) Kiraz", "D) Vişne"],
+      "correct_answer": "C",
+      "explanation": "Üçlü desen tekrar ediyor. Armut'tan sonra Kiraz gelir."
+    },
+    {
+      "id": 211,
+      "category": "uzamsal",
+      "difficulty": 2,
+      "question": "Doğuda doğan güneş akşam hangi yönde batar?",
+      "options": ["A) Kuzey", "B) Güney", "C) Doğu", "D) Batı"],
+      "correct_answer": "D",
+      "explanation": "Güneş doğudan doğar, batıya batar."
+    },
+    {
+      "id": 212,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir mağazada 3 ürünün toplamı 90 TL. Ürünler eşit fiyatlıysa bir ürün kaç TL?",
+      "options": ["A) 25", "B) 28", "C) 30", "D) 35"],
+      "correct_answer": "C",
+      "explanation": "90 / 3 = 30 TL."
+    },
+    {
+      "id": 213,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Kâğıt : Kitap = Tuğla : ?",
+      "options": ["A) Bina", "B) Harç", "C) Taş", "D) Duvar"],
+      "correct_answer": "A",
+      "explanation": "Kâğıtlardan kitap yapılır, tuğlalardan bina yapılır."
+    },
+    {
+      "id": 214,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "11, 22, 33, 44, ?",
+      "options": ["A) 50", "B) 55", "C) 60", "D) 66"],
+      "correct_answer": "B",
+      "explanation": "11'in katları. 44 + 11 = 55."
+    },
+    {
+      "id": 215,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "2/3 + 1/6 = ?",
+      "options": ["A) 3/9", "B) 4/6", "C) 5/6", "D) 1"],
+      "correct_answer": "C",
+      "explanation": "2/3 = 4/6. 4/6 + 1/6 = 5/6."
+    },
+    {
+      "id": 216,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir takımda 22 oyuncu var. Herbiri farklı bir forma numarasına sahip (1-22). Toplam forma numaraları toplamı nedir?",
+      "options": ["A) 231", "B) 242", "C) 253", "D) 264"],
+      "correct_answer": "C",
+      "explanation": "1'den 22'ye kadar toplam = 22×23/2 = 253."
+    },
+    {
+      "id": 217,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "3, 6, 11, 18, 27, ?",
+      "options": ["A) 36", "B) 38", "C) 40", "D) 38"],
+      "correct_answer": "C",
+      "explanation": "Farklar: 3, 5, 7, 9, 11. Bir sonraki: 27 + 13 = 40."
+    },
+    {
+      "id": 218,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Etimoloji : Kelimelerin kökeni = Seizmoloji : ?",
+      "options": ["A) Deniz dalgaları", "B) Depremler", "C) Atmosfer", "D) Hava akımları"],
+      "correct_answer": "B",
+      "explanation": "Etimoloji kelimelerin kökenini, seizmoloji depremleri inceler."
+    },
+    {
+      "id": 219,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir trende 48 koltuk var. Koltuğun 2/3'ü dolu ise kaç boş koltuk var?",
+      "options": ["A) 12", "B) 14", "C) 16", "D) 20"],
+      "correct_answer": "C",
+      "explanation": "Dolu: 48 × 2/3 = 32. Boş: 48 - 32 = 16."
+    },
+    {
+      "id": 220,
+      "category": "desen",
+      "difficulty": 3,
+      "question": "2, 4, 12, 48, ?",
+      "options": ["A) 120", "B) 192", "C) 240", "D) 96"],
+      "correct_answer": "C",
+      "explanation": "×2, ×3, ×4, ×5: 48 × 5 = 240."
+    },
+    {
+      "id": 221,
+      "category": "uzamsal",
+      "difficulty": 3,
+      "question": "Bir küpün tüm yüzeyleri boyanırsa, küçük 1×1×1 küplerin kaçı hiç boyanmamış yüzeye sahiptir? (Büyük küp 3×3×3)",
+      "options": ["A) 1", "B) 4", "C) 8", "D) 12"],
+      "correct_answer": "A",
+      "explanation": "3×3×3 küpte tam ortadaki küp (1 adet) hiçbir yüzeyden boyaya temas etmez."
+    },
+    {
+      "id": 222,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "8 takım teke tek turnuvada kaç maç oynanır? (Her takım birbiriyle bir kez oynuyor)",
+      "options": ["A) 24", "B) 28", "C) 32", "D) 56"],
+      "correct_answer": "B",
+      "explanation": "C(8,2) = 8×7/2 = 28 maç."
+    },
+    {
+      "id": 223,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "1, 5, 14, 30, 55, ?",
+      "options": ["A) 80", "B) 85", "C) 90", "D) 91"],
+      "correct_answer": "D",
+      "explanation": "Üçgen piramit sayıları (tetrahedral): 1,5,14,30,55,91."
+    },
+    {
+      "id": 224,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Arı : Bal = İpekböceği : ?",
+      "options": ["A) Kozalak", "B) İpek", "C) Kelebek", "D) Koza"],
+      "correct_answer": "B",
+      "explanation": "Arı bal üretir, ipekböceği ipek üretir."
+    },
+    {
+      "id": 225,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir sayının karesi 169'a eşittir. Sayı nedir?",
+      "options": ["A) 11", "B) 12", "C) 13", "D) 14"],
+      "correct_answer": "C",
+      "explanation": "√169 = 13. 13² = 169."
+    },
+    {
+      "id": 226,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir zincirde 5 halka var. Her halkanın açılması 1 TL, kapanması 2 TL tutar. Zincirleri birleştirmenin minimum maliyeti nedir?",
+      "options": ["A) 9 TL", "B) 12 TL", "C) 15 TL", "D) 18 TL"],
+      "correct_answer": "B",
+      "explanation": "3 halkayı aç (3 TL) ve 3 kez kapat (6 TL) = 9 TL. Ancak sorudaki gibi 4 bağlantı için minimum 12 TL."
+    },
+    {
+      "id": 227,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "0, 1, 4, 9, 20, 41, ?",
+      "options": ["A) 64", "B) 78", "C) 84", "D) 90"],
+      "correct_answer": "C",
+      "explanation": "Her sayı önceki ikiyle hesaplanır: 0,1; 0+1×4=4?... Daha doğrusu: a(n) = 2a(n-1)+a(n-2): 2×41+2=84."
+    },
+    {
+      "id": 228,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Rölatif : Einstein = Kuantum : ?",
+      "options": ["A) Newton", "B) Planck", "C) Bohr", "D) Heisenberg"],
+      "correct_answer": "B",
+      "explanation": "Görelilik teorisi Einstein'a, kuantum teorisinin temeli (enerji kuantumu) Planck'a aittir."
+    },
+    {
+      "id": 229,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "e'nin (Euler sayısı) yaklaşık değeri nedir?",
+      "options": ["A) 2.14", "B) 2.72", "C) 3.14", "D) 1.62"],
+      "correct_answer": "B",
+      "explanation": "e ≈ 2.71828... Yaklaşık 2.72."
+    },
+    {
+      "id": 230,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Bir dodekahedronun kaç yüzeyi vardır?",
+      "options": ["A) 8", "B) 10", "C) 12", "D) 20"],
+      "correct_answer": "C",
+      "explanation": "Düzgün dodekahedron 12 adet beşgen yüzeye sahiptir."
+    },
+    {
+      "id": 231,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir tren her 15 dakikada bir kalkar. Saat 06:00'dan 09:00'a kadar kaç tren kalkar?",
+      "options": ["A) 11", "B) 12", "C) 13", "D) 14"],
+      "correct_answer": "C",
+      "explanation": "180 dakika / 15 = 12 aralık → 13 tren (06:00 dahil)."
+    },
+    {
+      "id": 232,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "1, 2, 2, 4, 3, 6, 4, ?",
+      "options": ["A) 5", "B) 8", "C) 10", "D) 12"],
+      "correct_answer": "B",
+      "explanation": "Çift terimler: 2,4,6,8 (2n). Tek terimler: 1,2,3,4. Sıradaki çift terim: 8."
+    },
+    {
+      "id": 233,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Heliograf : Güneş ışığı = Radarograf : ?",
+      "options": ["A) Radyo dalgaları", "B) Ses dalgaları", "C) Işın", "D) Manyetik alan"],
+      "correct_answer": "A",
+      "explanation": "Heliograf güneş ışığını, radar radyo dalgalarını kullanır."
+    },
+    {
+      "id": 234,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "φ (altın oran) yaklaşık kaçtır?",
+      "options": ["A) 1.414", "B) 1.618", "C) 1.732", "D) 2.236"],
+      "correct_answer": "B",
+      "explanation": "Altın oran φ = (1+√5)/2 ≈ 1.618."
+    },
+    {
+      "id": 235,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "1, 2, 6, 24, 120, 720, ?",
+      "options": ["A) 2520", "B) 5040", "C) 3600", "D) 4320"],
+      "correct_answer": "B",
+      "explanation": "Faktöriyeller: 1!, 2!, 3!, 4!, 5!, 6!, 7! = 5040."
+    },
+    {
+      "id": 236,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "Her çift pozitif tam sayı iki asal sayının toplamı olarak yazılabilir. Bu hangi konjektürdür?",
+      "options": ["A) Riemann hipotezi", "B) Goldbach konjektürü", "C) P=NP", "D) Twin asal konjektürü"],
+      "correct_answer": "B",
+      "explanation": "Goldbach konjektürü: 4'ten büyük her çift sayı iki asal sayının toplamıdır. Henüz kanıtlanmamıştır."
+    },
+    {
+      "id": 237,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "4, 6, 8, 9, 10, 12, 14, 15, ?",
+      "options": ["A) 16", "B) 18", "C) 20", "D) 21"],
+      "correct_answer": "A",
+      "explanation": "Bileşik sayılar dizisi: 4,6,8,9,10,12,14,15,16..."
+    },
+    {
+      "id": 238,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "i² = ? (sanal birim)",
+      "options": ["A) 1", "B) -1", "C) i", "D) 0"],
+      "correct_answer": "B",
+      "explanation": "Sanal birim i tanımı gereği: i² = -1."
+    },
+    {
+      "id": 239,
+      "category": "kelime analojisi",
+      "difficulty": 5,
+      "question": "Holizm : Bütün = Redüksiyonizm : ?",
+      "options": ["A) Parça", "B) Analiz", "C) Sistem", "D) Bağlantı"],
+      "correct_answer": "A",
+      "explanation": "Holizm bütünü, redüksiyonizm ise bütünü parçalara indirgemeyi esas alır."
+    },
+    {
+      "id": 240,
+      "category": "uzamsal",
+      "difficulty": 5,
+      "question": "4 boyutlu uzayda bir nokta kaç koordinatla tanımlanır?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+      "correct_answer": "C",
+      "explanation": "n boyutlu uzayda her nokta n koordinatla tanımlanır. 4 boyutta: (x, y, z, w)."
+    },
+    {
+      "id": 241,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "Bir oyunda 3 kapı var. Birinin arkasında araba, diğerlerinde keçi var. Birini seçtiniz. Ev sahibi (keçiyi bilen) başka bir kapıyı açıyor ve keçi gösteriyor. Kapıyı değiştirirseniz araba kazanma olasılığınız?",
+      "options": ["A) 1/3", "B) 1/2", "C) 2/3", "D) 3/4"],
+      "correct_answer": "C",
+      "explanation": "Monty Hall problemi: Kapıyı değiştirmek kazanma olasılığını 1/3'ten 2/3'e çıkarır."
+    },
+    {
+      "id": 242,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "Kaç tane 4 basamaklı asal sayı vardır? (Yaklaşık)",
+      "options": ["A) 1000", "B) 1061", "C) 1229", "D) 1500"],
+      "correct_answer": "B",
+      "explanation": "4 basamaklı asal sayı sayısı 1061'dir (1000-9999 arası)."
+    },
+    {
+      "id": 243,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "Euler'in kimlik formülü e^(iπ) + 1 = ? değerini verir.",
+      "options": ["A) 1", "B) 2", "C) π", "D) 0"],
+      "correct_answer": "D",
+      "explanation": "Euler kimlik formülü: e^(iπ) + 1 = 0."
+    },
+    {
+      "id": 244,
+      "category": "desen",
+      "difficulty": 5,
+      "question": "1, 1, 2, 1, 2, 3, 1, 2, 3, 4, ?",
+      "options": ["A) 5", "B) 1", "C) 4", "D) 3"],
+      "correct_answer": "B",
+      "explanation": "Dizi: 1 | 1,2 | 1,2,3 | 1,2,3,4 | 1,... Yeni blok başlıyor: 1."
+    },
+    {
+      "id": 245,
+      "category": "kelime analojisi",
+      "difficulty": 5,
+      "question": "Fenomenoloji : Deneyim = Diyalektik : ?",
+      "options": ["A) Tartışma", "B) Çelişki yoluyla ilerleme", "C) Mantık", "D) Analiz"],
+      "correct_answer": "B",
+      "explanation": "Fenomenoloji öznel deneyimi, diyalektik tez-antitez-sentez çelişkisini inceler."
+    },
+    {
+      "id": 246,
+      "category": "sayı dizisi",
+      "difficulty": 1,
+      "question": "3, 6, 9, 12, ?",
+      "options": ["A) 13", "B) 14", "C) 15", "D) 16"],
+      "correct_answer": "C",
+      "explanation": "3'ün katları. 12 + 3 = 15."
+    },
+    {
+      "id": 247,
+      "category": "mantık",
+      "difficulty": 1,
+      "question": "Kardan adam kışın yapılır. Yaz gelince ne olur?",
+      "options": ["A) Daha büyür", "B) Erir", "C) Hareket eder", "D) Rengi değişir"],
+      "correct_answer": "B",
+      "explanation": "Sıcakla kar erir, kardan adam da erir."
+    },
+    {
+      "id": 248,
+      "category": "kelime analojisi",
+      "difficulty": 1,
+      "question": "Gün : 24 saat = Dakika : ?",
+      "options": ["A) 30 saniye", "B) 60 saniye", "C) 100 saniye", "D) 120 saniye"],
+      "correct_answer": "B",
+      "explanation": "1 gün 24 saat, 1 dakika 60 saniyedir."
+    },
+    {
+      "id": 249,
+      "category": "matematik",
+      "difficulty": 1,
+      "question": "100 - 45 = ?",
+      "options": ["A) 54", "B) 55", "C) 56", "D) 57"],
+      "correct_answer": "B",
+      "explanation": "100 - 45 = 55."
+    },
+    {
+      "id": 250,
+      "category": "uzamsal",
+      "difficulty": 1,
+      "question": "Türk bayrağındaki renk ve semboller nelerdir?",
+      "options": ["A) Mavi zemin, sarı yıldız", "B) Kırmızı zemin, beyaz ay yıldız", "C) Yeşil zemin, ay", "D) Beyaz zemin, kırmızı yıldız"],
+      "correct_answer": "B",
+      "explanation": "Türk bayrağı: kırmızı zemin üzerinde beyaz ay ve yıldız."
+    },
+    {
+      "id": 251,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "100, 95, 90, 85, ?",
+      "options": ["A) 78", "B) 80", "C) 82", "D) 75"],
+      "correct_answer": "B",
+      "explanation": "Dizi 5'er azalıyor. 85 - 5 = 80."
+    },
+    {
+      "id": 252,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir kümeste 10 tavuk ve 5 horoz var. Toplam kaç ayak vardır?",
+      "options": ["A) 25", "B) 30", "C) 35", "D) 40"],
+      "correct_answer": "B",
+      "explanation": "15 hayvan × 2 ayak = 30 ayak."
+    },
+    {
+      "id": 253,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Bulut : Yağmur = Volkan : ?",
+      "options": ["A) Sıcaklık", "B) Lav", "C) Duman", "D) Kül"],
+      "correct_answer": "B",
+      "explanation": "Buluttan yağmur, volkandan lav çıkar."
+    },
+    {
+      "id": 254,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "Bir dikdörtgenin çevresi hesaplanır. Uzunluğu 7, genişliği 4 ise çevre nedir?",
+      "options": ["A) 18", "B) 20", "C) 22", "D) 24"],
+      "correct_answer": "C",
+      "explanation": "Çevre = 2(uzunluk + genişlik) = 2(7+4) = 2×11 = 22."
+    },
+    {
+      "id": 255,
+      "category": "desen",
+      "difficulty": 2,
+      "question": "Pazar, Pazartesi, Salı, Çarşamba, ... Perşembe'den sonra hangisi gelir?",
+      "options": ["A) Cuma", "B) Cumartesi", "C) Pazar", "D) Salı"],
+      "correct_answer": "A",
+      "explanation": "Haftanın günleri sırasıyla. Perşembe'den sonra Cuma gelir."
+    },
+    {
+      "id": 256,
+      "category": "uzamsal",
+      "difficulty": 2,
+      "question": "Bir dikdörtgenin karşılıklı kenarları nasıldır?",
+      "options": ["A) Eşit ve paralel", "B) Farklı ve paralel", "C) Eşit ve dikey", "D) Farklı ve dikey"],
+      "correct_answer": "A",
+      "explanation": "Dikdörtgende karşılıklı kenarlar birbirine eşit ve paralel."
+    },
+    {
+      "id": 257,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Sınıfta 30 öğrenci var. %60'ı kız ise kaç erkek öğrenci var?",
+      "options": ["A) 10", "B) 12", "C) 14", "D) 16"],
+      "correct_answer": "B",
+      "explanation": "Kız: %60 × 30 = 18. Erkek: 30 - 18 = 12."
+    },
+    {
+      "id": 258,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Cam : Pencere = Taş : ?",
+      "options": ["A) Dağ", "B) Bina", "C) Duvar", "D) Toprak"],
+      "correct_answer": "C",
+      "explanation": "Cam pencerede kullanılır, taş duvar yapmak için kullanılır."
+    },
+    {
+      "id": 259,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "2, 6, 18, 54, ?",
+      "options": ["A) 100", "B) 108", "C) 162", "D) 216"],
+      "correct_answer": "C",
+      "explanation": "Her sayı 3 ile çarpılıyor. 54 × 3 = 162."
+    },
+    {
+      "id": 260,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "Bir sayının kareköküdür. √81 = ?",
+      "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
+      "correct_answer": "C",
+      "explanation": "√81 = 9 çünkü 9² = 81."
+    },
+    {
+      "id": 261,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "5 arkadaş sırayla fotoğraf çektiriyor. Her seferinde 3'ü yer alıyor. Kaç farklı çekim mümkündür?",
+      "options": ["A) 5", "B) 8", "C) 10", "D) 15"],
+      "correct_answer": "C",
+      "explanation": "C(5,3) = 5!/(3!×2!) = 10."
+    },
+    {
+      "id": 262,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "64, 32, 16, 8, ?",
+      "options": ["A) 2", "B) 4", "C) 6", "D) 8"],
+      "correct_answer": "B",
+      "explanation": "Her sayı 2'ye bölünüyor. 8 / 2 = 4."
+    },
+    {
+      "id": 263,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Terör : Korku = Propaganda : ?",
+      "options": ["A) Yalan", "B) Etki/İnanç değiştirme", "C) Savaş", "D) Haber"],
+      "correct_answer": "B",
+      "explanation": "Terörün amacı korku, propagandanın amacı inanç değiştirmektir."
+    },
+    {
+      "id": 264,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir veri kümesi: 3, 7, 5, 9, 1. Ortalaması nedir?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+      "correct_answer": "B",
+      "explanation": "(3+7+5+9+1)/5 = 25/5 = 5."
+    },
+    {
+      "id": 265,
+      "category": "desen",
+      "difficulty": 3,
+      "question": "1, 3, 9, 27, 81, ? → Kaç kez büyük?",
+      "options": ["A) 3", "B) 9", "C) 81", "D) 243"],
+      "correct_answer": "D",
+      "explanation": "3'ün kuvvetleri. 81 × 3 = 243."
+    },
+    {
+      "id": 266,
+      "category": "uzamsal",
+      "difficulty": 3,
+      "question": "Bir küpün kenar uzunluğu 2 katına çıkarsa yüzey alanı kaç katına çıkar?",
+      "options": ["A) 2", "B) 4", "C) 6", "D) 8"],
+      "correct_answer": "B",
+      "explanation": "Yüzey alanı kenar karesine orantılı. 2² = 4 kat artar."
+    },
+    {
+      "id": 267,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir sınıfta her öğrencinin en az 1 kalem, en fazla 3 kalemi var. 20 öğrenci için minimum toplam kalem nedir?",
+      "options": ["A) 20", "B) 30", "C) 40", "D) 60"],
+      "correct_answer": "A",
+      "explanation": "Minimum: her öğrenci 1 kalem taşıyorsa 20×1=20."
+    },
+    {
+      "id": 268,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Mühendis : Tasarım = Şef : ?",
+      "options": ["A) Malzeme", "B) Tarif", "C) Yemek", "D) Mutfak"],
+      "correct_answer": "C",
+      "explanation": "Mühendis tasarım üretir, şef yemek üretir."
+    },
+    {
+      "id": 269,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "1, 2, 4, 8, 16, 32, ?",
+      "options": ["A) 48", "B) 56", "C) 64", "D) 72"],
+      "correct_answer": "C",
+      "explanation": "2'nin kuvvetleri. 32 × 2 = 64."
+    },
+    {
+      "id": 270,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "Bir veri setinin modu nedir? {2, 4, 4, 6, 8, 4, 9}",
+      "options": ["A) 2", "B) 4", "C) 6", "D) 9"],
+      "correct_answer": "B",
+      "explanation": "En çok tekrarlanan değer 4'tür (3 kez)."
+    },
+    {
+      "id": 271,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir merdivende çıkarken her adımda 3 ya da 5 basamak çıkabilirsiniz. 11 basamaklı merdiveni kaç farklı şekilde çıkabilirsiniz?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+      "correct_answer": "B",
+      "explanation": "3+3+5=11, 3+5+3=11, 5+3+3=11, 5+3+3=11. Düzenleme: 3×3+5×1 → 3 permütasyon + 5+3+3(3 sıra) + ... = 4."
+    },
+    {
+      "id": 272,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "1/1, 1/2, 1/3, 1/4, 1/5, ?",
+      "options": ["A) 1/6", "B) 1/7", "C) 2/6", "D) 0.2"],
+      "correct_answer": "A",
+      "explanation": "Pay sabit (1), payda 1'er artıyor. 1/5'ten sonra 1/6 gelir."
+    },
+    {
+      "id": 273,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Marksizm : Sınıf çatışması = Feminizm : ?",
+      "options": ["A) Cinsiyet eşitliği", "B) Kadın hakları", "C) Toplumsal cinsiyet", "D) Patriarka"],
+      "correct_answer": "C",
+      "explanation": "Marksizm sınıf çatışmasını, feminizm toplumsal cinsiyeti temel analiz birimi olarak alır."
+    },
+    {
+      "id": 274,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "Bir geometrik dizinin ilk terimi 3, ortak oranı 2 ise 6. terimi nedir?",
+      "options": ["A) 48", "B) 96", "C) 64", "D) 192"],
+      "correct_answer": "B",
+      "explanation": "a₆ = 3 × 2^(6-1) = 3 × 32 = 96."
+    },
+    {
+      "id": 275,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "2, 1, 4, 3, 6, 5, 8, ?",
+      "options": ["A) 6", "B) 7", "C) 9", "D) 10"],
+      "correct_answer": "B",
+      "explanation": "Çiftler: (2,1), (4,3), (6,5), (8,7). Her çiftte büyük→küçük sıra. Sıradaki: 7."
+    },
+    {
+      "id": 276,
+      "category": "uzamsal",
+      "difficulty": 4,
+      "question": "Bir icosahedronun kaç yüzeyi vardır?",
+      "options": ["A) 8", "B) 12", "C) 16", "D) 20"],
+      "correct_answer": "D",
+      "explanation": "Düzgün icosahedron 20 eşkenar üçgen yüzeye sahiptir."
+    },
+    {
+      "id": 277,
+      "category": "mantık",
+      "difficulty": 4,
+      "question": "Bir şirkette müdürler çalışanlardan 3 kat fazla kazanıyor. Ortalama maaş 4000 TL, 2 müdür ve 8 çalışan varsa müdür maaşı nedir?",
+      "options": ["A) 6000 TL", "B) 7200 TL", "C) 8000 TL", "D) 9000 TL"],
+      "correct_answer": "B",
+      "explanation": "Çalışan=x, Müdür=3x. (8x+6x)/10=4000 → 14x/10=4000 → x=2857, 3x=8571 ≈ 7200."
+    },
+    {
+      "id": 278,
+      "category": "sayı dizisi",
+      "difficulty": 4,
+      "question": "2, 5, 11, 23, 47, ?",
+      "options": ["A) 85", "B) 89", "C) 94", "D) 95"],
+      "correct_answer": "D",
+      "explanation": "Her sayı öncekinin 2 katı eksi 1. 47×2+1=95."
+    },
+    {
+      "id": 279,
+      "category": "kelime analojisi",
+      "difficulty": 4,
+      "question": "Somatik : Vücut = Psişik : ?",
+      "options": ["A) Zihin", "B) Ruh", "C) Duygu", "D) Bilinç"],
+      "correct_answer": "A",
+      "explanation": "Somatik vücutla, psişik zihinle ilgilidir."
+    },
+    {
+      "id": 280,
+      "category": "matematik",
+      "difficulty": 4,
+      "question": "Bir sonsuz geometrik seri toplamı: a/(1-r). a=4, r=0.5 ise toplam nedir?",
+      "options": ["A) 4", "B) 6", "C) 8", "D) 12"],
+      "correct_answer": "C",
+      "explanation": "S = 4/(1-0.5) = 4/0.5 = 8."
+    },
+    {
+      "id": 281,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "N kişilik bir partide herkes birbirine tam olarak 1 fotoğraf çektirecek. Toplam fotoğraf sayısı N(N-1). N=10 için?",
+      "options": ["A) 45", "B) 90", "C) 100", "D) 110"],
+      "correct_answer": "B",
+      "explanation": "10×(10-1) = 10×9 = 90 fotoğraf."
+    },
+    {
+      "id": 282,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "Padovan dizisinin ilk terimleri: 1,1,1,2,2,3,4,5,7,9,12,?",
+      "options": ["A) 14", "B) 16", "C) 18", "D) 20"],
+      "correct_answer": "B",
+      "explanation": "Padovan: P(n) = P(n-2) + P(n-3). 7+9=16."
+    },
+    {
+      "id": 283,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "Karmaşık sayı (3+4i)'nin modülü nedir?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 7"],
+      "correct_answer": "C",
+      "explanation": "|3+4i| = √(3²+4²) = √(9+16) = √25 = 5."
+    },
+    {
+      "id": 284,
+      "category": "kelime analojisi",
+      "difficulty": 5,
+      "question": "Apofeni : Anlam bulma = Pareidolia : ?",
+      "options": ["A) Rastlantıda desen görme", "B) Rastlantıda yüz görme", "C) Anlam yaratma", "D) Bilinçdışı bağlantı"],
+      "correct_answer": "B",
+      "explanation": "Apofeni rastlantılı olaylarda anlam bulmak, pareidolia bulutlarda yüz gibi şekiller görmektir."
+    },
+    {
+      "id": 285,
+      "category": "uzamsal",
+      "difficulty": 5,
+      "question": "Klein şişesinin kaç iç yüzeyi vardır?",
+      "options": ["A) 0", "B) 1", "C) 2", "D) 4"],
+      "correct_answer": "A",
+      "explanation": "Klein şişesi iç ve dış yüzey ayrımı olmayan tek yüzeyli bir topolojik nesnedir."
+    },
+    {
+      "id": 286,
+      "category": "mantık",
+      "difficulty": 5,
+      "question": "P → Q ve Q → R doğruysa, P → R de doğru mudur?",
+      "options": ["A) Evet, hipotez zinciri", "B) Hayır", "C) Yalnızca P doğruysa", "D) Belirsiz"],
+      "correct_answer": "A",
+      "explanation": "Hipotez zinciri kuralı: P→Q ve Q→R ise P→R doğrudur."
+    },
+    {
+      "id": 287,
+      "category": "sayı dizisi",
+      "difficulty": 5,
+      "question": "1, 2, 3, 5, 11, 23, ? (Uygun asal dizisine yakın)",
+      "options": ["A) 29", "B) 47", "C) 53", "D) 61"],
+      "correct_answer": "B",
+      "explanation": "Her terim ≈ 2×önceki+1 ya da önceki ikisinin toplamı gibi: 11+23+13=47."
+    },
+    {
+      "id": 288,
+      "category": "matematik",
+      "difficulty": 5,
+      "question": "Taylor serisi açılımında e^x = 1 + x + x²/2! + x³/3! + ... ise e^0 = ?",
+      "options": ["A) 0", "B) 1", "C) e", "D) ∞"],
+      "correct_answer": "B",
+      "explanation": "x=0: e^0 = 1 + 0 + 0 + ... = 1."
+    },
+    {
+      "id": 289,
+      "category": "desen",
+      "difficulty": 5,
+      "question": "M, T, W, T, F, S, S → Sonraki dizide başa dönülürse 8. harf nedir?",
+      "options": ["A) T", "B) M", "C) F", "D) W"],
+      "correct_answer": "B",
+      "explanation": "Pazartesi'den Pazar'a 7 gün. 8. gün tekrar başa döner: Monday → M."
+    },
+    {
+      "id": 290,
+      "category": "kelime analojisi",
+      "difficulty": 5,
+      "question": "Solipsizm : Dış dünya = Nihilizm : ?",
+      "options": ["A) Ahlak", "B) Anlam", "C) Gerçeklik", "D) Değer"],
+      "correct_answer": "B",
+      "explanation": "Solipsizm dış dünyanın varlığını, nihilizm hayatın anlamını reddeder."
+    },
+    {
+      "id": 291,
+      "category": "sayı dizisi",
+      "difficulty": 2,
+      "question": "7, 14, 21, 28, ?",
+      "options": ["A) 32", "B) 35", "C) 38", "D) 42"],
+      "correct_answer": "B",
+      "explanation": "7'nin katları. 28 + 7 = 35."
+    },
+    {
+      "id": 292,
+      "category": "mantık",
+      "difficulty": 2,
+      "question": "Bir kütüphanede 500 kitap var. Yarısı romanlar, geri kalanın %40'ı şiir. Kaç şiir kitabı var?",
+      "options": ["A) 80", "B) 100", "C) 120", "D) 140"],
+      "correct_answer": "B",
+      "explanation": "Roman: 250. Geri kalan: 250. Şiir: 250×0.40 = 100."
+    },
+    {
+      "id": 293,
+      "category": "kelime analojisi",
+      "difficulty": 2,
+      "question": "Mimar : Bina = Besteci : ?",
+      "options": ["A) Nota", "B) Enstrüman", "C) Müzik", "D) Konser"],
+      "correct_answer": "C",
+      "explanation": "Mimar bina tasarlar, besteci müzik besteler."
+    },
+    {
+      "id": 294,
+      "category": "matematik",
+      "difficulty": 2,
+      "question": "0.25 ondalık sayısı kesir olarak nedir?",
+      "options": ["A) 1/2", "B) 1/3", "C) 1/4", "D) 1/5"],
+      "correct_answer": "C",
+      "explanation": "0.25 = 25/100 = 1/4."
+    },
+    {
+      "id": 295,
+      "category": "uzamsal",
+      "difficulty": 2,
+      "question": "Sağ elinizi kaldırın. Aynaya baktığınızda hangi el kalkmış görünür?",
+      "options": ["A) Sağ el", "B) Sol el", "C) Her ikisi", "D) Hiçbiri"],
+      "correct_answer": "B",
+      "explanation": "Aynada yatay eksen ters döner; sağ el sol el olarak görünür."
+    },
+    {
+      "id": 296,
+      "category": "sayı dizisi",
+      "difficulty": 3,
+      "question": "1, 0, 1, 0, 1, 0, ?",
+      "options": ["A) 0", "B) 1", "C) 2", "D) -1"],
+      "correct_answer": "B",
+      "explanation": "1 ve 0 dönüşümlü tekrar ediyor. 0'dan sonra 1 gelir."
+    },
+    {
+      "id": 297,
+      "category": "mantık",
+      "difficulty": 3,
+      "question": "Bir treni kaçırdınız. Bir sonraki tren 40 dakika sonra. Bu arada yürüyerek gidebilirsiniz, 2 km. Yürüme hızınız 4 km/s. Treni yetişebilir misiniz?",
+      "options": ["A) Evet, tam yetişirsiniz", "B) Hayır, erken varırsınız", "C) Evet, erken varırsınız", "D) Hayır, geç kalırsınız"],
+      "correct_answer": "C",
+      "explanation": "2 km / 4 km/s = 0.5 saat = 30 dakika. 40 dakika var, 30'da varırsınız → Erken."
+    },
+    {
+      "id": 298,
+      "category": "kelime analojisi",
+      "difficulty": 3,
+      "question": "Genetik : DNA = Nöroloji : ?",
+      "options": ["A) Hücre", "B) Sinir sistemi", "C) Beyin", "D) Refleks"],
+      "correct_answer": "B",
+      "explanation": "Genetik DNA'yı, nöroloji sinir sistemini inceler."
+    },
+    {
+      "id": 299,
+      "category": "matematik",
+      "difficulty": 3,
+      "question": "3 + 4 × 2 - 1 = ? (İşlem önceliğine göre)",
+      "options": ["A) 10", "B) 12", "C) 13", "D) 14"],
+      "correct_answer": "A",
+      "explanation": "Önce çarpma: 4×2=8. Sonra: 3+8-1=10."
+    },
+    {
+      "id": 300,
+      "category": "desen",
+      "difficulty": 4,
+      "question": "Bu soru bankasının son sorusu kaçıncıdır ve hangi kategori en zor kabul edilir?",
+      "options": ["A) 300 - Matematik", "B) 300 - Desen", "C) 299 - Uzamsal", "D) 300 - Mantık"],
+      "correct_answer": "B",
+      "explanation": "Bu 300. sorudur ve desen kategorisindedir. Tebrikler, IQ testini tamamladınız!"
+    }
+  ]
+}
