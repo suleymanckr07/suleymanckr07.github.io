@@ -1,6 +1,40 @@
 {
   "apps": [
     {
+      "id": "watched",
+      "title": "Kare",
+      "description": "İzlediklerinizi takip edin ve izlemek istediğiniz film & dizileri kolayca bulun",
+      "logo": "https://suleymanckr07.github.io/images/watched/watched-logo.png",
+      "color": "#FF9800",
+      "platforms": {
+        "ios": {
+          "url": "https://apps.apple.com/tr/app/izlemeliyim/id6749468704?l=tr",
+          "available": true
+        },
+        "android": {
+          "url": "https://play.google.com/store/apps/details?id=com.sc.watched",
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "daily_information",
+      "title": "Günlük Bilgi",
+      "description": "Günlük birbirinden farklı bilgiler telefonunuzda..",
+      "logo": "https://suleymanckr07.github.io/images/daily_information/daily_logo.png",
+      "color": "#2196F3",
+      "platforms": {
+        "ios": {
+          "url": "https://apps.apple.com/tr/app/g%C3%BCnl%C3%BCk-bilgi/id6749371652",
+          "available": true
+        },
+        "android": {
+          "url": "https://play.google.com/store/apps/details?id=com.sc.daily_information",
+          "available": true
+        }
+      }
+    },
+    {
       "id": "woo_ai",
       "title": "Turistly",
       "description": "Yeni yerleri keşfetmek için yapay zeka destekli",
@@ -47,40 +81,6 @@
         },
         "android": {
           "url": "https://play.google.com/store/apps/details?id=com.sc.football_team",
-          "available": true
-        }
-      }
-    },
-    {
-      "id": "watched",
-      "title": "Kare",
-      "description": "İzlediklerinizi takip edin ve izlemek istediğiniz film & dizileri kolayca bulun",
-      "logo": "https://suleymanckr07.github.io/images/watched/watched-logo.png",
-      "color": "#FF9800",
-      "platforms": {
-        "ios": {
-          "url": "https://apps.apple.com/tr/app/izlemeliyim/id6749468704?l=tr",
-          "available": true
-        },
-        "android": {
-          "url": "https://play.google.com/store/apps/details?id=com.sc.watched",
-          "available": true
-        }
-      }
-    },
-    {
-      "id": "daily_information",
-      "title": "Günlük Bilgi",
-      "description": "Günlük birbirinden farklı bilgiler telefonunuzda..",
-      "logo": "https://suleymanckr07.github.io/images/daily_information/daily_logo.png",
-      "color": "#2196F3",
-      "platforms": {
-        "ios": {
-          "url": "https://apps.apple.com/tr/app/g%C3%BCnl%C3%BCk-bilgi/id6749371652",
-          "available": true
-        },
-        "android": {
-          "url": "https://play.google.com/store/apps/details?id=com.sc.daily_information",
           "available": true
         }
       }
